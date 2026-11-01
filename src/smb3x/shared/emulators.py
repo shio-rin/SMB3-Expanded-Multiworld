@@ -22,7 +22,12 @@ def profile(version):
 
 
 def identify(exe):
-    """Verify official executable and complete DLL set before using its settings."""
+    """Verify required runtime files and any explicitly approved language resources.
+
+    Optional assemblies are exact path/hash pairs for this profile's dependency
+    version. A resources.dll filename alone never grants an integrity exemption.
+    They do not alter the required-file identity stored in existing sessions.
+    """
     exe = Path(exe).resolve()
     executable_hash = sha(exe)
     found = next((p for p in profiles().values() if p['files']['EmuHawk.exe'] == executable_hash), None)
@@ -32,11 +37,23 @@ def identify(exe):
     actual = {'EmuHawk.exe': executable_hash}
     actual.update({p.relative_to(exe.parent).as_posix(): sha(p)
                    for p in sorted((exe.parent / 'dll').rglob('*')) if p.is_file()})
-    if actual != found['files']:
-        differing = sorted(k for k in actual.keys() | found['files'].keys()
-                           if actual.get(k) != found['files'].get(k))
-        raise ValueError('BizHawk ' + found['version'] + ' core/runtime integrity mismatch: '
-                         + ', '.join(differing[:3]) + '. Select its complete official installation; keep existing saves.')
+    required = found['files']
+    optional = found.get('optional_files', {})
+    differences = {
+        'Missing required files': sorted(required.keys() - actual.keys()),
+        'Modified required files': sorted(k for k in required.keys() & actual.keys()
+                                          if actual[k] != required[k]),
+        'Modified optional language resources': sorted(k for k in optional.keys() & actual.keys()
+                                                       if actual[k] != optional[k]),
+        'Unapproved additional files': sorted(actual.keys() - required.keys() - optional.keys()),
+    }
+    details = [label + ' (' + str(len(paths)) + '): ' + ', '.join(paths)
+               for label, paths in differences.items() if paths]
+    if details:
+        raise ValueError('BizHawk ' + found['version'] + ' core/runtime integrity mismatch.\n'
+                         + '\n'.join(details)
+                         + '\nSelect a complete official installation in a separate folder; do not mix versions.'
+                           ' Only hash-verified language resources are optional. Keep existing saves.')
     return found
 
 

@@ -8,7 +8,7 @@
     "maximum_ap_version": "0.6.8",
     "minimum_ap_version": "0.6.8",
     "version": 7,
-    "world_version": "0.36.0"
+    "world_version": "0.36.1"
   },
   "baseline": {
     "role": "Accepted M28 gameplay; no archive/cache is a build prerequisite",
@@ -185,7 +185,7 @@
       "owned canonical SMB3 USA Revision A ROM"
     ]
   },
-  "release": "36.0.0-rc1",
+  "release": "36.0.1-rc1",
   "resources": {
     "__init__.py": {
       "output_sha256": "3ee95cc1dca09bbdb3b3e2240c534657d564b68925a51e3079d28ed8d95ff545",
@@ -404,9 +404,9 @@
       "transform": "lf"
     },
     "launcher/config/emulators.json": {
-      "output_sha256": "109c768b6289250b0a840c04e8f9ec32d571e1bfb83b41d86f98b3b12dc291ac",
+      "output_sha256": "efed8e05e44de7034762570637c9d4cd2265460d6eedd43f62c0c56282b6e4fe",
       "source": "src/smb3x/launcher/config/emulators.json",
-      "source_lf_sha256": "109c768b6289250b0a840c04e8f9ec32d571e1bfb83b41d86f98b3b12dc291ac",
+      "source_lf_sha256": "efed8e05e44de7034762570637c9d4cd2265460d6eedd43f62c0c56282b6e4fe",
       "transform": "lf"
     },
     "launcher/config/neshawk-2.11.1.json": {
@@ -1370,9 +1370,9 @@
       "transform": "lf"
     },
     "shared/emulators.py": {
-      "output_sha256": "0488245df9bf58247d3a7da907aa9ae7449e9eb78e011d8c98872a3dc2fc9c51",
+      "output_sha256": "ee2e521f54c3b2d812ad05eff04932428768f7f5360189a3098b61dc0341e6da",
       "source": "src/smb3x/shared/emulators.py",
-      "source_lf_sha256": "0488245df9bf58247d3a7da907aa9ae7449e9eb78e011d8c98872a3dc2fc9c51",
+      "source_lf_sha256": "ee2e521f54c3b2d812ad05eff04932428768f7f5360189a3098b61dc0341e6da",
       "transform": "lf"
     },
     "shared/identity.py": {
@@ -1508,7 +1508,7 @@
       "transform": "lf"
     }
   },
-  "runtime": "m36-python-1",
+  "runtime": "m36-python-2",
   "schema": 1,
   "seed_policy": "No historical development denylist; all identity/ROM/cache/checkpoint checks retained",
   "slot_release": "m27-1",

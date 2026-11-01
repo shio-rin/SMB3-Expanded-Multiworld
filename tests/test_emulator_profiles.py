@@ -1,6 +1,9 @@
 # SPDX-License-Identifier: MPL-2.0
 """Profile ownership and State/config refusal; native qualification is separate."""
 import json
+from contextlib import contextmanager
+from copy import deepcopy
+from hashlib import sha256
 from pathlib import Path
 import tempfile
 import unittest
@@ -13,6 +16,117 @@ from smb3x.client.persistence.checkpoints import validate_state_container
 
 def identity(version):
     return dict(profile=version, revision=emulators.profile(version)['revision'], core='NesHawk')
+
+
+@contextmanager
+def installation(version, languages=()):
+    """Real filesystem/hash validation with explicitly synthetic binary contents."""
+    selected = deepcopy(emulators.profile(version))
+    required = {name: (version + ':' + name).encode() for name in (
+        'EmuHawk.exe', 'dll/BizHawk.Emulation.Cores.dll', 'dll/System.CommandLine.dll')}
+    optional = {name: (version + ':' + name).encode() for name in selected['optional_files']}
+    selected['files'] = {n: sha256(b).hexdigest() for n, b in required.items()}
+    selected['optional_files'] = {n: sha256(b).hexdigest() for n, b in optional.items()}
+    with tempfile.TemporaryDirectory() as folder:
+        root = Path(folder)
+        for name, data in {**required, **{n: optional[n] for n in languages}}.items():
+            path = root / name
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(data)
+        with patch.object(emulators, 'profiles', return_value={version: selected}):
+            yield root, selected, optional
+
+
+class OptionalLocalizationTests(unittest.TestCase):
+    def test_official_installation_without_satellites_is_accepted(self):
+        for version in emulators.profiles():
+            with self.subTest(version=version), installation(version) as (root, selected, _):
+                self.assertEqual(emulators.identify(root / 'EmuHawk.exe'), selected)
+
+    def test_all_reviewed_languages_and_each_individual_language_are_optional(self):
+        for version, selected in emulators.profiles().items():
+            names = list(selected['optional_files'])
+            for present in (names, *([n] for n in names)):
+                with self.subTest(version=version, present=present), installation(version, present) as (root, expected, _):
+                    self.assertEqual(emulators.identify(root / 'EmuHawk.exe'), expected)
+
+    def test_optional_language_removal_preserves_exact_session_identity(self):
+        for version, selected in emulators.profiles().items():
+            with self.subTest(version=version), installation(version, selected['optional_files']) as (root, _, optional):
+                before = emulator.emulator_identity(root / 'EmuHawk.exe')
+                (root / 'emulator-identity.json').write_text(json.dumps(before))
+                for name in optional:
+                    (root / name).unlink()
+                after = emulator.emulator_identity(root / 'EmuHawk.exe')
+                self.assertEqual(before, after)
+                emulator.require_session_emulator(root, after)
+
+    def test_missing_required_runtime_is_not_made_optional(self):
+        for version in emulators.profiles():
+            for missing in ('dll/BizHawk.Emulation.Cores.dll', 'dll/System.CommandLine.dll'):
+                with self.subTest(version=version, missing=missing), installation(version) as (root, _, _):
+                    (root / missing).unlink()
+                    with self.assertRaisesRegex(ValueError, 'Missing required files') as caught:
+                        emulators.identify(root / 'EmuHawk.exe')
+                    self.assertIn(missing, str(caught.exception))
+
+    def test_modified_required_core_and_dependency_are_rejected(self):
+        for version in emulators.profiles():
+            for changed in ('dll/BizHawk.Emulation.Cores.dll', 'dll/System.CommandLine.dll'):
+                with self.subTest(version=version, changed=changed), installation(version) as (root, _, _):
+                    (root / changed).write_bytes(b'modified core or runtime')
+                    with self.assertRaisesRegex(ValueError, 'Modified required files'):
+                        emulators.identify(root / 'EmuHawk.exe')
+
+    def test_modified_optional_resources_are_rejected(self):
+        for version, selected in emulators.profiles().items():
+            with self.subTest(version=version), installation(version, selected['optional_files']) as (root, _, optional):
+                (root / next(iter(optional))).write_bytes(b'not the approved satellite')
+                with self.assertRaisesRegex(ValueError, 'Modified optional language resources'):
+                    emulators.identify(root / 'EmuHawk.exe')
+
+    def test_unapproved_binaries_and_resource_names_are_rejected(self):
+        for version in emulators.profiles():
+            for extra in ('dll/puae.wbx.zst', 'dll/extra.dll', 'dll/other.exe',
+                          'dll/de/Other.resources.dll', 'dll/xx/System.CommandLine.resources.dll',
+                          'dll/de/nested/System.CommandLine.resources.dll'):
+                with self.subTest(version=version, extra=extra), installation(version) as (root, _, _):
+                    path = root / extra
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_bytes(b'unapproved binary')
+                    with self.assertRaisesRegex(ValueError, 'Unapproved additional files') as caught:
+                        emulators.identify(root / 'EmuHawk.exe')
+                    self.assertIn(extra, str(caught.exception))
+
+    def test_every_difference_is_reported_without_first_three_truncation(self):
+        for version, selected in emulators.profiles().items():
+            with self.subTest(version=version), installation(version, selected['optional_files']) as (root, _, optional):
+                (root / 'dll/BizHawk.Emulation.Cores.dll').unlink()
+                (root / 'dll/System.CommandLine.dll').write_bytes(b'changed')
+                (root / next(iter(optional))).write_bytes(b'changed')
+                extras = ['dll/extra' + str(i) + '.dll' for i in range(5)]
+                for name in extras:
+                    (root / name).write_bytes(b'extra')
+                with self.assertRaises(ValueError) as caught:
+                    emulators.identify(root / 'EmuHawk.exe')
+                message = str(caught.exception)
+                for name in (*extras, 'dll/BizHawk.Emulation.Cores.dll', 'dll/System.CommandLine.dll', next(iter(optional))):
+                    self.assertIn(name, message)
+                self.assertIn('Unapproved additional files (5)', message)
+
+    def test_executable_substitution_is_still_rejected(self):
+        for version in emulators.profiles():
+            with self.subTest(version=version), installation(version) as (root, _, _):
+                (root / 'EmuHawk.exe').write_bytes(b'wrong executable')
+                with self.assertRaisesRegex(ValueError, 'Unrecognized or modified'):
+                    emulators.identify(root / 'EmuHawk.exe')
+
+    def test_optional_provenance_matches_each_required_dependency(self):
+        for selected in emulators.profiles().values():
+            self.assertEqual(len(selected['optional_files']), 13)
+            self.assertFalse(selected['files'].keys() & selected['optional_files'].keys())
+            self.assertEqual(selected['optional_files_source']['parent_sha256'],
+                             selected['files']['dll/System.CommandLine.dll'])
 
 
 class EmulatorProfileTests(unittest.TestCase):

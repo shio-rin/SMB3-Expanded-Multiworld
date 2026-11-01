@@ -7,7 +7,10 @@ two-cold-Resume fixtures. The private handoff records evidence and limitations.
 Independent Sol verification passed for both M35 and M36. The M36 membership evidence correction did not change the source or package. Tests run on Windows 10 Pro 22H2; The owner reports one successful fresh 2.11.1 Windows 11 check and cold Resume; broader Windows 11 acceptance is not inferred. Other versions/platforms are not approved automatically.
 
 `shared/emulators.py` identifies the executable by SHA256, then verifies every
-file in the official DLL directory. `launcher/config/emulators.json` holds the
+required file in the official DLL directory. The 0.36.1 fix branch also accepts
+exact hash-verified optional System.CommandLine language assemblies; arbitrary
+additional or modified binaries still reject. See [the correction and retest
+guide](beta/bizhawk-localization-fix.md). `launcher/config/emulators.json` holds the
 reviewed identities, config filename and State requirements. No emulator binary
 is packaged. Each session stores its exact emulator identity before creating a
 native lifetime. Cross-version Resume is unsupported in every direction. Reopen

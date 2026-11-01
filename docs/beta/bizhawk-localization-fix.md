@@ -1,0 +1,63 @@
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+# Private BizHawk localization compatibility correction
+
+This branch prepares **APWorld 0.36.1 / 36.0.1-rc1**, Python runtime
+`m36-python-2`. Native runtime `m26-native-2`, slot release `m27-1`, generation,
+ROM output, checkpoint schemas and supported emulator versions are unchanged.
+The existing 0.36.0 beta draft and `v0.36.0-beta.1` tag are not replaced.
+
+## What changed
+
+M36 required the discovered executable/DLL-tree inventory to equal the official
+release inventory exactly and displayed only its first three differences. The
+official Windows x64 ZIPs for 2.10, 2.11 and 2.11.1 omit System.CommandLine language
+satellites, although matching optional Microsoft assemblies can accompany an
+installation. Their presence therefore rejected otherwise matching required files.
+
+The validator now admits only exact reviewed path/SHA256 pairs for thirteen
+`dll/<culture>/System.CommandLine.resources.dll` files: cs, de, es, fr, it, ja,
+ko, pl, pt-BR, ru, tr, zh-Hans and zh-Hant. Each may be present or absent.
+2.10/2.11 use System.CommandLine 2.0.0-beta4.22272.1; 2.11.1 uses 2.0.3.
+The matching netstandard2.0 parent DLL must retain its original required hash.
+Profile metadata records the exact Microsoft NuGet package URL/hash used to
+verify the satellite bytes. No upstream binaries are bundled with SMB3X.
+
+This is not a wildcard exception for resources.dll. Modified satellites, other
+cultures/paths, unknown assemblies and unexpected cores still reject. All required
+file hashes and executable/version identities remain exact. Error messages list
+all differences, grouped as missing required, modified required, modified optional
+language resources and unapproved additions. Optional files do not enter or change
+the required-file session identity; cross-version Resume remains prohibited.
+
+The affected 2.10 folder inspected for this fix had **14** additions, not three:
+13 verified satellites plus `dll/puae.wbx.zst`, which is absent from all three
+approved official ZIPs. It has no missing or modified required files. The extra
+core remains correctly rejected. Do not bypass the warning or modify played saves.
+
+## Verify your previously failing 2.10 setup
+
+1. Keep your current installation, old player files, managed cache and saves intact.
+   Extract the complete official [BizHawk 2.10 Windows x64 ZIP](https://github.com/TASEmulators/BizHawk/releases/tag/2.10)
+   into a **new, empty folder**. Do not extract over a folder containing older cores.
+2. Obtain the private `36.0.1-rc1/smb3x.apworld`, install through official AP 0.6.8
+   Launcher and restart Launcher. Use a separate AP installation for this test if
+   you want to retain your normal installation unchanged.
+3. Generate a **fresh disposable room/player file with 0.36.1**. Existing 0.36.0
+   `.apsmb3x` files retain their embedded historical runtime; installing the new
+   APWorld does not patch or migrate them. Do not alter their resource IDs/caches.
+4. Open the new player file using that Launcher's Open Patch. Supply your clean
+   SMB3 USA Rev A ROM and select the new folder's EmuHawk.exe with NesHawk.
+   A setup containing only the thirteen exact matching language DLLs in addition
+   to the official files is now also accepted. Do not copy other binaries across.
+5. Connect, wait for the initial verified checkpoint, clear a level, receive a
+   reward and wait for the saved notice on the settled overworld. Close normally,
+   then reopen the same new player file with the same emulator to verify Resume.
+6. If rejected, retain the complete categorized error. An unapproved
+   `dll/puae.wbx.zst` warning means the selected directory is still mixed; select
+   the clean directory from step 1. Do not remove ownership records, transplant
+   States, reset or rewind to recover progress.
+
+Normal close does not guarantee another save. This correction permits no new
+emulator versions and does not migrate existing games. The repository remains
+Private, the beta release remains unpublished, and branch review/merge and asset
+replacement require separate owner authorization.
