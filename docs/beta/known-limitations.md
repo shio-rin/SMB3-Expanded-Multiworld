@@ -2,7 +2,8 @@
 # Known beta limitations
 
 - Windows x64, official AP 0.6.8 and exact supported BizHawk 2.10/2.11/2.11.1
-  NesHawk installations only. No other emulator/platform qualification is implied.
+  NesHawk installations only. Existing installations may contain unrelated cores,
+  plugins and language files; critical dependencies remain pinned. No other emulator/platform qualification is implied.
 - Safe automatic checkpoints are not continuous or exact mid-level crash saves.
   Normal close does not guarantee an additional checkpoint. Map movement alone
   may Resume at the prior progress-save position.

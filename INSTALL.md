@@ -3,7 +3,14 @@
 
 Follow the current [step-by-step player guide](docs/beta/player-guide.md).
 
-Requirements: Windows x64, official Archipelago **0.6.8**, complete BizHawk
+**Pending first beta: APWorld 0.36.2 / v0.36.2-beta.1.**
+
+Use your existing supported BizHawk installation. Unrelated cores, language files
+and plugins may remain; critical executable/dependency integrity is still verified.
+Generate a fresh 0.36.2 player file to use this launcher correction. Older games
+retain their original runtime; never delete or manually migrate saved sessions.
+
+Requirements: Windows x64, official Archipelago **0.6.8**, supported BizHawk
 **2.10 / 2.11 / 2.11.1** with **NesHawk**, and your own verified clean SMB3 USA
 Revision A ROM. Install `smb3x.apworld`, restart Launcher, export YAML through
 Options Creator, and obtain your room's player-specific `.apsmb3x`.

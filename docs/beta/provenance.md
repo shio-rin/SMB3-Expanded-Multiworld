@@ -1,58 +1,42 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Beta source and artifact provenance
 
-Proposed display tag: **v0.36.0-beta.1**. It points to packaged source commit
-`cf90296511a46174e8daf1a634acb3127f457c51`, the original single-root M36 source.
-The main branch's later documentation-only commit adds the current beta guides;
-no recipe input or executable resource changes. The tag's source archive retains
-the historical package-bound guides. Use the current beta guides linked from
-main/README and the release notes for installation.
+Pending first beta: **v0.36.2-beta.1**, APWorld **0.36.2**, candidate **36.0.2-rc1**.
+The tag points exactly to packaged source `7a4438a840116d279ff9688ded1c0e1b7f26d3fb`.
+The accepted fix branch ends at `2dfac2dcf5f1dd2de4f41159c6acbf0ba51bc3c6`;
+main integrates that history and adds current beta documentation. These subsequent
+documentation changes are outside the package recipe. The tag source retains the
+historical documentation snapshot; use the current main README/beta guides and
+attached installation instructions for the pending beta.
 
 | Identity | Exact value |
-|---|---|
-| Candidate / APWorld | 36.0.0-rc1 / 0.36.0 |
-| APWorld SHA256 | `8a67704da88446e48e091b801542fff5bc2c8bb5f6aa7a8f27597bbb22e1afe9` |
-| Resource-manifest SHA256 | `65d8d65db3b1f3a30ba5f76d19a5f7800c560604f09175388902fb063afc6e83` |
-| Recipe SHA256 | `68209fee9645ec8cf180f1463dcfe56d5dee2a63ddddd1b4be498b261c27d906` |
-| Python / native / slot runtime | m36-python-1 / m26-native-2 / m27-1 |
-| Original source paths / resources / ZIP entries | 282 / 220 / 232 |
+| --- | --- |
+| APWorld SHA256 | `88e4766294c4ed6687229114069d6d4d7d228b6bc6e68b8fd65f1c351f9a60e3` |
+| Resource SHA256 | `eba4e81d449afe232867d4d73d5b5ce27000b99aa623ebe9ea596a4b1f1fc3e4` |
+| Recipe SHA256 | `058cda0522e5e9c6aaadf681b95584c113652a63f010ba6a2b8a9d1c2896631c` |
+| Python / native / slot | m36-python-3 / m26-native-2 / m27-1 |
+| Resources / ZIP entries | 220 / 232 |
 
-For byte-identical reproduction, use a separate clean checkout of the packaged
-commit and Python 3.12.14 with zlib 1.3.2, then follow BUILDING.md. Building at a
-later documentation commit changes generated `build-source.json` even when recipe
-inputs match; it is not the sealed archive. Do not substitute that output under
-the same hash or tag. Source tests additionally require lupa.
+The sealed candidate is reused unchanged. Two separate clean-source builds with
+Python 3.12.14 / zlib 1.3.2 reproduce every byte. Check out the packaged commit and
+follow BUILDING.md; source tests also require lupa. Building at a later documentation
+commit changes build-source.json and must not replace the sealed archive under
+its existing hash. No production/resource changes are part of this staging update.
 
-Release asset allowlist: `smb3x.apworld`, `SHA256SUMS.txt`, `INSTALLATION.md`,
-`RELEASE-NOTES.md`. Only the APWorld is the game integration artifact. Generated
-player/seed archives, local prepared games, emulator binaries, ROMs/BPS/States,
-private evidence and historical development Git objects are excluded.
+The accepted correction has 211 maintained tests, independent Sol High review,
+seven deterministic generation/ROM comparisons, mixed-installation native check,
+indexed reward, consumption, checkpoint and cold Resume on all three supported
+versions, effects/DeathLink and exact session/version ownership checks. See
+[bizhawk-practical-installations.md](bizhawk-practical-installations.md) for scope.
+The owner also confirmed startup with their existing installation; no exhaustive
+human campaign or multiplayer claim follows.
 
-Independent M36 evidence remains authoritative for seven generation comparisons,
-seven complete native ROM comparisons, the three-version managed native matrix,
-cross-version refusals and historical isolation. The membership correction accounts
-for ten Git line-ending normalizations without a package change. New release
-verification is summarized in the private handoff separately from inherited results.
+Only four assets are staged: smb3x.apworld, SHA256SUMS.txt, INSTALLATION.md and
+RELEASE-NOTES.md. Generated rooms, ROMs, prepared BPS, States, emulator binaries,
+private music, credentials and internal evidence are excluded. MPL scope and
+third-party disclosures remain intact. Repository visibility is Private; the
+release is an unpublished draft/prerelease pending separate launch authorization.
 
-## Final release staging checks
-
-The sealed APWorld was rebuilt from the exact clean source using Python 3.12.14 /
-zlib 1.3.2, matching every archive byte and all 220 resource members. All 190
-maintained tests passed again. The build audit rejected private-project reads
-outside the clean source/output and Python prerequisite.
-
-A new isolated official AP 0.6.8 installation passed Options Creator's actual
-Vanilla/Balanced/Compatible widget order, Vanilla default and clean YAML export.
-A fresh disposable room and exact installed APWorld on BizHawk 2.11.1 / NesHawk
-passed physical World 1-1 clear, indexed Super Leaf delivery, consumption,
-checkpoint publication, ordinary client.exit closure and cold Resume. The
-server retained the check and item count stayed one with Leaf quantity zero.
-Cache resources and the authoritative checkpoint were verified. File selectors,
-Creator selection, navigation and goal approach were assisted; no native check
-bits, receipt acknowledgements or checkpoint data were injected. This is not a
-new desktop mouse/controller or full campaign acceptance claim.
-
-Actual diagnostic seed archives contain a server payload and a two-member
-player container; seven older generation cases additionally include standard
-spoiler text. These diagnostics remain private, never release assets. No prepared
-ROM/BPS/State or emulator binary is present in the inspected generated containers.
+The old v0.36.0-beta.1 tag remains at
+`cf90296511a46174e8daf1a634acb3127f457c51`; its sealed M36 archive and the sealed
+M36.1 correction remain preserved locally. The active draft now uses the new tag.

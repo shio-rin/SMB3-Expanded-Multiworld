@@ -1,6 +1,9 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Existing BizHawk installations: private 0.36.2 correction
 
+> Historical correction/qualification snapshot. Current beta staging and installation
+> instructions are in [provenance.md](provenance.md) and [player-guide.md](player-guide.md).
+
 This candidate replaces whole-DLL-directory equality with dependency-focused
 validation. It supersedes the 0.36.1 localization-only approach and its clean-folder
 workaround. **Keep your existing BizHawk installation, including unrelated cores,

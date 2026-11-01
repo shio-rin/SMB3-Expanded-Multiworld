@@ -1,13 +1,14 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
-# Player guide — beta 0.36.0
+# Player guide — beta 0.36.2
 
 ## Requirements
 
 - Windows x64; engineering fixtures used Windows 10. The owner separately reports
   a successful BizHawk 2.11.1 check and cold Resume on Windows 11.
 - Official Archipelago **0.6.8**.
-- A complete supported BizHawk **2.10, 2.11 or 2.11.1** installation with NesHawk.
-  Keep its DLLs and supporting files together; other builds may be refused.
+- An existing supported BizHawk **2.10, 2.11 or 2.11.1** installation with NesHawk.
+  Unrelated cores, language assemblies and plugins may remain. SMB3X verifies
+  the executable and critical NES/client/Lua dependencies, not the whole DLL folder.
 - Your own clean **Super Mario Bros. 3 USA Revision A** ROM.
 - `smb3x.apworld` and your generated room's player-specific `.apsmb3x`.
 
@@ -15,6 +16,14 @@ The ROM must be an iNES1 mapper-4 file, 393232 bytes, with no trainer, battery f
 or extra trailer. Payload SHA1: `BB894D104C796F69BA16587EB66C0275F5C2FC02`;
 payload CRC32: `2E6301ED`. SMB3X validates it during preparation. It does not
 provide or download ROMs. The patched ROM and BPS are created **locally only**.
+
+## Updating to this beta
+
+Use your existing BizHawk directory; no pristine extraction, cleanup or reinstall
+is required. Generate a **fresh 0.36.2 player file** to use the corrected launcher.
+Existing player files remain bound to their original runtime even after installing
+a newer APWorld. Preserve those files, caches and saved sessions; never delete or
+manually migrate them to bypass validation.
 
 ## Install and play
 
@@ -69,7 +78,7 @@ records or locks to bypass a refusal. Preserve evidence and report errors.
 SMB3X (`smb3x`, `.apsmb3x`) can coexist with the independent SMB3 proof of concept
 (`smb3`, `.apsmb3`) in one AP installation. Their clients, player files and sessions
 are separate. Only one implementation of the older `worlds.smb3` namespace can
-be installed at a time. Old SMB3X games retain their embedded runtime; no historical
+be installed at a time. Old SMB3X games remain bound to their original runtime; no historical
 room/save migration is promised by installing this beta.
 
 [Options](../options.md) · [Troubleshooting](troubleshooting.md) ·

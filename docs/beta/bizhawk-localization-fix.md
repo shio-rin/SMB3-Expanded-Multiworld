@@ -1,6 +1,9 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Private BizHawk localization compatibility correction
 
+> Historical correction/qualification snapshot. Current beta staging and installation
+> instructions are in [provenance.md](provenance.md) and [player-guide.md](player-guide.md).
+
 This branch prepares **APWorld 0.36.1 / 36.0.1-rc1**, Python runtime
 `m36-python-2`. Native runtime `m26-native-2`, slot release `m27-1`, generation,
 ROM output, checkpoint schemas and supported emulator versions are unchanged.

@@ -1,9 +1,12 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
-# Host guide — beta 0.36.0
+# Host guide — beta 0.36.2
 
 Use official Archipelago **0.6.8** and install the same verified `smb3x.apworld`
 as your SMB3X players. Restart Launcher. Hosts need no SMB3 ROM or emulator to
 generate or host a room.
+
+Generate fresh 0.36.2 player files for the corrected launcher; existing rooms and
+saved sessions retain their original runtime and must not be migrated manually.
 
 1. Ask each player to export fresh YAML from Options Creator. The SMB3X game name
    and YAML section key are exactly `Super Mario Bros. 3: Expanded Multiworld`.

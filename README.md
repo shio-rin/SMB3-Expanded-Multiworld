@@ -9,11 +9,17 @@ and DeathLink, original/shuffled native music, palette modes and cosmetic Luigi.
 
 **First beta staged for owner review. This repository stays Private and the
 GitHub Release stays an unpublished draft until separately authorized.**
-APWorld **0.36.0**, candidate **36.0.0-rc1**, proposed tag **v0.36.0-beta.1**.
+APWorld **0.36.2**, candidate **36.0.2-rc1**, beta tag **v0.36.2-beta.1**.
+
+Existing supported BizHawk installations may be used, including unrelated cores,
+language files and plugins. The executable and critical execution dependencies
+remain verified. Generate a **new 0.36.2 player file** to use the corrected launcher;
+older player files retain their original runtime. Never delete or manually migrate
+saved sessions to update them.
 
 ## Start playing
 
-You need Windows x64, official **Archipelago 0.6.8**, a complete **BizHawk 2.10,
+You need Windows x64, official **Archipelago 0.6.8**, an existing supported **BizHawk 2.10,
 2.11 or 2.11.1** installation using **NesHawk**, and your own clean SMB3 USA Rev A
 ROM. No ROM or emulator is supplied. Game files are built locally from your ROM.
 

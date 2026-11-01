@@ -5,13 +5,21 @@
 |---|---|
 | SMB3X absent from Launcher/Creator | Confirm official AP 0.6.8, install the verified APWorld and restart Launcher. |
 | ROM refused | Check USA Rev A and the exact format/hash in the player guide; do not bypass validation. |
-| Emulator refused | Use a complete supported 2.10, 2.11 or 2.11.1 release and NesHawk, with its original DLLs. |
+| Emulator refused | Use supported 2.10, 2.11 or 2.11.1 with NesHawk. Read the named critical-file, loader-policy or core-setting failure. Unrelated extras may stay; do not delete DLLs or reinstall merely because extras exist. |
 | Existing game refuses a new emulator | Reopen with that game's original emulator/core version. Cross-version Resume is unsupported. |
 | Waiting for AP server | Check room status, address, slot name and password. Wait for validated connection/checkpoint. |
 | Resource/identity/native marker error | Preserve files and logs; reinstall the matching APWorld or report the error. Never edit the cache or ownership records. |
 | Duplicate open refused | Close the existing game/client/error window normally. Do not delete live locks. |
 | Latest movement absent after Resume | Normal close does not add a save; Resume uses the latest verified checkpoint. |
 | Save failure/uncertain operation | Stop normal play, preserve evidence, and report it. Do not reset, rewind or load arbitrary States. |
+
+For the 0.36.2 compatibility correction, generate a fresh player file. Installing
+the new APWorld does not replace the validator selected by an older player file.
+Keep old saved sessions and caches intact. The owner has confirmed the corrected
+launcher works with their existing BizHawk installation; no broader human campaign
+acceptance is inferred. Known compatibility errors offer another selection or a
+safe stop and retain technical tracebacks in the log without a duplicate fatal
+traceback. Canceling setup stops quietly.
 
 Managed data normally lives under `%LOCALAPPDATA%\SMB3XAP`: settings, hash-bound
 cache and sessions. Session `runs` contain client/emulator logs and bounded
