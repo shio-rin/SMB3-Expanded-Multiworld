@@ -1,0 +1,11 @@
+{
+  "LevelEvent_Cnt": 31985,
+  "LevelEvent_TreasureBox": 48291,
+  "Level_Event": 1382,
+  "Level_ExitToMap": 20,
+  "Level_Tileset": 1802,
+  "Level_TreasureItem": 31075,
+  "Map_DoFortressFX": 1861,
+  "Map_ReturnStatus": 1811,
+  "World_Num": 1831
+}

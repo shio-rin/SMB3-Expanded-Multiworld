@@ -1,0 +1,19 @@
+{
+  "BattleEnemy_ByEnterID": 42088,
+  "Level_Event": 1382,
+  "Level_LayPtrOrig_AddrH": 32442,
+  "Level_LayPtrOrig_AddrL": 32441,
+  "Level_LayPtr_AddrH": 98,
+  "Level_LayPtr_AddrL": 97,
+  "Level_ObjPtrOrig_AddrH": 32444,
+  "Level_ObjPtrOrig_AddrL": 32443,
+  "Level_ObjPtr_AddrH": 102,
+  "Level_ObjPtr_AddrL": 101,
+  "Level_Tileset": 1802,
+  "MO_Unused": 45760,
+  "Map_DoEnterViaID": 45569,
+  "Map_EnterViaID": 30,
+  "Map_ReturnStatus": 1811,
+  "ObjInit_HammerBro": 42098,
+  "World_Num": 1831
+}

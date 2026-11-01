@@ -1,0 +1,700 @@
+{
+  "version": "m222-mixed-contract-1",
+  "status": "certified-for-production",
+  "pipe_audit": {
+    "path": "generated/m222/pipe-audit-v1/candidates.json",
+    "sha256": "7996d3eca9558c43ca07b4b5ed0b7e73d83de248b61065a3a04b28eb7687a7bb"
+  },
+  "policy": "Only reviewed single-main-card ordinary donors cross to fortress hosts; other ordinary contents retain ordinary destinations. All admitted fortress graphs may cross to ordinary hosts; genuine orb/secret maps to host effects.",
+  "card_rewards": "Preserve native card, score, time and life effects; do not fabricate a boss event",
+  "ordinary_donors": [
+    {
+      "content_id": "smb3-prg1-w1-1-1",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 1,
+        "layout": 48002,
+        "objects": 50471
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-2",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 3,
+        "layout": 44842,
+        "objects": 50858
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-3",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Numbered secret chest needs a separately scoped fortress-host effect proof"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-4",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-5",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings",
+        "Generated generic exit pipe can reach a separate terminal area"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-6",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 4,
+        "layout": 45992,
+        "objects": 52237
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-2",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-3",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-1",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 9,
+        "layout": 46175,
+        "objects": 53641
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-4",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 9,
+        "layout": 48248,
+        "objects": 53855
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-5",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 9,
+        "layout": 46906,
+        "objects": 53697
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-3",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-2",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-4",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 14,
+        "layout": 46873,
+        "objects": 51635
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-1",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-5",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-6",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-7",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 1,
+        "layout": 47292,
+        "objects": 50286
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-8",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-9",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-6",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-5",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings",
+        "Generated generic exit pipe can reach a separate terminal area"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-3",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings",
+        "Generated generic exit pipe can reach a separate terminal area"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-2",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings",
+        "Generated generic exit pipe can reach a separate terminal area"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-4",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings",
+        "Generated generic exit pipe can reach a separate terminal area"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-1",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings",
+        "Generated generic exit pipe can reach a separate terminal area"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-2",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings",
+        "Generated generic exit pipe can reach a separate terminal area"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-3",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-1",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 1,
+        "layout": 46155,
+        "objects": 50146
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-5",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 4,
+        "layout": 44802,
+        "objects": 51978
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-4",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-7",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-9",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-8",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-6",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-2",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-1",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 12,
+        "layout": 45612,
+        "objects": 52162
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-3",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 12,
+        "layout": 43627,
+        "objects": 51854
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-6",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 12,
+        "layout": 47409,
+        "objects": 52448
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-8",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 14,
+        "layout": 47284,
+        "objects": 51685
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-4",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 12,
+        "layout": 46629,
+        "objects": 52331
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-7",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-9",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 12,
+        "layout": 48366,
+        "objects": 52525
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-10",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 12,
+        "layout": 47507,
+        "objects": 52456
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-1",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 1,
+        "layout": 43617,
+        "objects": 49741
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-4",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 1,
+        "layout": 45954,
+        "objects": 50141
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-2",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-3",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 3,
+        "layout": 45700,
+        "objects": 50931
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-8",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 1,
+        "layout": 44911,
+        "objects": 49965
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-5",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 1,
+        "layout": 48361,
+        "objects": 50518
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-9",
+      "cross_type_candidate": false,
+      "reasons": [
+        "Multiple or secondary card areas need additional per-host terminal bindings"
+      ],
+      "terminal": null
+    },
+    {
+      "content_id": "smb3-prg1-w8-8-1",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 1,
+        "layout": 46983,
+        "objects": 50212
+      }
+    },
+    {
+      "content_id": "smb3-prg1-w8-8-2",
+      "cross_type_candidate": true,
+      "reasons": [],
+      "terminal": {
+        "tileset": 14,
+        "layout": 43003,
+        "objects": 51455
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w1-1-1/native/result.json",
+      "sha256": "a58c58269b2fa732c407d13231bbb5ef31d5f91ad11735645a03f88e4fc257ab",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w1-1-2/native-v2/result.json",
+      "sha256": "6aad6f9ad514f175dd95c2198352bdfb64889739d022ffa09215fe988f89f4ed",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w1-1-6/native/result.json",
+      "sha256": "98b75af102988fd3cb8557c49868ff8e9f47cf2dbb1a1da40c9ea5865cdc115f",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w2-2-1/native/result.json",
+      "sha256": "814561b08479f7f84ae39e495547bb6b97f780f35cfc32b45da47701bd523f68",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w2-2-4/native/result.json",
+      "sha256": "c7dac77bc10a4b135fb0b0f81be7f3825380eb6635009db7babec2ef189f1c26",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w2-2-5/native/result.json",
+      "sha256": "c556625a9e9ccced420b68fc101bc8409726b63acd9e1092dd3cb6eb07085b29",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w3-3-4/native/result.json",
+      "sha256": "6cd0200b034702dd09b61d0b4f7e272f8dc0152bde0e901a38480525e1561b90",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w3-3-7/native/result.json",
+      "sha256": "84d12f5434414cd1b168e73468fb29cf8df0485986a415886c0159b6c45fe427",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w5-5-1/native/result.json",
+      "sha256": "68d2c9bf3db63d0a48481ffa1692cbefe223ec5c9d517181c76a5fdfe5b7c576",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w5-5-5/native/result.json",
+      "sha256": "69fc0f2b0fe35d82519a5490dea5010c6250a0343368c609b53c789caa967889",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-6-1/native/result.json",
+      "sha256": "6017bb1ebd46f9c7cbeed60d804029a7d8683dee165c691db900d1623474cb00",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-6-3/native/result.json",
+      "sha256": "f9e69a44747de29a1a9d7dface7c8527ae8fb531f694383f8c98a15e1d4e5089",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-6-6/native/result.json",
+      "sha256": "82e18c40ea2e5dbb084bcbac186041c8867f36f42c5a93e9f74d4b55edcd1d89",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-6-8/native-v2/result.json",
+      "sha256": "91280df05bd284217c8331c1a75c049d3ffcb49b1b12425be6a3c069e1a5780e",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-6-4/native/result.json",
+      "sha256": "7cdb2b4cda229273ecd15611c58d7c354f954b121b5548663aa37ba79b48b626",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-6-9/native/result.json",
+      "sha256": "d210e8780cb102724ff37c7f658a078216f31c672b72df7935b9289174773da5",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-6-10/native/result.json",
+      "sha256": "2aed21665e585349328a907ba57aeeacc0bed17f1cf34e7c6e63bb6b88dbc65b",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w7-7-1/native/result.json",
+      "sha256": "8d1a65eb3baea377c3a137e71a22c88da0119c6a5c6bbe8a8929b41749b63879",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w7-7-4/native/result.json",
+      "sha256": "33ea19b156d9fd0e454fb6c000e01465d511c64c090cfbc24efcb615632aa084",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w7-7-3/native/result.json",
+      "sha256": "6765d72203fbc9f2b975ab42fd7fe2f8d3e43e701a3e021e031e71fe08792327",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w7-7-8/native/result.json",
+      "sha256": "ba37f3f2909eb1c38c906dfab8168349afdfd9dd27f21446fee4e6fd8a681f84",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w7-7-5/native/result.json",
+      "sha256": "8c77f2dcd0e8c64758ab4e96448a5328a084f9df058b9c012922c76cbed57d24",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w8-8-1/native/result.json",
+      "sha256": "56e81d3a8d7b412663e52b6f0fe6f521a48dd73876e03db5dabaa3e764623eeb",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w8-8-2/native/result.json",
+      "sha256": "df41d69545b949e314c238b73cf31ed81a5dcb8491583a5438a565d95ab2acc3",
+      "scope": "card-to-fortress; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w1-fortress/native/result.json",
+      "sha256": "f17a16a15c512ca78accf80d25b399740675c8145bfabd7db6a424f59219ea64",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w2-fortress/native/result.json",
+      "sha256": "6b91782614f664eecf94f136f0f22cd76bd05492cbe848389400e31ae173ecf6",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w3-fortress-1/native/result.json",
+      "sha256": "1a21806e69151bb3161ccdfc5a0db18015616b4ad3d9837b39c46ee6208d54a2",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w3-fortress-2/native/result.json",
+      "sha256": "7a069ed48a216fb23f9dae35cb8d5076c89fa1c17a6744d33a6e754795b6e4b7",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w4-fortress-2/native/result.json",
+      "sha256": "b474ff8bfd246b1226c418b004c64bd20f58f7c6abe0d2dfa415cf471768f51e",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w4-fortress-1/native/result.json",
+      "sha256": "f22a2000585b2b4d103c332325728972648daf405630b3a224784039a0db875a",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w5-fortress-1/native/result.json",
+      "sha256": "046caac41190203846d93d52211264a78e51a4e346cbfb48a36b39d1c47d3fef",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w5-fortress-2/native/result.json",
+      "sha256": "8ef3ff2ba36d31c14cb5f604c435ace1b8108894d292888537c80a33b148e260",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-fortress-1/native/result.json",
+      "sha256": "aec66a5a045ec3ca26bd0e0d514b8839f825fd97bbec51424f75ed7aadb28bd2",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-fortress-2/native/result.json",
+      "sha256": "7cbc05b7484a034f4f3930f053432d6a1305e58ce518a14492a406c6ea5ec9f5",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w6-fortress-3/native/result.json",
+      "sha256": "cf3974348802f538fc102d7930b1e35ed34aff5f6262a4b6c634a14ce6edc1d8",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w7-fortress-2/native/result.json",
+      "sha256": "defe3b507b78be20c336f0ca29aab8f1b9b712f931f0f8f701716150ea5ceee0",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/mixed-terminal-matrix-v1/smb3-prg1-w8-fortress/native/result.json",
+      "sha256": "99a3788428017e8f4ec81aa2a592ecb894807a20a3743aff67e11961052c49fb",
+      "scope": "orb-to-numbered; assisted native terminal/host effects"
+    },
+    {
+      "path": "generated/m222/fortress-controller-current-v1/controller-v3/result.json",
+      "sha256": "f2b2ee92757f29744eef6c31d3fe2abf7427fe62a612df97e03ca7269be423b1",
+      "scope": "fortress-controller-current-v1/controller-v3"
+    },
+    {
+      "path": "generated/m222/mixed-hills-controller-v1/controller-v1/result.json",
+      "sha256": "67fc01523223cb9bdc6ae43ce5d3b822ca75a49b4f18d9b4551675f03ba1f830",
+      "scope": "mixed-hills-controller-v1/controller-v1"
+    },
+    {
+      "path": "generated/m222/fortress-controller-current-v1/secret-at-numbered-v1/result.json",
+      "sha256": "4a4a8a0bbf0e0339ef475270c75c254803d67506d3cbee8abb8598200e5341c7",
+      "scope": "fortress-controller-current-v1/secret-at-numbered-v1"
+    },
+    {
+      "path": "generated/m222/mixed-proof-card-v1/cpu-v3/result.json",
+      "sha256": "e0f7de4fdb7f86c73340d9a0d572fdd53176b665e1e272ff11eb172cacb589e3",
+      "scope": "mixed-proof-card-v1/cpu-v3"
+    }
+  ],
+  "evidence_limits": "37 assisted donor/host terminal cases plus two representative fresh normal controller routes; not every pairing or every stage unassisted. W1 fortress secret separately verified at numbered host. Additional ordinary terminal types remain outside cross-type graph.",
+  "failed_evidence": "Initial1-2 and6-8 assisted card approaches stalled below raised cards; fresh native-v2 adds controller jump inputs and passes, without terminal/guard changes. Original failures retained."
+}

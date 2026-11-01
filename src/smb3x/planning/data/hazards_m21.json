@@ -1,0 +1,316 @@
+{
+  "version": "m21-hazards-1",
+  "status": "certified-for-production",
+  "contents": [
+    {
+      "content_id": "classic/lost-levels/1-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 208,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 9,
+              "kind": "brick_power",
+              "x": 19,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 12,
+              "kind": "power",
+              "x": 28,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 30,
+              "kind": "power",
+              "x": 89,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": [
+            {
+              "id": "open-region-120",
+              "spawn_column": 120,
+              "activation_column": 124,
+              "native_certification": "m21-sun-controller-clear-120",
+              "maximum_added": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/1-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 224,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 6,
+              "kind": "power",
+              "x": 21,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 15,
+              "kind": "power",
+              "x": 78,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 23,
+              "kind": "power",
+              "x": 109,
+              "y": 18,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": [
+            {
+              "id": "open-region-40",
+              "spawn_column": 40,
+              "activation_column": 44,
+              "native_certification": "m21-sun-controller-clear-40",
+              "maximum_added": 1
+            },
+            {
+              "id": "open-region-80",
+              "spawn_column": 80,
+              "activation_column": 84,
+              "native_certification": "m21-sun-controller-clear-80",
+              "maximum_added": 1
+            },
+            {
+              "id": "open-region-120",
+              "spawn_column": 120,
+              "activation_column": 124,
+              "native_certification": "m21-sun-controller-clear-120",
+              "maximum_added": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/1-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 14,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 29,
+              "kind": "power",
+              "x": 10,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 58,
+              "kind": "brick_power",
+              "x": 69,
+              "y": 21,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1",
+              "reason": "Buried behind lower native brick row; ordinary Small-Mario bump is obstructed. Excluded pending separate powered-form access audit."
+            },
+            {
+              "object_index": 80,
+              "kind": "brick_power",
+              "x": 150,
+              "y": 21,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1",
+              "reason": "Buried behind lower native brick row; ordinary Small-Mario bump is obstructed. Excluded pending separate powered-form access audit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/1-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": []
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/4-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 240,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 9,
+              "kind": "power",
+              "x": 25,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 27,
+              "kind": "power",
+              "x": 148,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": []
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/8-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 240,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 11,
+              "kind": "brick_power",
+              "x": 66,
+              "y": 18,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 23,
+              "kind": "brick_power",
+              "x": 116,
+              "y": 18,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 319,
+              "kind": "power",
+              "x": 15,
+              "y": 19,
+              "mandatory": false,
+              "native_tile": 97,
+              "native_certification": "m21-native-plains-blocks-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 1257,
+              "kind": "power",
+              "x": 41,
+              "y": 24,
+              "mandatory": false,
+              "native_tile": 97,
+              "native_certification": "m21-native-plains-blocks-1",
+              "reason": "Ground-adjacent or obstructed reward: not certified for the ordinary upward-bump substitution mechanism; native special reveal remains unchanged."
+            },
+            {
+              "object_index": 2540,
+              "kind": "power",
+              "x": 92,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 97,
+              "native_certification": "m21-native-plains-blocks-1",
+              "reason": "Ground-adjacent or obstructed reward: not certified for the ordinary upward-bump substitution mechanism; native special reveal remains unchanged."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "exclusions": [
+    "All unlisted native and special areas",
+    "Water, vertical, autoscroll and scripted scenes",
+    "Native Sun stages",
+    "1-Up, Star, vine, switch, note and unique blocks",
+    "Unreviewed pipe-adjacent or unsupported blocks",
+    "Lakitu and dense Hammer Bro stages for additional Suns"
+  ],
+  "certification": {
+    "version": "m21-hazard-certification-1",
+    "scope": "Twelve eligible upward-bumped power blocks, two compatible contents, four Sun regions; defaults Off. All unlisted content excluded.",
+    "poison_evidence": [
+      "generated/m21/hazard-matrix-v1/classic-lost-levels-1-1-poison/blocks-v2/result.json",
+      "generated/m21/hazard-matrix-v1/classic-smb1-1-1-poison/blocks-v2/result.json",
+      "generated/m21/hazard-matrix-v1/classic-smb1-4-1-poison/blocks-v2/result.json",
+      "generated/m21/hazard-matrix-v1/classic-smb1-8-3-poison/blocks-v2/result.json",
+      "generated/m21/hazard-matrix-v2/classic-smb1-1-2-poison/blocks/result.json",
+      "generated/m21/poison-native-plains-test-v3/result.json",
+      "generated/m21/poison-art-native-v1/result.json"
+    ],
+    "sun_evidence": [
+      "generated/m21/hazard-matrix-v1/classic-smb1-1-1-sun-40/native/result.json",
+      "generated/m21/hazard-matrix-v1/classic-smb1-1-1-sun-80/native/result.json",
+      "generated/m21/hazard-matrix-v1/classic-smb1-1-1-sun-120/native/result.json",
+      "generated/m21/sun-lostlevels-120-replay-v2/result.json",
+      "generated/m21/sun-lifecycle-v6/result.json",
+      "generated/m21/neshawk-integrated-sun-v2/evidence/result.txt"
+    ],
+    "human_accepted": false
+  }
+}

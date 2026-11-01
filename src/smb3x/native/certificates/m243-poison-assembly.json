@@ -1,0 +1,48 @@
+{
+  "assembler_sha256": "d6c16c39e1ffe4b46896726c738b5a8654e9dac3389e4439597582e1b97f4501",
+  "edits": [
+    {
+      "after": "c006d0034c00c6c005d0034c00c3c004d0034c00c2c00290034c00c1c001f016e006b0034cefc0bda3008d0000bd88008d01004c92c0ad0a07c90bd027bd9100290fc908d01ebda300290fd017bd910029f08d0300bda3008d0000bd88008d01004c98c0ad7d05d011bda30029f08d0000bd88008d01004c92c0bda3001869018d0000bd880069008d0100bd91008d0300ad0a078d0200adb67ef008adb77e09808d0200acffc7f03f88ad0200d900c8d033adb97ed900c9d02badba7ed900cad023ad0300d900cbd01bbd7600d900ccd013ad0000d900cdd00bad0100d900ced003a901608810c2a90060ffffffffffffffffffffffffffff",
+      "before": "c006d0034c00c6c005d0034c00c3c004d0034c00c2c00290034c00c1c001f018e0069069bd9106f064bda3008d0000bd88008d01004c50c0bda3001869018d0000bd880069008d0100acffc7f03f88ad0a07d900c8d033adb97ed900c9d02badba7ed900cad023bd9100d900cbd01bbd7600d900ccd013ad0000d900cdd00bad0100d900ced003a901608810c2a90060ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "description": "bank51 C007..C0FF lookup; dispatcher C000 preserved",
+      "offset": 417815
+    },
+    {
+      "after": "201ab8",
+      "before": "b9eca4",
+      "description": "bank1 sideways wooden reward",
+      "offset": 10975
+    },
+    {
+      "after": "c00ef0034c00d7bda3008d0000bd88008d01002092c0c901f008aded00f003a91e60a90d60",
+      "before": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "description": "bank51 C380 giant selector dispatch",
+      "offset": 418704
+    },
+    {
+      "after": "4c80c3",
+      "before": "4c00d7",
+      "description": "giant selector chained before original dispatcher",
+      "offset": 417808
+    },
+    {
+      "after": "a00e209fe2eaeaea",
+      "before": "a91ea4edd002a90d",
+      "description": "native giant-block form selection",
+      "offset": 17330
+    },
+    {
+      "after": "4d3234332d504f49534f4e2d4e41544956452d303100000000",
+      "before": "ffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "description": "M24.3 production Poison identity in allocated D7E0 gap",
+      "offset": 423920
+    }
+  ],
+  "giant_end": 50085,
+  "lookup_end": 49394,
+  "new_ram": 0,
+  "origin_research_commit": "de66f8e88d3c1252e21d385afe0e21780bd8a6d6",
+  "source_sha256": "c71089a3587300f85c45e3192766202e29380b0541d08662bc84b49d9cb17f43",
+  "symbols_sha256": "30562283bc4ccb953b1b71a229c0bd0f1231f2cabfdd4149518426d5c37c1cb7",
+  "version": "m243-poison-native-1"
+}

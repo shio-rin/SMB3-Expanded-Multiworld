@@ -1,0 +1,11 @@
+{
+  "EndCard_Flag": 31092,
+  "Level_ExitToMap": 20,
+  "Level_ObjectID": 1649,
+  "Level_Tileset": 1802,
+  "Map_DoFortressFX": 1861,
+  "Map_ReturnStatus": 1811,
+  "Objects_Timer": 1304,
+  "Player_GetInventoryOffset": 48708,
+  "World_Num": 1831
+}

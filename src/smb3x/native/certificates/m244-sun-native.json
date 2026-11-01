@@ -1,0 +1,90 @@
+{
+  "edits": [
+    {
+      "address": 50176,
+      "after": "c00ad0034c63c4c00bd0034c7cc5c00cd01da0022000c1c900d013bd7600c905d00abd9100c9b09003a90260a901604c80c3adb67ed029acffcff02488b900d6101bad0a07d900d0d013adb97ed900d1d00badba7ed900d2d003a901608810dda900602032c4f0c6bd6106c902d0bfadce00d0babddc7cc9a5f00ba9a59ddc7c2025c54c18c5ad430538fdc87c8d0000ad4205fdcd7c8d0100bd2104f00ec901f00ac904f0062037c54c18c5ad0100f00ec9ffd027ad0000c9f890204cc6c4ad0000c909b016bda300186d00009da300bd88006d01009d88004c18c52025c5ad900038edfd008d0000ad7500ed1200d00bad0000c980b004a9c0d002a920186dfd009d9100ad120069009d7600a9009d21049dbe009dd000ad43059dc87cad42059dcd7c60ad43051869219da300ad420569009d880060bd2104c903f004c906d039bd910038edfd008d0000bd7600ed12003011d00bad0000c9209008c9c1901aa9c0d002a920186dfd009d9100ad120069009d7600a9009dbe00602032c4d00fbda300c910b03aa9109da300a90160ad43051869218d0000ad420569008d0100bd8800cd0100900ad017bda300cd0000b00fad00009da300ad01009d8800a90160a90060",
+      "bank": 51,
+      "before": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+      "offset": 418832,
+      "reason": "HRDispatch"
+    },
+    {
+      "address": 44393,
+      "after": "a00a209fe22054d54c0fad",
+      "bank": 5,
+      "before": "4cc6bfeaeab576c905d009",
+      "offset": 44409,
+      "reason": "HRSunEntry"
+    },
+    {
+      "address": 49094,
+      "after": "a00c209fe2c902f006a9009d6906604cf6ad",
+      "bank": 5,
+      "before": "a002209fe2c902f012c901f008a9009d6906",
+      "offset": 49110,
+      "reason": "HRSunWait"
+    },
+    {
+      "address": 49152,
+      "after": "4c00c4eaeaeaea",
+      "bank": 51,
+      "before": "4c80c3eaeaeaea",
+      "offset": 417808,
+      "reason": "dispatch preserves original source-context handler"
+    },
+    {
+      "address": 41094,
+      "after": "69ad",
+      "bank": 5,
+      "before": "0fad",
+      "offset": 41110,
+      "reason": "normal Sun entry"
+    },
+    {
+      "address": 44379,
+      "after": "c6bf",
+      "bank": 5,
+      "before": "69ad",
+      "offset": 44395,
+      "reason": "state0 wait dispatch"
+    },
+    {
+      "address": 44474,
+      "after": "a00b209fe2f022eaeaea",
+      "bank": 5,
+      "before": "b5a3c910b023a91095a3",
+      "offset": 44490,
+      "reason": "16-bit camera return anchor Sun_WaitForUpperReturn"
+    },
+    {
+      "address": 44524,
+      "after": "a00b209fe2f01deaeaea",
+      "bank": 5,
+      "before": "b5a3c910b01ea91095a3",
+      "offset": 44540,
+      "reason": "16-bit camera return anchor Sun_WaitForUpperReturn2"
+    },
+    {
+      "address": 55264,
+      "after": "534d42334d32343443414d3100000000000000000000000000",
+      "bank": 51,
+      "before": "4d3234332d504f49534f4e2d4e41544956452d303100000000",
+      "offset": 423920,
+      "reason": "Distinct M24.4 native camera/Poison identity"
+    }
+  ],
+  "experimental_chr": false,
+  "helper_end": 50629,
+  "helper_start": 50176,
+  "identity": "m244-camera-sun-1",
+  "new_ram": 0,
+  "source_guards": {
+    "rom/sun-exp3-entry.asm": "9a8377a73c7fce912eb6313f895dc119df2733af7bed2fdbba393657544497c4",
+    "rom/sun-exp3.asm": "a195b53abbf9547b23ecb92f4ff3135766b9b39ea2d8e6b3d7998031a0cdd319"
+  },
+  "provenance": {
+    "packaged_source": "1c5fccb6729dd9887d52476dc2ae01c0d6195e08",
+    "source_apworld_sha256": "6411ce1fdf285edf4ac713d605910dc469b57d0c995caf8eb1f6226db02f4d83",
+    "scope": "Original 2-5 region40/activation44 only; unchanged native code"
+  }
+}

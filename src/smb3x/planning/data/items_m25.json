@@ -1,0 +1,196 @@
+[
+  {
+    "name": "1-Up",
+    "id": "0x534D3381",
+    "kind": "life",
+    "weight": 18
+  },
+  {
+    "name": "World 2 Pass",
+    "id": "0x534D3382",
+    "kind": "permanent",
+    "weight": 0
+  },
+  {
+    "name": "Super Mushroom",
+    "id": "0x534D3383",
+    "kind": "inventory",
+    "native": 1,
+    "weight": 24
+  },
+  {
+    "name": "Fire Flower",
+    "id": "0x534D3384",
+    "kind": "inventory",
+    "native": 2,
+    "weight": 18
+  },
+  {
+    "name": "Super Leaf",
+    "id": "0x534D3385",
+    "kind": "inventory",
+    "native": 3,
+    "weight": 20
+  },
+  {
+    "name": "Starman",
+    "id": "0x534D3386",
+    "kind": "inventory",
+    "native": 9,
+    "weight": 10
+  },
+  {
+    "name": "Frog Suit",
+    "id": "0x534D3387",
+    "kind": "inventory",
+    "native": 4,
+    "weight": 4
+  },
+  {
+    "name": "Tanooki Suit",
+    "id": "0x534D3388",
+    "kind": "inventory",
+    "native": 5,
+    "weight": 3
+  },
+  {
+    "name": "Hammer Suit",
+    "id": "0x534D3389",
+    "kind": "inventory",
+    "native": 6,
+    "weight": 2
+  },
+  {
+    "name": "P-Wing",
+    "id": "0x534D338A",
+    "kind": "inventory",
+    "native": 8,
+    "weight": 1
+  },
+  {
+    "name": "Overworld Hammer",
+    "id": "0x534D338B",
+    "kind": "inventory",
+    "native": 11,
+    "weight": 8
+  },
+  {
+    "name": "World 3 Pass",
+    "id": "0x534D338C",
+    "kind": "permanent",
+    "weight": 0
+  },
+  {
+    "name": "World 4 Pass",
+    "id": "0x534D338D",
+    "kind": "permanent",
+    "weight": 0
+  },
+  {
+    "name": "World 5 Pass",
+    "id": "0x534D338E",
+    "kind": "permanent",
+    "weight": 0
+  },
+  {
+    "name": "World 6 Pass",
+    "id": "0x534D338F",
+    "kind": "permanent",
+    "weight": 0
+  },
+  {
+    "name": "World 7 Pass",
+    "id": "0x534D3390",
+    "kind": "permanent",
+    "weight": 0
+  },
+  {
+    "name": "World 8 Pass",
+    "id": "0x534D3391",
+    "kind": "permanent",
+    "weight": 0
+  },
+  {
+    "id": "0x534D3392",
+    "name": "Desert Hammer",
+    "kind": "permanent",
+    "weight": 0,
+    "world": 2
+  },
+  {
+    "id": "0x534D3393",
+    "name": "Water Hammer",
+    "kind": "permanent",
+    "weight": 0,
+    "world": 3
+  },
+  {
+    "id": "0x534D3394",
+    "name": "Giant Hammer",
+    "kind": "permanent",
+    "weight": 0,
+    "world": 4
+  },
+  {
+    "id": "0x534D3395",
+    "name": "Ice Hammer",
+    "kind": "permanent",
+    "weight": 0,
+    "world": 6
+  },
+  {
+    "id": "0x534D3396",
+    "name": "Star Fragment",
+    "kind": "permanent",
+    "weight": 0,
+    "world": 0
+  },
+  {
+    "id": "0x534D3400",
+    "name": "Forced Small Trap",
+    "kind": "effect",
+    "effect": "small",
+    "trap": true,
+    "weight": 0
+  },
+  {
+    "id": "0x534D3402",
+    "name": "Walking Only Trap",
+    "kind": "effect",
+    "effect": "walking",
+    "trap": true,
+    "weight": 0
+  },
+  {
+    "id": "0x534D3403",
+    "name": "Micro-Goomba Infestation",
+    "kind": "effect",
+    "effect": "micro",
+    "trap": true,
+    "weight": 0
+  },
+  {
+    "id": "0x534D3404",
+    "name": "Icy Feet Trap",
+    "kind": "effect",
+    "effect": "icy",
+    "trap": true,
+    "weight": 0
+  },
+  {
+    "id": "0x534D3410",
+    "name": "Starman (Effect)",
+    "kind": "effect",
+    "effect": "star",
+    "trap": false,
+    "weight": 0
+  },
+  {
+    "id": "0x534D3411",
+    "name": "Emergency Mushroom (Effect)",
+    "kind": "effect",
+    "effect": "mushroom",
+    "trap": false,
+    "weight": 0
+  }
+]

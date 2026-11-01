@@ -1,0 +1,323 @@
+{
+  "evidence": "generated/m20/primary-matrix-v1",
+  "rows": [
+    {
+      "content": "smb3-prg1-w1-1-1",
+      "layout": 48002,
+      "source_music": 0,
+      "stage": "1-1",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w1-1-2",
+      "layout": 44842,
+      "source_music": 8,
+      "stage": "1-2",
+      "tileset": 3
+    },
+    {
+      "content": "smb3-prg1-w1-1-3",
+      "layout": 44553,
+      "source_music": 0,
+      "stage": "1-3",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w1-1-4",
+      "layout": 46337,
+      "source_music": 8,
+      "stage": "1-4",
+      "tileset": 4
+    },
+    {
+      "content": "smb3-prg1-w1-1-5",
+      "layout": 43585,
+      "source_music": 1,
+      "stage": "1-5",
+      "tileset": 14
+    },
+    {
+      "content": "smb3-prg1-w1-1-6",
+      "layout": 45992,
+      "source_music": 8,
+      "stage": "1-6",
+      "tileset": 4
+    },
+    {
+      "content": "smb3-prg1-w2-2-1",
+      "layout": 46175,
+      "source_music": 0,
+      "stage": "2-1",
+      "tileset": 9
+    },
+    {
+      "content": "smb3-prg1-w2-2-2",
+      "layout": 47256,
+      "source_music": 8,
+      "stage": "2-2",
+      "tileset": 3
+    },
+    {
+      "content": "smb3-prg1-w2-2-3",
+      "layout": 47381,
+      "source_music": 0,
+      "stage": "2-3",
+      "tileset": 9
+    },
+    {
+      "content": "smb3-prg1-w2-2-4",
+      "layout": 48248,
+      "source_music": 0,
+      "stage": "2-4",
+      "tileset": 9
+    },
+    {
+      "content": "smb3-prg1-w2-2-5",
+      "layout": 46906,
+      "source_music": 0,
+      "stage": "2-5",
+      "tileset": 9
+    },
+    {
+      "content": "smb3-prg1-w3-3-3",
+      "layout": 48745,
+      "source_music": 8,
+      "stage": "3-3",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w3-3-2",
+      "layout": 42960,
+      "source_music": 8,
+      "stage": "3-2",
+      "tileset": 4
+    },
+    {
+      "content": "smb3-prg1-w3-3-4",
+      "layout": 46873,
+      "source_music": 8,
+      "stage": "3-4",
+      "tileset": 14
+    },
+    {
+      "content": "smb3-prg1-w3-3-1",
+      "layout": 45834,
+      "source_music": 2,
+      "stage": "3-1",
+      "tileset": 6
+    },
+    {
+      "content": "smb3-prg1-w3-3-5",
+      "layout": 45146,
+      "source_music": 2,
+      "stage": "3-5",
+      "tileset": 6
+    },
+    {
+      "content": "smb3-prg1-w3-3-6",
+      "layout": 43321,
+      "source_music": 8,
+      "stage": "3-6",
+      "tileset": 4
+    },
+    {
+      "content": "smb3-prg1-w3-3-7",
+      "layout": 47292,
+      "source_music": 0,
+      "stage": "3-7",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w3-3-8",
+      "layout": 44121,
+      "source_music": 8,
+      "stage": "3-8",
+      "tileset": 14
+    },
+    {
+      "content": "smb3-prg1-w3-3-9",
+      "layout": 45320,
+      "source_music": 0,
+      "stage": "3-9",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w4-4-6",
+      "layout": 43743,
+      "source_music": 0,
+      "stage": "4-6",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w4-4-5",
+      "layout": 46892,
+      "source_music": 0,
+      "stage": "4-5",
+      "tileset": 11
+    },
+    {
+      "content": "smb3-prg1-w4-4-3",
+      "layout": 45071,
+      "source_music": 0,
+      "stage": "4-3",
+      "tileset": 11
+    },
+    {
+      "content": "smb3-prg1-w4-4-2",
+      "layout": 45159,
+      "source_music": 8,
+      "stage": "4-2",
+      "tileset": 11
+    },
+    {
+      "content": "smb3-prg1-w4-4-4",
+      "layout": 45741,
+      "source_music": 2,
+      "stage": "4-4",
+      "tileset": 11
+    },
+    {
+      "content": "smb3-prg1-w4-4-1",
+      "layout": 43912,
+      "source_music": 0,
+      "stage": "4-1",
+      "tileset": 11
+    },
+    {
+      "content": "smb3-prg1-w6-6-2",
+      "layout": 45388,
+      "source_music": 8,
+      "stage": "6-2",
+      "tileset": 12
+    },
+    {
+      "content": "smb3-prg1-w6-6-1",
+      "layout": 45612,
+      "source_music": 0,
+      "stage": "6-1",
+      "tileset": 12
+    },
+    {
+      "content": "smb3-prg1-w6-6-3",
+      "layout": 43627,
+      "source_music": 8,
+      "stage": "6-3",
+      "tileset": 12
+    },
+    {
+      "content": "smb3-prg1-w6-6-6",
+      "layout": 47409,
+      "source_music": 0,
+      "stage": "6-6",
+      "tileset": 12
+    },
+    {
+      "content": "smb3-prg1-w6-6-8",
+      "layout": 47284,
+      "source_music": 8,
+      "stage": "6-8",
+      "tileset": 14
+    },
+    {
+      "content": "smb3-prg1-w6-6-4",
+      "layout": 46629,
+      "source_music": 8,
+      "stage": "6-4",
+      "tileset": 12
+    },
+    {
+      "content": "smb3-prg1-w6-6-7",
+      "layout": 47850,
+      "source_music": 8,
+      "stage": "6-7",
+      "tileset": 12
+    },
+    {
+      "content": "smb3-prg1-w6-6-5",
+      "layout": 44266,
+      "source_music": 0,
+      "stage": "6-5",
+      "tileset": 12
+    },
+    {
+      "content": "smb3-prg1-w6-6-9",
+      "layout": 48366,
+      "source_music": 0,
+      "stage": "6-9",
+      "tileset": 12
+    },
+    {
+      "content": "smb3-prg1-w6-6-10",
+      "layout": 47507,
+      "source_music": 8,
+      "stage": "6-10",
+      "tileset": 12
+    },
+    {
+      "content": "smb3-prg1-w7-7-1",
+      "layout": 43617,
+      "source_music": 0,
+      "stage": "7-1",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w7-7-4",
+      "layout": 45954,
+      "source_music": 8,
+      "stage": "7-4",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w7-7-2",
+      "layout": 45038,
+      "source_music": 0,
+      "stage": "7-2",
+      "tileset": 9
+    },
+    {
+      "content": "smb3-prg1-w7-7-3",
+      "layout": 45700,
+      "source_music": 8,
+      "stage": "7-3",
+      "tileset": 3
+    },
+    {
+      "content": "smb3-prg1-w7-7-6",
+      "layout": 45874,
+      "source_music": 0,
+      "stage": "7-6",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w7-7-7",
+      "layout": 43688,
+      "source_music": 8,
+      "stage": "7-7",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w7-7-8",
+      "layout": 44911,
+      "source_music": 0,
+      "stage": "7-8",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w7-7-5",
+      "layout": 48361,
+      "source_music": 0,
+      "stage": "7-5",
+      "tileset": 1
+    },
+    {
+      "content": "smb3-prg1-w7-7-9",
+      "layout": 45631,
+      "source_music": 8,
+      "stage": "7-9",
+      "tileset": 9
+    }
+  ],
+  "scope": "ordinary primary music only; M18 shuffle certification unchanged; World5 remains native pending separate floor/sky lifecycle certification",
+  "status": "native-entry-custom-playback-palette-pause-tested",
+  "version": "m20-primary-1"
+}

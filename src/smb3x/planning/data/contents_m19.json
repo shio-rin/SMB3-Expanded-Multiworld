@@ -1,0 +1,360 @@
+{
+  "version": "m19-contents-2",
+  "parent": "contents_m18.json",
+  "parent_sha256": "5b32d4c3faf90bc62120ed83162a71b4b4bcec78cfe8eedb1f1b0e03c57741fc",
+  "family_schema": [
+    "smb1",
+    "smb2j",
+    "worlde",
+    "smw"
+  ],
+  "contents": [
+    {
+      "content_id": "classic/smb1/1-1",
+      "display_name": "SMB1 1-1",
+      "source_family": "smb1",
+      "inspiration_stage": "1-1",
+      "adaptation_version": "m19-smb1-2",
+      "native_storage": {
+        "content_id": "classic/smb1/1-1",
+        "kind": "native-bank-local",
+        "version": "m19-bank-local-1",
+        "tileset": 3,
+        "terrain": {
+          "bank": 16,
+          "origin": 40960,
+          "pointer": 47616,
+          "offset": 137744,
+          "length": 389,
+          "sha256": "8ea8515b63f42e00f524b45644378ef5442bfbff92a74527ee374fbdd8b96daa"
+        },
+        "enemies": {
+          "bank": 6,
+          "origin": 49152,
+          "pointer": 56064,
+          "offset": 56080,
+          "length": 56,
+          "sha256": "154bb4ec3d14e2f38515f9785df0f28006004392d8f87a1f3d732eb8794ae76f"
+        }
+      },
+      "tileset": 3,
+      "layout": 47616,
+      "objects": 56064,
+      "chr_requirements": {
+        "background_pair_index": 19,
+        "original_chr_only": true,
+        "sprite_patterns": "native per-object bank requests; no new graphics"
+      },
+      "entry": {
+        "x": 16,
+        "y": 384,
+        "action": 0,
+        "horizontal": true
+      },
+      "area_graph": {
+        "primary": "main",
+        "secondary": [],
+        "optional_pipes": "non-enterable generator 24; native caps B1/B2, verified Down input"
+      },
+      "music_compatibility": [
+        0,
+        1,
+        2,
+        8
+      ],
+      "palette_compatibility": {
+        "background": [
+          0
+        ],
+        "sprite": 8,
+        "constrained_shuffle": "retain audited Hills palette"
+      },
+      "special_mechanics": [],
+      "mandatory_items": [],
+      "difficulty": {
+        "estimate": 1,
+        "scale": "1-5",
+        "basis": "source layout and native route; not sphere-balanced"
+      },
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "restrictions": [
+        "certified M18 physical entrances only",
+        "one player",
+        "no secondary routes",
+        "at most 15 horizontal screens"
+      ],
+      "certified": true,
+      "status": "certified-for-production",
+      "evidence": [
+        {
+          "path": "generated/m19/offline-feedback-20261025/replay-1-1-v2/result.json",
+          "sha256": "4fb1f6c7e016c0403b3cd799234acef4fe736ba20c048f1d2eebe05c66ec3ca1"
+        },
+        {
+          "path": "generated/m19/offline-feedback-20261025/after-1-1-v1/result.json",
+          "sha256": "bc0a59f764a6177263ebade7ca38d5bb80144f9b5fc3a92a851e1556f3f9ca81"
+        }
+      ],
+      "provenance": {
+        "source": "doppelganger SMB1 annotated disassembly via 1wErt3r/4048722",
+        "sha256": "e5c17c42783f430029ab90aa37c73d51c2c320898e533b3ff196dad38c50ae42",
+        "method": "project-authored semantic decoder adapted from R2; private streams",
+        "redistribution": "not cleared; no public release",
+        "adaptations": [
+          "Optional coin-room pipe at x=57 is non-enterable; coin room omitted, main-route geometry retained.",
+          "Hidden 1-Up made unconditional; source visibility depends on prior coin history.",
+          "Decorative castle omitted after native goal; no castle entry or extra check.",
+          "Flagpole/castle ending replaced by native SMB3 card at x=216, aligned with the final-screen frame.",
+          "Source enemy-stream area dependency 1ec200 retained in private IR; disabled with sealed optional pipe.",
+          "Enemy group at x=54 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+          "Enemy group at x=100 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+          "Enemy group at x=117 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+          "Enemy group at x=127 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+          "Enemy group at x=131 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+          "Shift enemy group at x=177 left 1 column(s) to keep its 32-pixel spacing clear of pipe collision tiles.",
+          "Enemy group at x=177 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+          "SMB3 Hills ground/solid wood blocks replace SMB1 ground/hard blocks; no physics changes."
+        ]
+      },
+      "human_acceptance": "v1 offline completion user-reported; corrections require targeted retest; live not started"
+    },
+    {
+      "content_id": "classic/smb1/4-1",
+      "display_name": "SMB1 4-1",
+      "source_family": "smb1",
+      "inspiration_stage": "4-1",
+      "adaptation_version": "m19-smb1-2",
+      "native_storage": {
+        "content_id": "classic/smb1/4-1",
+        "kind": "native-bank-local",
+        "version": "m19-bank-local-1",
+        "tileset": 3,
+        "terrain": {
+          "bank": 16,
+          "origin": 40960,
+          "pointer": 48005,
+          "offset": 138133,
+          "length": 263,
+          "sha256": "ad452334718648abb90755c340880bcc8357b56575900da024064c322ab326bb"
+        },
+        "enemies": {
+          "bank": 6,
+          "origin": 49152,
+          "pointer": 56120,
+          "offset": 56136,
+          "length": 23,
+          "sha256": "cd3ece6ec80b8ee9c9009a7b5706c89a6c1a66378bf4c367080bb73f02104777"
+        }
+      },
+      "tileset": 3,
+      "layout": 48005,
+      "objects": 56120,
+      "chr_requirements": {
+        "background_pair_index": 19,
+        "original_chr_only": true,
+        "sprite_patterns": "native per-object bank requests; no new graphics"
+      },
+      "entry": {
+        "x": 16,
+        "y": 384,
+        "action": 0,
+        "horizontal": true
+      },
+      "area_graph": {
+        "primary": "main",
+        "secondary": [],
+        "optional_pipes": "non-enterable generator 24; native caps B1/B2, verified Down input"
+      },
+      "music_compatibility": [
+        0,
+        1,
+        2,
+        8
+      ],
+      "palette_compatibility": {
+        "background": [
+          0
+        ],
+        "sprite": 8,
+        "constrained_shuffle": "retain audited Hills palette"
+      },
+      "special_mechanics": [
+        "native Lakitu/Spiny pressure"
+      ],
+      "mandatory_items": [],
+      "difficulty": {
+        "estimate": 3,
+        "scale": "1-5",
+        "basis": "source layout and native route; not sphere-balanced"
+      },
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "restrictions": [
+        "certified M18 physical entrances only",
+        "one player",
+        "no secondary routes",
+        "at most 15 horizontal screens"
+      ],
+      "certified": true,
+      "status": "certified-for-production",
+      "evidence": [
+        {
+          "path": "generated/m19/offline-feedback-20261025/replay-4-1-v2/result.json",
+          "sha256": "a0048ca96b6defd834d090e90b74bbdba4af389d0aa63f3d1ecf3448a41a9ade"
+        },
+        {
+          "path": "generated/m19/offline-feedback-20261025/after-4-1-v1/result.json",
+          "sha256": "ad3d466b3b129a7d6209d02d625051ca464ef1f0a273378eb6a6f7d9678776b7"
+        }
+      ],
+      "provenance": {
+        "source": "doppelganger SMB1 annotated disassembly via 1wErt3r/4048722",
+        "sha256": "e5c17c42783f430029ab90aa37c73d51c2c320898e533b3ff196dad38c50ae42",
+        "method": "project-authored semantic decoder adapted from R2; private streams",
+        "redistribution": "not cleared; no public release",
+        "adaptations": [
+          "Decorative castle omitted after native goal; no castle entry or extra check.",
+          "Source terrain/scenery attribute {'x': 6, 'y': 14, 'code': 64, 'source_offset': 4} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Hidden 1-Up made unconditional; source visibility depends on prior coin history.",
+          "Optional coin-room pipe at x=132 is non-enterable; coin room omitted, main-route geometry retained.",
+          "Source end-frenzy marker omitted; native Lakitu flee event is used near goal.",
+          "Decorative castle omitted after native goal; no castle entry or extra check.",
+          "Remove empty columns 192..207 before the final staircase to fit the native 15-screen tile RAM limit; omit the Lakitu respawn in that removed run.",
+          "Flagpole/castle ending replaced by native SMB3 card at x=232, aligned with the final-screen frame.",
+          "Source enemy-stream area dependency 2ec266 retained in private IR; disabled with sealed optional pipe.",
+          "Omit SMB1 Lakitu respawn record: the existing native pursuer remains active; do not spawn a second simultaneous Lakitu.",
+          "Lakitu cloud uses native row 18 so its head remains visible above the playfield border.",
+          "SMB3 Hills ground/solid wood blocks replace SMB1 ground/hard blocks; no physics changes."
+        ]
+      },
+      "human_acceptance": "v1 offline completion user-reported; corrections require targeted retest; live not started"
+    },
+    {
+      "content_id": "classic/smb1/8-3",
+      "display_name": "SMB1 8-3",
+      "source_family": "smb1",
+      "inspiration_stage": "8-3",
+      "adaptation_version": "m19-smb1-2",
+      "native_storage": {
+        "content_id": "classic/smb1/8-3",
+        "kind": "native-bank-local",
+        "version": "m19-bank-local-1",
+        "tileset": 3,
+        "terrain": {
+          "bank": 16,
+          "origin": 40960,
+          "pointer": 48268,
+          "offset": 138396,
+          "length": 160,
+          "sha256": "9afbbe8b1b6df4f3e1e970e45f696bfa82c2e6ee3a4fd88bd9be466908e0d4ef"
+        },
+        "enemies": {
+          "bank": 6,
+          "origin": 49152,
+          "pointer": 56143,
+          "offset": 56159,
+          "length": 50,
+          "sha256": "109951879154f3d6635073788e0811720c105b13c5901157895501683cde8624"
+        }
+      },
+      "tileset": 3,
+      "layout": 48268,
+      "objects": 56143,
+      "chr_requirements": {
+        "background_pair_index": 19,
+        "original_chr_only": true,
+        "sprite_patterns": "native per-object bank requests; no new graphics"
+      },
+      "entry": {
+        "x": 16,
+        "y": 384,
+        "action": 0,
+        "horizontal": true
+      },
+      "area_graph": {
+        "primary": "main",
+        "secondary": [],
+        "optional_pipes": "non-enterable generator 24; native caps B1/B2, verified Down input"
+      },
+      "music_compatibility": [
+        0,
+        1,
+        2,
+        8
+      ],
+      "palette_compatibility": {
+        "background": [
+          0
+        ],
+        "sprite": 8,
+        "constrained_shuffle": "retain audited Hills palette"
+      },
+      "special_mechanics": [
+        "native cannons and ordinary Hammer Bros."
+      ],
+      "mandatory_items": [],
+      "difficulty": {
+        "estimate": 4,
+        "scale": "1-5",
+        "basis": "source layout and native route; not sphere-balanced"
+      },
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "restrictions": [
+        "certified M18 physical entrances only",
+        "one player",
+        "no secondary routes",
+        "at most 15 horizontal screens"
+      ],
+      "certified": true,
+      "status": "certified-for-production",
+      "evidence": [
+        {
+          "path": "generated/m19/offline-feedback-20261025/replay-8-3-v1/result.json",
+          "sha256": "9f48027376d13930eacfcb76296b844ec68ce1aa58af1da2f9b14e08212f7966"
+        },
+        {
+          "path": "generated/m19/offline-feedback-20261025/after-8-3-v1/result.json",
+          "sha256": "857dcab383c2c23e2667576020fc2b69b19020da3215e951b73308898020730c"
+        }
+      ],
+      "provenance": {
+        "source": "doppelganger SMB1 annotated disassembly via 1wErt3r/4048722",
+        "sha256": "e5c17c42783f430029ab90aa37c73d51c2c320898e533b3ff196dad38c50ae42",
+        "method": "project-authored semantic decoder adapted from R2; private streams",
+        "redistribution": "not cleared; no public release",
+        "adaptations": [
+          "Decorative castle omitted after native goal; no castle entry or extra check.",
+          "Source terrain/scenery attribute {'x': 23, 'y': 14, 'code': 66, 'source_offset': 6} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 31, 'y': 14, 'code': 64, 'source_offset': 8} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 36, 'y': 14, 'code': 66, 'source_offset': 12} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 50, 'y': 14, 'code': 64, 'source_offset': 14} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 78, 'y': 14, 'code': 66, 'source_offset': 38} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 84, 'y': 14, 'code': 64, 'source_offset': 40} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 87, 'y': 14, 'code': 66, 'source_offset': 44} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 93, 'y': 14, 'code': 64, 'source_offset': 46} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 96, 'y': 14, 'code': 66, 'source_offset': 50} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 106, 'y': 14, 'code': 64, 'source_offset': 52} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 131, 'y': 14, 'code': 66, 'source_offset': 70} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 165, 'y': 14, 'code': 64, 'source_offset': 74} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 171, 'y': 14, 'code': 66, 'source_offset': 78} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 191, 'y': 14, 'code': 64, 'source_offset': 82} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 196, 'y': 14, 'code': 0, 'source_offset': 86} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 207, 'y': 14, 'code': 49, 'source_offset': 96} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Source terrain/scenery attribute {'x': 219, 'y': 14, 'code': 66, 'source_offset': 100} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+          "Decorative castle omitted after native goal; no castle entry or extra check.",
+          "Flagpole/castle ending replaced by native SMB3 card at x=232, aligned with the final-screen frame.",
+          "Source frenzy Bullet Bill request replaced by native terrain cannons; no global encounter state.",
+          "Source frenzy Bullet Bill request replaced by native terrain cannons; no global encounter state.",
+          "Raise six ground Hammer Bro spawn origins one tile to row 24; retain platforms and ground height.",
+          "SMB3 Hills ground/solid wood blocks replace SMB1 ground/hard blocks; no physics changes."
+        ]
+      },
+      "human_acceptance": "v1 offline completion user-reported; corrections require targeted retest; live not started"
+    }
+  ]
+}

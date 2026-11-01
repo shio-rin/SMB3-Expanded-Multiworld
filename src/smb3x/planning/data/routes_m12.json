@@ -1,0 +1,1347 @@
+{
+  "source": "Southbird PRG010 Map_CheckDoMove / World7L / PipewayCtlr; derived from verified PRG1",
+  "start": [
+    2,
+    3
+  ],
+  "nodes": [
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      3,
+      7
+    ],
+    [
+      3,
+      9
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      9
+    ],
+    [
+      6,
+      3
+    ],
+    [
+      6,
+      5
+    ],
+    [
+      8,
+      7
+    ],
+    [
+      8,
+      9
+    ],
+    [
+      9,
+      3
+    ],
+    [
+      9,
+      5
+    ],
+    [
+      10,
+      7
+    ],
+    [
+      11,
+      5
+    ],
+    [
+      12,
+      7
+    ],
+    [
+      13,
+      3
+    ],
+    [
+      13,
+      5
+    ],
+    [
+      14,
+      7
+    ],
+    [
+      14,
+      9
+    ],
+    [
+      15,
+      3
+    ],
+    [
+      15,
+      5
+    ],
+    [
+      16,
+      7
+    ],
+    [
+      16,
+      9
+    ],
+    [
+      17,
+      3
+    ],
+    [
+      17,
+      5
+    ],
+    [
+      18,
+      7
+    ],
+    [
+      18,
+      9
+    ],
+    [
+      19,
+      3
+    ],
+    [
+      19,
+      5
+    ],
+    [
+      22,
+      3
+    ],
+    [
+      22,
+      5
+    ],
+    [
+      22,
+      7
+    ],
+    [
+      24,
+      3
+    ],
+    [
+      24,
+      5
+    ],
+    [
+      24,
+      7
+    ],
+    [
+      24,
+      9
+    ],
+    [
+      26,
+      3
+    ],
+    [
+      26,
+      5
+    ],
+    [
+      26,
+      7
+    ],
+    [
+      26,
+      9
+    ],
+    [
+      28,
+      5
+    ],
+    [
+      28,
+      7
+    ],
+    [
+      28,
+      9
+    ],
+    [
+      29,
+      4
+    ]
+  ],
+  "edges": [
+    {
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        2,
+        3
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        4,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        2,
+        5
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        4,
+        5
+      ],
+      "target": [
+        2,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        4,
+        5
+      ],
+      "target": [
+        3,
+        7
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        3,
+        7
+      ],
+      "target": [
+        5,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        3,
+        7
+      ],
+      "target": [
+        3,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        3,
+        7
+      ],
+      "target": [
+        4,
+        5
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        3,
+        9
+      ],
+      "target": [
+        5,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        3,
+        9
+      ],
+      "target": [
+        3,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        5,
+        9
+      ],
+      "target": [
+        3,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        5,
+        9
+      ],
+      "target": [
+        16,
+        9
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        16,
+        9
+      ],
+      "target": [
+        14,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        16,
+        9
+      ],
+      "target": [
+        5,
+        9
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        14,
+        9
+      ],
+      "target": [
+        16,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        14,
+        9
+      ],
+      "target": [
+        14,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        14,
+        7
+      ],
+      "target": [
+        16,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        14,
+        7
+      ],
+      "target": [
+        12,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        14,
+        7
+      ],
+      "target": [
+        14,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        12,
+        7
+      ],
+      "target": [
+        14,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        12,
+        7
+      ],
+      "target": [
+        10,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        10,
+        7
+      ],
+      "target": [
+        12,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        10,
+        7
+      ],
+      "target": [
+        8,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        8,
+        7
+      ],
+      "target": [
+        10,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        8,
+        7
+      ],
+      "target": [
+        8,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        8,
+        9
+      ],
+      "target": [
+        8,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        8,
+        9
+      ],
+      "target": [
+        17,
+        5
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        17,
+        5
+      ],
+      "target": [
+        15,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        17,
+        5
+      ],
+      "target": [
+        8,
+        9
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        15,
+        5
+      ],
+      "target": [
+        17,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        15,
+        5
+      ],
+      "target": [
+        13,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        15,
+        5
+      ],
+      "target": [
+        15,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        15,
+        3
+      ],
+      "target": [
+        17,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        15,
+        3
+      ],
+      "target": [
+        15,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        17,
+        3
+      ],
+      "target": [
+        19,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        17,
+        3
+      ],
+      "target": [
+        15,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        19,
+        3
+      ],
+      "target": [
+        17,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        19,
+        3
+      ],
+      "target": [
+        19,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        19,
+        5
+      ],
+      "target": [
+        19,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        19,
+        5
+      ],
+      "target": [
+        26,
+        3
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        26,
+        3
+      ],
+      "target": [
+        24,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        26,
+        3
+      ],
+      "target": [
+        26,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        26,
+        3
+      ],
+      "target": [
+        19,
+        5
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        26,
+        5
+      ],
+      "target": [
+        28,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        26,
+        5
+      ],
+      "target": [
+        24,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        26,
+        5
+      ],
+      "target": [
+        26,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        24,
+        5
+      ],
+      "target": [
+        26,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        24,
+        5
+      ],
+      "target": [
+        22,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        24,
+        5
+      ],
+      "target": [
+        24,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        24,
+        7
+      ],
+      "target": [
+        26,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        24,
+        7
+      ],
+      "target": [
+        22,
+        7
+      ],
+      "fortress": "fortress-2",
+      "pipe": false
+    },
+    {
+      "source": [
+        24,
+        7
+      ],
+      "target": [
+        24,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        22,
+        7
+      ],
+      "target": [
+        24,
+        7
+      ],
+      "fortress": "fortress-2",
+      "pipe": false
+    },
+    {
+      "source": [
+        22,
+        7
+      ],
+      "target": [
+        11,
+        5
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        11,
+        5
+      ],
+      "target": [
+        13,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        11,
+        5
+      ],
+      "target": [
+        22,
+        7
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        26,
+        7
+      ],
+      "target": [
+        28,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        26,
+        7
+      ],
+      "target": [
+        24,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        28,
+        7
+      ],
+      "target": [
+        26,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        28,
+        7
+      ],
+      "target": [
+        28,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        28,
+        9
+      ],
+      "target": [
+        26,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        28,
+        9
+      ],
+      "target": [
+        28,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        26,
+        9
+      ],
+      "target": [
+        28,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        26,
+        9
+      ],
+      "target": [
+        24,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        24,
+        9
+      ],
+      "target": [
+        26,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        22,
+        5
+      ],
+      "target": [
+        24,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        22,
+        5
+      ],
+      "target": [
+        22,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        22,
+        3
+      ],
+      "target": [
+        24,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        22,
+        3
+      ],
+      "target": [
+        22,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        28,
+        5
+      ],
+      "target": [
+        26,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        24,
+        3
+      ],
+      "target": [
+        26,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        24,
+        3
+      ],
+      "target": [
+        22,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        13,
+        5
+      ],
+      "target": [
+        15,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        13,
+        5
+      ],
+      "target": [
+        11,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        13,
+        5
+      ],
+      "target": [
+        13,
+        3
+      ],
+      "fortress": "fortress-1",
+      "pipe": false
+    },
+    {
+      "source": [
+        13,
+        3
+      ],
+      "target": [
+        13,
+        5
+      ],
+      "fortress": "fortress-1",
+      "pipe": false
+    },
+    {
+      "source": [
+        13,
+        3
+      ],
+      "target": [
+        6,
+        5
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        6,
+        5
+      ],
+      "target": [
+        6,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        6,
+        5
+      ],
+      "target": [
+        13,
+        3
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        6,
+        3
+      ],
+      "target": [
+        4,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        6,
+        3
+      ],
+      "target": [
+        6,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        16,
+        7
+      ],
+      "target": [
+        18,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        16,
+        7
+      ],
+      "target": [
+        14,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        18,
+        7
+      ],
+      "target": [
+        16,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        18,
+        7
+      ],
+      "target": [
+        18,
+        9
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        18,
+        7
+      ],
+      "target": [
+        29,
+        4
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        29,
+        4
+      ],
+      "target": [
+        18,
+        7
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        18,
+        9
+      ],
+      "target": [
+        18,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        5,
+        7
+      ],
+      "target": [
+        3,
+        7
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        5,
+        7
+      ],
+      "target": [
+        9,
+        3
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        9,
+        3
+      ],
+      "target": [
+        9,
+        5
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        9,
+        3
+      ],
+      "target": [
+        5,
+        7
+      ],
+      "fortress": null,
+      "pipe": true
+    },
+    {
+      "source": [
+        9,
+        5
+      ],
+      "target": [
+        9,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        4,
+        3
+      ],
+      "target": [
+        6,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    },
+    {
+      "source": [
+        4,
+        3
+      ],
+      "target": [
+        2,
+        3
+      ],
+      "fortress": null,
+      "pipe": false
+    }
+  ]
+}

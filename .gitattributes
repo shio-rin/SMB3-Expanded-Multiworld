@@ -1,0 +1,9 @@
+# Canonical source bytes across Windows and Unix checkouts.
+* text=auto eol=lf
+# Explicit byte-bound CRLF resources retain their reviewed representation.
+src/smb3x/native/asm/m10.asm text eol=crlf
+src/smb3x/native/asm/m17.asm text eol=crlf
+src/smb3x/planning/data/archipelago.json text eol=crlf
+src/smb3x/planning/data/cosmetic_headers_m17.json text eol=crlf
+src/smb3x/planning/data/items.json text eol=crlf
+src/smb3x/planning/data/world1_locations.json text eol=crlf

@@ -1,0 +1,3063 @@
+{
+  "AVWriterPad": false,
+  "AVWriterResizeHeight": 0,
+  "AVWriterResizeWidth": 0,
+  "AcceptBackgroundInput": false,
+  "AcceptBackgroundInputControllerOnly": false,
+  "AlertMessageColor": -65536,
+  "AllTrollers": {
+    "3DS Controller": {
+      "A": "X, J1 B3, X1 B",
+      "B": "Z, J1 B2, X1 A",
+      "Down": "Down, J1 POV1D, X1 DpadDown",
+      "L": "Q, J1 B5, X1 LeftShoulder",
+      "Left": "Left, J1 POV1L, X1 DpadLeft",
+      "R": "W, J1 B6, X1 RightShoulder",
+      "Right": "Right, J1 POV1R, X1 DpadRight",
+      "Select": "Space, J1 B9, X1 Back",
+      "Start": "Enter, J1 B10, X1 Start",
+      "Tilt": "WMouse R",
+      "Touch": "WMouse L, X1 Touchpad",
+      "Up": "Up, J1 POV1U, X1 DpadUp",
+      "X": "S, J1 B4, X1 Y",
+      "Y": "A, J1 B1, X1 X",
+      "ZL": "E, J1 B7, X1 LeftTrigger",
+      "ZR": "R, J1 B8, X1 RightTrigger"
+    },
+    "Amiga Controller": {
+      "P1 Mouse Left Button": "WMouse L",
+      "P2 Joystick Button 1": "Z",
+      "P2 Joystick Button 2": "X",
+      "P2 Joystick Button 3": "C",
+      "P2 Joystick Down": "Down",
+      "P2 Joystick Left": "Left",
+      "P2 Joystick Right": "Right",
+      "P2 Joystick Up": "Up"
+    },
+    "Atari 2600 Basic Controller": {
+      "P1 Button": "Z, J1 B1, X1 X",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P2 Button": "Keypad1, J1 B2, X1 A",
+      "P2 Down": "Keypad2, J1 RotationZ+, X1 RStickDown",
+      "P2 Left": "Keypad4, J1 Z-, X1 RStickLeft",
+      "P2 Right": "Keypad6, J1 Z+, X1 RStickRight",
+      "P2 Up": "Keypad8, J1 RotationZ-, X1 RStickUp",
+      "Reset": "D, J1 B9, X1 Back",
+      "Select": "S, J1 B10, X1 Start"
+    },
+    "Atari 7800 Basic Controller": {
+      "P1 Button": "Z, J1 B1, X1 X",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P2 Button": "Keypad1, J1 B2, X1 A",
+      "P2 Down": "Keypad2, J1 RotationZ+, X1 RStickDown",
+      "P2 Left": "Keypad4, J1 Z-, X1 RStickLeft",
+      "P2 Right": "Keypad6, J1 Z+, X1 RStickRight",
+      "P2 Up": "Keypad8, J1 RotationZ-, X1 RStickUp",
+      "Reset": "D, J1 B9, X1 Back",
+      "Select": "S, J1 B10, X1 Start"
+    },
+    "Atari 7800 Joystick Controller": {
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Trigger": "Z, J1 B1, X1 X",
+      "P1 Trigger 2": "X, J1 B2, X1 A",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P2 Down": "Keypad2, J1 RotationZ+, X1 RStickDown",
+      "P2 Left": "Keypad4, J1 Z-, X1 RStickLeft",
+      "P2 Right": "Keypad6, J1 Z+, X1 RStickRight",
+      "P2 Trigger": "Keypad1, J1 B4, X1 Y",
+      "P2 Up": "Keypad8, J1 RotationZ-, X1 RStickUp",
+      "Reset": "D, J1 B9, X1 Back",
+      "Select": "S, J1 B10, X1 Start"
+    },
+    "Atari 7800 Light Gun Controller": {
+      "P1 Trigger": "WMouse L",
+      "Reset": "D, J1 B9, X1 Back",
+      "Select": "S, J1 B10, X1 Start"
+    },
+    "Atari 7800 Paddle Controller": {
+      "P2 Trigger": "Keypad1, J1 B4, X1 Y",
+      "Reset": "D, J1 B9, X1 Back",
+      "Select": "S, J1 B10, X1 Start"
+    },
+    "Atari 7800 ProLine Joystick Controller": {
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Trigger": "Z, J1 B1, X1 X",
+      "P1 Trigger 2": "X, J1 B2, X1 A",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P2 Down": "Keypad2, J1 RotationZ+, X1 RStickDown",
+      "P2 Left": "Keypad4, J1 Z-, X1 RStickLeft",
+      "P2 Right": "Keypad6, J1 Z+, X1 RStickRight",
+      "P2 Trigger": "Keypad1, J1 B4, X1 Y",
+      "P2 Trigger 2": "Keypad3, J1 B3, X1 B",
+      "P2 Up": "Keypad8, J1 RotationZ-, X1 RStickUp",
+      "Reset": "D, J1 B9, X1 Back",
+      "Select": "S, J1 B10, X1 Start"
+    },
+    "ChannelF Controller": {
+      "HOLD": "F3",
+      "MODE": "F2",
+      "P1 Back": "Keypad2, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 CCW": "Left, J1 Z-, X1 RStickLeft",
+      "P1 CW": "Right, J1 Z+, X1 RStickRight",
+      "P1 Forward": "Keypad8, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P1 Left": "Keypad4, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Pull": "Up, J1 RotationZ-, X1 RStickUp",
+      "P1 Push": "Down, J1 RotationZ+, X1 RStickDown",
+      "P1 Right": "Keypad6, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P2 Back": "S, J2 POV1D, X2 DpadDown, X2 LStickDown",
+      "P2 CCW": "J, J2 Z-, X2 RStickLeft",
+      "P2 CW": "L, J2 Z+, X2 RStickRight",
+      "P2 Forward": "W, J2 POV1U, X2 DpadUp, X2 LStickUp",
+      "P2 Left": "A, J2 POV1L, X2 DpadLeft, X2 LStickLeft",
+      "P2 Pull": "I, J2 RotationZ-, X2 RStickUp",
+      "P2 Push": "K, J2 RotationZ+, X2 RStickDown",
+      "P2 Right": "D, J2 POV1R, X2 DpadRight, X2 LStickRight",
+      "RESET": "F5",
+      "START": "F4",
+      "TIME": "F1"
+    },
+    "ColecoVision Basic Controller": {
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Key 0": "Keypad0, J1 B12, X1 RightThumb",
+      "P1 Key 1": "Keypad1, J1 B1, X1 X",
+      "P1 Key 2": "Keypad2, J1 B2, X1 A",
+      "P1 Key 3": "Keypad3, J1 B3, X1 B",
+      "P1 Key 4": "Keypad4, J1 B4, X1 Y",
+      "P1 Key 5": "Keypad5, J1 RotationZ-, X1 RStickUp",
+      "P1 Key 6": "Keypad6, J1 RotationZ+, X1 RStickDown",
+      "P1 Key 7": "Keypad7, J1 Z-, X1 RStickLeft",
+      "P1 Key 8": "Keypad8, J1 Z+, X1 RStickRight",
+      "P1 Key 9": "Keypad9, J1 B11, X1 LeftThumb",
+      "P1 L": "Z, J1 B5, X1 LeftShoulder",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Pound": "KeypadDecimal, J1 B10, X1 Start",
+      "P1 R": "X, J1 B6, X1 RightShoulder",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Star": "KeypadEnter, J1 B9, X1 Back",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp"
+    },
+    "Commodore 64 Controller": {
+      "P1 Button": "Keypad1, J1 B1, X1 X",
+      "P1 Down": "Keypad2, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Keypad4, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Keypad6, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Up": "Keypad8, J1 POV1U, X1 DpadUp, X1 LStickUp"
+    },
+    "Dual Gameboy Controller": {
+      "P1 A": "X, J1 B2, X1 A",
+      "P1 B": "Z, J1 B1, X1 X",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Select": "Space, J1 B9, X1 Space",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P2 A": "V, J1 B3, X1 B",
+      "P2 B": "C, J1 B4, X1 Y",
+      "P2 Down": "Keypad2, J1 RotationZ+, X1 RStickDown",
+      "P2 Left": "Keypad4, J1 Z-, X1 RStickLeft",
+      "P2 Right": "Keypad6, J1 Z+, X1 RStickRight",
+      "P2 Select": "LeftBracket, J1 B6, X1 RightShoulder",
+      "P2 Start": "RightBracket, J1 B5, X1 LeftShoulder",
+      "P2 Up": "Keypad8, J1 RotationZ-, X1 RStickUp"
+    },
+    "GBA Controller": {
+      "A": "X, J1 B2, X1 A",
+      "B": "Z, J1 B1, X1 X",
+      "Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "L": "W, J1 B5, X1 LeftShoulder",
+      "Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "R": "E, J1 B6, X1 RightShoulder",
+      "Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "Select": "Space, J1 B9, X1 Back",
+      "Start": "Enter, J1 B10, X1 Start",
+      "Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp"
+    },
+    "GG Controller": {
+      "P1 B1": "Z, J1 B1, X1 X",
+      "P1 B2": "X, J1 B2, X1 A",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "Reset": "J1 B9, X1 Back"
+    },
+    "GPGX Genesis Controller": {
+      "P1 A": "Z, J1 B1, X1 X",
+      "P1 B": "X, J1 B2, X1 A",
+      "P1 C": "C, J1 B4, X1 Y",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Mode": "E, J1 B9, X1 Back",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P1 X": "A, J1 B3, X1 B",
+      "P1 Y": "S, J1 B5, X1 LeftShoulder",
+      "P1 Z": "D, J1 B6, X1 RightShoulder",
+      "P2 Lightgun Start": "Keypad5",
+      "P2 Lightgun Trigger": "WMouse L",
+      "P2 Mouse Center": "WMouse M",
+      "P2 Mouse Left": "WMouse L",
+      "P2 Mouse Right": "WMouse R",
+      "P2 Mouse Start": "Keypad5"
+    },
+    "Gameboy Controller": {
+      "A": "X, J1 B2, X1 A",
+      "B": "Z, J1 B1, X1 X",
+      "Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 A": "X, J1 B2, X1 A",
+      "P1 B": "Z, J1 B1, X1 X",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Select": "Space, J1 B9, X1 Back",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "Select": "Space, J1 B9, X1 Back",
+      "Start": "Enter, J1 B10, X1 Start",
+      "Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp"
+    },
+    "Gameboy Controller H": {
+      "A": "X, J1 B2, X1 A",
+      "B": "Z, J1 B1, X1 X",
+      "Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 A": "X, J1 B2, X1 A",
+      "P1 B": "Z, J1 B1, X1 X",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Select": "Space, J1 B9, X1 Back",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "Select": "Space, J1 B9, X1 Back",
+      "Start": "Enter, J1 B10, X1 Start",
+      "Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp"
+    },
+    "Intellivision Controller": {
+      "P1 Clear": "KeypadDecimal",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Enter": "KeypadEnter",
+      "P1 Key0": "Keypad0",
+      "P1 Key1": "Keypad1",
+      "P1 Key2": "Keypad2",
+      "P1 Key3": "Keypad3",
+      "P1 Key4": "Keypad4",
+      "P1 Key5": "Keypad5",
+      "P1 Key6": "Keypad6",
+      "P1 Key7": "Keypad7",
+      "P1 Key8": "Keypad9",
+      "P1 Key9": "Keypad9",
+      "P1 L": "Z, J1 B1, X1 X",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 R": "X, J1 B2, X1 A",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp"
+    },
+    "Jaguar Controller": {
+      "P1 0": "Keypad0",
+      "P1 1": "Keypad1",
+      "P1 2": "Keypad2",
+      "P1 3": "Keypad3",
+      "P1 4": "Keypad4",
+      "P1 5": "Keypad5",
+      "P1 6": "Keypad6",
+      "P1 7": "Keypad7",
+      "P1 8": "Keypad8",
+      "P1 9": "Keypad9",
+      "P1 A": "C",
+      "P1 Asterisk": "KeypadMultiply",
+      "P1 B": "X",
+      "P1 C": "Z",
+      "P1 Down": "Down",
+      "P1 Left": "Left",
+      "P1 Option": "Space",
+      "P1 Pause": "Enter",
+      "P1 Pound": "KeypadDivide",
+      "P1 Right": "Right",
+      "P1 Up": "Up"
+    },
+    "LibRetro Controls": {
+      "P1 RetroPad A": "X, J1 B3, X1 B",
+      "P1 RetroPad B": "Z, J1 B2, X1 A",
+      "P1 RetroPad Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 RetroPad L": "W, J1 B5, X1 LeftShoulder",
+      "P1 RetroPad Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 RetroPad R": "E, J1 B6, X1 RightShoulder",
+      "P1 RetroPad Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 RetroPad Select": "Space, J1 B9, X1 Back",
+      "P1 RetroPad Start": "Enter, J1 B10, X1 Start",
+      "P1 RetroPad Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P1 RetroPad X": "S, J1 B4, X1 Y",
+      "P1 RetroPad Y": "A, J1 B1, X1 X"
+    },
+    "Lynx Controller": {
+      "A": "X",
+      "B": "Z",
+      "Down": "Down",
+      "Left": "Left",
+      "Option 1": "A",
+      "Option 2": "S",
+      "Pause": "Enter",
+      "Right": "Right",
+      "Up": "Up"
+    },
+    "NDS Controller": {
+      "A": "X, J1 B3, X1 B",
+      "B": "Z, J1 B2, X1 A",
+      "Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "L": "W, J1 B5, X1 LeftShoulder",
+      "Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "Microphone": "M",
+      "R": "E, J1 B6, X1 RightShoulder",
+      "Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "Select": "Space, J1 B9, X1 Back",
+      "Start": "Enter, J1 B10, X1 Start",
+      "Touch": "WMouse L, X1 Touchpad",
+      "Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "X": "S, J1 B4, X1 Y",
+      "Y": "A, J1 B1, X1 X"
+    },
+    "NES Controller": {
+      "P1 A": "X, J1 B2, X1 A",
+      "P1 B": "Z, J1 B1, X1 X",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Select": "Space, J1 B9, X1 Back",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P2 Fire": "WMouse L",
+      "P3 Fire": "WMouse L"
+    },
+    "NeoGeo Portable Controller": {
+      "P1 A": "X, J1 B2, X1 A",
+      "P1 B": "Z, J1 B1, X1 X",
+      "P1 Down": "Down, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, X1 DpadLeft, X1 LStickLeft",
+      "P1 Option": "Enter, J1 B10, X1 Start",
+      "P1 Right": "Right, X1 DpadRight, X1 LStickRight",
+      "P1 Up": "Up, X1 DpadUp, X1 LStickUp"
+    },
+    "Nintendo 64 Controller": {
+      "P1 A": "A, J1 B2, X1 A",
+      "P1 A Down": "Down, J1 POV1D",
+      "P1 A Left": "Left, J1 POV1L",
+      "P1 A Right": "Right, J1 POV1R",
+      "P1 A Up": "Up, J1 POV1U",
+      "P1 B": "S, J1 B1, X1 X",
+      "P1 C Down": "Keypad2, J1 RotationZ+, X1 RStickDown",
+      "P1 C Left": "Keypad4, J1 Z-, X1 RStickLeft",
+      "P1 C Right": "Keypad6, J1 Z+, X1 RStickRight",
+      "P1 C Up": "Keypad8, J1 RotationZ-, X1 RStickUp",
+      "P1 DPad D": "X1 DpadDown",
+      "P1 DPad L": "X1 DpadLeft",
+      "P1 DPad R": "X1 DpadRight",
+      "P1 DPad U": "X1 DpadUp",
+      "P1 L": "Q, J1 B5, X1 LeftShoulder",
+      "P1 R": "W, J1 B6, X1 RightShoulder",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Z": "D, J1 B3, X1 B"
+    },
+    "O2 Joystick": {
+      "0": "Keypad0",
+      "1": "Keypad1",
+      "2": "Keypad2",
+      "3": "Keypad3",
+      "4": "Keypad4",
+      "5": "Keypad5",
+      "6": "Keypad6",
+      "7": "Keypad7",
+      "8": "Keypad8",
+      "9": "Keypad9",
+      "ENT": "KeypadEnter",
+      "NO": "N",
+      "P1 Down": "Down",
+      "P1 F": "Z",
+      "P1 Left": "Left",
+      "P1 Right": "Right",
+      "P1 Up": "Up",
+      "YES": "Y"
+    },
+    "PC Engine Controller": {
+      "P1 B1": "C, J1 B3, X1 B",
+      "P1 B2": "X, J1 B2, X1 A",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 I": "C, J1 B3, X1 B",
+      "P1 II": "X, J1 B2, X1 A",
+      "P1 III": "Z",
+      "P1 IV": "D",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Mode: Set 2-button": "LeftBracket",
+      "P1 Mode: Set 6-button": "RightBracket",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Run": "Enter, J1 B10, X1 Start",
+      "P1 Select": "V, J1 B9, X1 Back",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P1 V": "S",
+      "P1 VI": "A"
+    },
+    "PC-FX Controller": {
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 I": "C, J1 B1, X1 X",
+      "P1 II": "X, J1 B2, X1 A",
+      "P1 III": "Z, J1 B4, X1 Y",
+      "P1 IV": "D, J1 B3, X1 B",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Run": "Enter, J1 B10, X1 Start",
+      "P1 Select": "Space, J1 B9, X1 Back",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P1 V": "S, J1 B11, X1 X",
+      "P1 VI": "A, J1 B12, X1 X",
+      "P2 Mouse Left": "WMouse L",
+      "P2 Mouse Right": "WMouse R"
+    },
+    "PSX Front Panel": {
+      "P1 Analog": "D",
+      "P1 Circle": "X1 B, X",
+      "P1 Cross": "X1 A, Z",
+      "P1 D-Pad Down": "X1 DpadDown, Down",
+      "P1 D-Pad Left": "X1 DpadLeft, Left",
+      "P1 D-Pad Right": "X1 DpadRight, Right",
+      "P1 D-Pad Up": "X1 DpadUp, Up",
+      "P1 Down": "X1 DpadDown, Down",
+      "P1 L1": "X1 LeftShoulder, Q",
+      "P1 L2": "X1 LeftTrigger, E",
+      "P1 L3": "X1 LeftThumb, T",
+      "P1 Left": "X1 DpadLeft, Left",
+      "P1 Left Stick, Button": "X1 LeftThumb, T",
+      "P1 MODE": "D",
+      "P1 R1": "X1 RightShoulder, W",
+      "P1 R2": "X1 RightTrigger, R",
+      "P1 R3": "X1 RightThumb, Y",
+      "P1 Right": "X1 DpadRight, Right",
+      "P1 Right Stick, Button": "X1 RightThumb, Y",
+      "P1 Select": "X1 Back, Space",
+      "P1 Square": "X1 X, A",
+      "P1 Start": "X1 Start, Enter",
+      "P1 Thumbstick Down": "X1 DpadDown, Down",
+      "P1 Thumbstick Left": "X1 DpadLeft, Left",
+      "P1 Thumbstick Right": "X1 DpadRight, Right",
+      "P1 Thumbstick Up": "X1 DpadUp, Up",
+      "P1 Triangle": "X1 Y, S",
+      "P1 Up": "X1 DpadUp, Up",
+      "P1 X": "X1 A, Z",
+      "P1 \u00c3\u00a2\u00e2\u20ac\u201c\u00c2\u00a1": "X1 X, A",
+      "P1 \u00c3\u00a2\u00e2\u20ac\u201c\u00c2\u00b3": "X1 Y, S",
+      "P1 \u00c3\u00a2\u00e2\u20ac\u201d\u00e2\u20ac\u00b9": "X1 B, X"
+    },
+    "PicoDrive Genesis Controller": {
+      "P1 A": "Z, J1 B1, X1 X",
+      "P1 B": "X, J1 B2, X1 A",
+      "P1 C": "C, J1 B4, X1 Y",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Mode": "E, J1 B9, X1 Back",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P1 X": "A, J1 B3, X1 B",
+      "P1 Y": "S, J1 B5, X1 LeftShoulder",
+      "P1 Z": "D, J1 B6, X1 RightShoulder"
+    },
+    "SMS Controller": {
+      "P1 B1": "Z, J1 B1, X1 X",
+      "P1 B2": "X, J1 B2, X1 A",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "Pause": "J1 B10, X1 Start",
+      "Reset": "J1 B9, X1 Back"
+    },
+    "SMS Keyboard Controller": {
+      "P1 B1": "J1 B1, X1 X",
+      "P1 B2": "J1 B2, X1 A",
+      "P1 Down": "J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Up": "J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "Pause": "J1 B10, X1 Start",
+      "Reset": "J1 B9, X1 Back"
+    },
+    "SMS Light Phaser Controller": {
+      "P1 Trigger": "Z, J1 B1, X1 X, WMouse L",
+      "Pause": "J1 B10, X1 Start",
+      "Reset": "J1 B9, X1 Back"
+    },
+    "SMS Paddle Controller": {
+      "P1 B1": "Z, J1 B1, X1 X",
+      "P1 Left": "Left, J1 POV1L",
+      "P1 Right": "Right, J1 POV1R",
+      "Pause": "J1 B10, X1 Start",
+      "Reset": "J1 B9, X1 Back"
+    },
+    "SMS Sports Pad Controller": {
+      "P1 B1": "Z, J1 B1, X1 X",
+      "P1 B2": "X, J1 B2, X1 A",
+      "P1 Down": "Down, J1 POV1D",
+      "P1 Left": "Left, J1 POV1L",
+      "P1 Right": "Right, J1 POV1R",
+      "P1 Up": "Up, J1 POV1U",
+      "Pause": "J1 B10, X1 Start",
+      "Reset": "J1 B9, X1 Back"
+    },
+    "SNES Controller": {
+      "P1 A": "X, J1 B3, X1 B",
+      "P1 B": "Z, J1 B2, X1 A",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 L": "W, J1 B5, X1 LeftShoulder",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Mouse Left": "Z, J1 B1, X1 X",
+      "P1 Mouse Right": "X, J1 B2, X1 A",
+      "P1 R": "E, J1 B6, X1 RightShoulder",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Select": "Space, J1 B9, X1 Back",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P1 X": "S, J1 B4, X1 Y",
+      "P1 Y": "A, J1 B1, X1 X",
+      "P2 Cursor": "X, J1 B2, X1 A",
+      "P2 Pause": "S, J1 B4 X1 B",
+      "P2 Trigger": "Z, J1 B1, X1 X",
+      "P2 Turbo": "A, J1 B3 X1 Y"
+    },
+    "Saturn Controller": {
+      "P1 A": "C, J1 B1, X1 X",
+      "P1 B": "X, J1 B2, X1 A",
+      "P1 C": "Z, J1 B4, X1 Y",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 L": "Q, J1 B5, X1 LeftShoulder",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Mouse Center": "WMouse M",
+      "P1 Mouse Left": "WMouse L",
+      "P1 Mouse Right": "WMouse R",
+      "P1 R": "W, J1 B6, X1 RightShoulder",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P1 X": "D, J1 B3, X1 B",
+      "P1 Y": "S, J1 B11, X1 X",
+      "P1 Z": "A, J1 B12, X1 X"
+    },
+    "TI83 Controller": {
+      "0": "Keypad0",
+      "1": "Keypad1",
+      "2": "Keypad2",
+      "3": "Keypad3",
+      "4": "Keypad4",
+      "5": "Keypad5",
+      "6": "Keypad6",
+      "7": "Keypad7",
+      "8": "Keypad8",
+      "9": "Keypad9",
+      "ALPHA": "A",
+      "CLEAR": "Escape",
+      "COMMA": "Comma",
+      "COS": "C",
+      "DASH": "Minus",
+      "DEL": "Delete",
+      "DIVIDE": "KeypadDivide",
+      "DOT": "KeypadDecimal",
+      "DOWN": "Down",
+      "ENTER": "Enter, KeypadEnter",
+      "EXP": "6",
+      "GRAPH": "G",
+      "LEFT": "Left",
+      "LN": "L",
+      "LOG": "O",
+      "MATH": "M",
+      "MATRIX": "LeftBracket",
+      "MINUS": "KeypadSubtract",
+      "MODE": "Backslash",
+      "MULTIPLY": "KeypadMultiply",
+      "NEG1": "1",
+      "ON": "Space",
+      "PARACLOSE": "0",
+      "PARAOPEN": "9",
+      "PLUS": "KeypadAdd",
+      "PRGM": "R",
+      "RIGHT": "Right",
+      "SECOND": "Slash",
+      "SIN": "Period",
+      "SQUARED": "2",
+      "STAT": "S",
+      "STO": "Insert",
+      "TAN": "T",
+      "TRACE": "Home",
+      "UP": "Up",
+      "VARS": "V",
+      "WINDOW": "W",
+      "X": "X",
+      "Y": "Y",
+      "ZOOM": "Z"
+    },
+    "TIC-80 Controller": {
+      "Mouse Left Click": "Z",
+      "Mouse Middle Click": "X",
+      "Mouse Right Click": "C",
+      "P1 A": "X",
+      "P1 B": "Z",
+      "P1 Down": "Down",
+      "P1 Left": "Left",
+      "P1 Right": "Right",
+      "P1 Up": "Up",
+      "P1 X": "S",
+      "P1 Y": "A"
+    },
+    "Vectrex Analog Controller": {
+      "P1 Button 1": "Z, J1 B2, X1 A",
+      "P1 Button 2": "X, J1 B3, X1 B",
+      "P1 Button 3": "A, J1 B1, X1 X",
+      "P1 Button 4": "S, J1 B4, X1 Y"
+    },
+    "Vectrex Digital Controller": {
+      "P1 Button 1": "Z, J1 B2, X1 A",
+      "P1 Button 2": "X, J1 B3, X1 B",
+      "P1 Button 3": "A, J1 B1, X1 X",
+      "P1 Button 4": "S, J1 B4, X1 Y",
+      "P1 Down": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Up": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp"
+    },
+    "VirtualBoy Controller": {
+      "P1 A": "X, X1 A",
+      "P1 B": "Z, X1 X",
+      "P1 L": "E, X1 RightShoulder",
+      "P1 L_Down": "Down, X1 DpadDown, X1 LStickDown",
+      "P1 L_Left": "Left, X1 DpadLeft, X1 LStickLeft",
+      "P1 L_Right": "Right, X1 DpadRight, X1 LStickRight",
+      "P1 L_Up": "Up, X1 DpadUp, X1 LStickUp",
+      "P1 R": "W, X1 LeftShoulder",
+      "P1 R_Down": "Keypad2, X1 RStickDown",
+      "P1 R_Left": "Keypad4, X1 RStickLeft",
+      "P1 R_Right": "Keypad6, X1 RStickRight",
+      "P1 R_Up": "Keypad8, X1 RStickUp",
+      "P1 Select": "Space, X1 Back",
+      "P1 Start": "Enter, X1 Start"
+    },
+    "WonderSwan Controller": {
+      "P1 A": "X, J1 B2, X1 A",
+      "P1 B": "Z, J1 B1, X1 X",
+      "P1 Start": "Enter, J1 B10, X1 Start",
+      "P1 X1": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P1 X2": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 X3": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 X4": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Y1": "Keypad8, J1 RotationZ-, X1 RStickUp",
+      "P1 Y2": "Keypad6, J1 Z+, X1 RStickRight",
+      "P1 Y3": "Keypad2, J1 RotationZ+, X1 RStickDown",
+      "P1 Y4": "Keypad4, J1 Z-, X1 RStickLeft",
+      "P2 Start": "Enter, J1 B10, X1 Start",
+      "P2 X3": "X, J1 B2, X1 A",
+      "P2 X4": "Z, J1 B1, X1 X",
+      "P2 Y1": "Left, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P2 Y2": "Up, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "P2 Y3": "Right, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P2 Y4": "Down, J1 POV1D, X1 DpadDown, X1 LStickDown"
+    },
+    "ZXSpectrum Controller": {
+      "Get Disk Status": "F12",
+      "Get Tape Status": "F9",
+      "Insert Next Disk": "F11",
+      "Insert Next Tape": "F6",
+      "Insert Previous Disk": "F10",
+      "Insert Previous Tape": "F5",
+      "Next Tape Block": "F8",
+      "P1 Button": "Keypad1, J1 B1, X1 X",
+      "P1 Down": "Keypad2, J1 POV1D, X1 DpadDown, X1 LStickDown",
+      "P1 Left": "Keypad4, J1 POV1L, X1 DpadLeft, X1 LStickLeft",
+      "P1 Right": "Keypad6, J1 POV1R, X1 DpadRight, X1 LStickRight",
+      "P1 Up": "Keypad8, J1 POV1U, X1 DpadUp, X1 LStickUp",
+      "Play Tape": "F1",
+      "Prev Tape Block": "F7",
+      "RTZ Tape": "F3",
+      "Stop Tape": "F2"
+    }
+  },
+  "AllTrollersAnalog": {
+    "3DS Controller": {
+      "C-Stick X": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 RightThumbX Axis"
+      },
+      "C-Stick Y": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 RightThumbY Axis"
+      },
+      "Circle Pad X": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "Circle Pad Y": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbY Axis"
+      },
+      "Tilt X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "Tilt Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      },
+      "Touch X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "Touch Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    },
+    "Amiga Controller": {
+      "P1 Mouse X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P1 Mouse Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    },
+    "Atari 7800 Light Gun Controller": {
+      "P1 HPos": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P1 VPos": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    },
+    "Atari 7800 Paddle Controller": {
+      "P1 Paddle": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      }
+    },
+    "GPGX Genesis Controller": {
+      "P2 Lightgun X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P2 Lightgun Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      },
+      "P2 Mouse X": {
+        "Deadzone": 0.0,
+        "Mult": 0.1,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "P2 Mouse Y": {
+        "Deadzone": 0.0,
+        "Mult": 0.1,
+        "Value": "X1 LeftThumbY Axis"
+      }
+    },
+    "LibRetro Controls": {
+      "P1 Pointer X": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      },
+      "P1 Pointer Y": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      },
+      "Pointer X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "Pointer Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    },
+    "NDS Controller": {
+      "Touch X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "Touch Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    },
+    "NES Controller": {
+      "P2 Paddle": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P2 Zapper X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P2 Zapper Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      },
+      "P3 Paddle": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P3 Zapper X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P3 Zapper Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    },
+    "Nintendo 64 Controller": {
+      "P1 X Axis": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "P1 Y Axis": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbY Axis"
+      },
+      "P2 X Axis": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      },
+      "P2 Y Axis": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      },
+      "P3 X Axis": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      },
+      "P3 Y Axis": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      },
+      "P4 X Axis": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      },
+      "P4 Y Axis": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      }
+    },
+    "PC-FX Controller": {
+      "P2 Mouse X": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "P2 Mouse Y": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbY Axis"
+      }
+    },
+    "PSX Front Panel": {
+      "P1 LStick X": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "P1 LStick Y": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbY Axis"
+      },
+      "P1 RStick X": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 RightThumbX Axis"
+      },
+      "P1 RStick Y": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 RightThumbY Axis"
+      }
+    },
+    "SMS Light Phaser Controller": {
+      "P1 X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P1 Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    },
+    "SMS Paddle Controller": {
+      "P1 Paddle": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      }
+    },
+    "SMS Sports Pad Controller": {
+      "P1 X": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "P1 Y": {
+        "Deadzone": 0.1,
+        "Mult": -1.0,
+        "Value": "X1 LeftThumbY Axis"
+      },
+      "P2 X": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X2 LeftThumbX Axis"
+      },
+      "P2 Y": {
+        "Deadzone": 0.1,
+        "Mult": -1.0,
+        "Value": "X2 LeftThumbY Axis"
+      }
+    },
+    "SNES Controller": {
+      "P1 Mouse X": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "P1 Mouse Y": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbY Axis"
+      },
+      "P2 Scope X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P2 Scope Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    },
+    "Saturn Controller": {
+      "P1 Left Stick Horizontal": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "P1 Left Stick Vertical": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbY Axis"
+      },
+      "P1 Left Throttle": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      },
+      "P1 Right Stick Horizontal": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 RightThumbX Axis"
+      },
+      "P1 Right Stick Vertical": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": ""
+      },
+      "P1 Right Throttle": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 RightThumbY Axis"
+      },
+      "P1 Stick Horizontal": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "P1 Stick Vertical": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbY Axis"
+      },
+      "P1 Throttle": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 RightThumbX Axis"
+      },
+      "P1 Wheel": {
+        "Deadzone": 0.1,
+        "Mult": 1.0,
+        "Value": "X1 LeftThumbX Axis"
+      },
+      "P1 X": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "P1 Y": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    },
+    "TIC-80 Controller": {
+      "Mouse X Position": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse X"
+      },
+      "Mouse Y Position": {
+        "Deadzone": 0.0,
+        "Mult": 1.0,
+        "Value": "WMouse Y"
+      }
+    }
+  },
+  "AllTrollersAutoFire": {
+    "Apple IIe Keyboard": {
+      "Return": "Enter"
+    },
+    "Atari 2600 Basic Controller": {
+      "P1 Button": "A",
+      "P2 Button": "S"
+    },
+    "Atari 7800 Basic Controller": {
+      "P1 Button": "A",
+      "P2 Button": "S"
+    },
+    "GBA Controller": {
+      "A": "S",
+      "B": "A"
+    },
+    "GBAController": {
+      "A": "S",
+      "B": "A"
+    },
+    "GPGX Genesis Controller": {},
+    "Gameboy Controller": {
+      "A": "S",
+      "B": "A"
+    },
+    "Gameboy Controller H": {
+      "A": "S",
+      "B": "A"
+    },
+    "NES Controller": {
+      "P1 A": "S",
+      "P1 B": "A"
+    },
+    "PC Engine Controller": {
+      "P1 B1": "S",
+      "P1 B2": "A"
+    },
+    "SMS Controller": {
+      "P1 B1": "A",
+      "P1 B2": "S"
+    },
+    "WonderSwan Controller": {
+      "P1 A": "S",
+      "P1 B": "A",
+      "P2 X3": "S",
+      "P2 X4": "A"
+    }
+  },
+  "AllTrollersFeedbacks": {
+    "Nintendo 64 Controller": {
+      "P1 Rumble Pak": {
+        "Channels": "Left+Right",
+        "GamepadPrefix": "X1 ",
+        "Prescale": 1.0
+      }
+    }
+  },
+  "AnalogLargeChange": 10,
+  "AnalogSmallChange": 1,
+  "AutoLoadLastSaveSlot": false,
+  "AutoMinimizeSkipping": true,
+  "AutoSaveLastSaveSlot": false,
+  "AutofireLagFrames": true,
+  "AutofireOff": 1,
+  "AutofireOn": 1,
+  "Autohold": {
+    "Anchor": 1,
+    "X": 0,
+    "Y": 0
+  },
+  "AutosaveSaveRAM": false,
+  "AviCaptureLua": false,
+  "AviCaptureOsd": false,
+  "AviCodecToken": "",
+  "BackupSaveram": true,
+  "CaptureMouse": false,
+  "Cheats": {
+    "AutoSaveOnClose": true,
+    "DisableOnLoad": false,
+    "LoadFileByGame": true,
+    "Recent": {
+      "AutoLoad": false,
+      "Frozen": false,
+      "MAX_RECENT_FILES": 8,
+      "recentlist": []
+    }
+  },
+  "ClockThrottle": true,
+  "CommonToolSettings": {
+    "BizHawk.Client.EmuHawk.LuaConsole": {
+      "AutoLoad": false,
+      "FloatingWindow": true,
+      "Height": 386,
+      "SaveWindowPosition": true,
+      "TopMost": false,
+      "Width": 600,
+      "_wndx": 156,
+      "_wndy": 156
+    }
+  },
+  "CoreSettings": {
+    "BizHawk.Emulation.Cores.Consoles.Nintendo.QuickNES.QuickNES": {
+      "$type": "BizHawk.Emulation.Cores.Consoles.Nintendo.QuickNES.QuickNES+QuickNESSettings, BizHawk.Emulation.Cores",
+      "ClipLeftAndRight": false,
+      "ClipTopAndBottom": true,
+      "NumSprites": 8,
+      "Palette": "ZmZmACqIFBKoOwCkXAB+bgBAbAcAVx0ANDUADEkAAFIAAE8IAEBOAAAAAAAAAAAArq6uFV/aQkD+dif/oRvNuB58tTIgmU8AbG4AOIcADZQAAJAyAHyOAAAAAAAAAAAA/v7+ZLD+k5D+x3f+82r+/m7N/oJw658jvb8AidkAXeUwReGCSM7fT09PAAAAAAAA/v7+weD+1NP+6cj++8P+/sXr/s3G99mm5eaV0PCXvvWrtPPNtezzuLi4AAAAAAAAclNPABdxIACRRwCNaABnegApeAAAYwoAQCIAGDYAAD8AADwAAC02AAAAAAAAAAAAvpSPJUW7Uybkhg3gsQGuyARcxhgBqjUAfFQASW0AHnoABnYTCWJuAAAAAAAAAAAA/t7Xeo7+qG7+3FX+/kj3/kyk/mBH/n0A0p0AnrcAcsMHWr9ZXay2T09PAAAAAAAA/t7X1r7p6bH6/qb4/qHk/qPC/qud/rd9+sRs5c5u09OCydKky8rKuLi4AAAAAAAAS2pAAC5iABaCIAN+QQBYUgAaUAsAOyIAGDoAAE0AAFYAAFMAAEQnAAAAAAAAAAAAiLR6AGWmHUXQUCzLeyCZkiRIkDcAdFQARnQAE40AAJkAAJUAAIJaAAAAAAAAAAAAz/68M7fpYpf+ln7+wXHc2XWJ1oktuqYAjMYAWOAALOwAFOg/F9WbT09PAAAAAAAAz/68kOfPo9rguM/eycrJ08yo0tSCxuBjtO1Rn/dTjfxog/uJhPOvuLi4AAAAAAAAU1M3ABdZAAB5KAB1SQBPWgARWAAAQwoAICIAADUAAD8AADwAAC0eAAAAAAAAAAAAk5RuAEWaKCbEWwy/hgCNnQQ8mxcAfzQAUVQAHm0AAHkAAHUAAGJOAAAAAAAAAAAA3d6tQY7ZcG7+pFT/0EjM50x65V8dyH0Amp0AZrYAOsMAIr8vJauMT09PAAAAAAAA3d6tnr2/sbDQxqbO2KG54aOY4Kty1bdTwsNCrc5Em9NYkdF6ksmfuLi4AAAAAAAAV1eFABqnBQLGLADDTQCdXwBeXQAZRw4AJCYAADkAAEIAAD8mADFsAAAAAAAAAAAAmZnYAEr+Liv+YRH+jAX3pAmloRxKhTkAV1kAJHIAAH4KAHpcAGe3AAAAAAAAAAAA5eT+SpT+eHT+rFv+2E7+71L+7Wam0INZoqMubr0zQslmKsW4LbL+T09PAAAAAAAA5eT+psT+ubf+zqz+4Kf+6an+6LH83b3cysrLtdTNo9nimdj+mtD+uLi4AAAAAAAAWkdhAAuCCACiLwCeUAB4YgA6YAAASgAAJxYAACoAADMAADACACFIAAAAAAAAAAAAnoSmBDXSMhb8ZQD3kADFqAB0pQcZiSQAW0QAKF0AAGkAAGUqAFKGAAAAAAAAAAAA6sn2T3n+fVn+sT/+3TP+9TfD8kpm1mgYp4gAc6EAR64lMKp4MpbVT09PAAAAAAAA6sn2q6j+vpv+05H+5Yz+747h7Za74qKcz66LurmNqL6hn7zDoLTouLi4AAAAAAAAQlVYABl5AAGZFwCVOABvSgAxSAAAMwwAECQAADcAAEEAAD4AAC8/AAAAAAAAAAAAfZeaAEjGESjwRQ/rcAO5hwdohBoMaDcAO1cAB3AAAHwAAHgeAGV5AAAAAAAAAAAAwOHmJZH+U3L+h1j+s0z+ylCzyGNWq4EIfaAASboAHcYVBcJoCK/FT09PAAAAAAAAwOHmgcH4lLT+qar+u6XyxKbRw66ruLqMpcd7kNF9ftaRdNWzds3YuLi4AAAAAAAARUVFABBuAACOIQCKQgBkVAAmUgAAPAMAGRsAAC4AADgAADUAACYzAAAAAAAAAAAAhoaGAEC7IyDkVgffgQCumQBclhIBei8ATE8AGWgAAHQAAHATAF1uAAAAAAAAAAAAz8/PPIj+a2j+n0/+y0L44kal4FpIw3cAlZcAYbEANb0IHblbIKa3T09PAAAAAAAAz8/PlLLlpqX2vJv0zZbg15i+1p+Yyqt5t7hoosNqkch+h8agiL7FuLi4AAAAAAAA"
+    },
+    "BizHawk.Emulation.Cores.Nintendo.NES.NES": {
+      "$type": "BizHawk.Emulation.Cores.Nintendo.NES.NES+NESSettings, BizHawk.Emulation.Cores",
+      "APU_vol": 1,
+      "AllowMoreThanEightSprites": false,
+      "BackgroundColor": 0,
+      "ClipLeftAndRight": false,
+      "DispBackground": true,
+      "DispSprites": true,
+      "NTSC_BottomLine": 231,
+      "NTSC_TopLine": 8,
+      "PAL_BottomLine": 239,
+      "PAL_TopLine": 0,
+      "Palette": null
+    }
+  },
+  "CoreSyncSettings": {
+    "BizHawk.Emulation.Cores.Consoles.Nintendo.QuickNES.QuickNES": {
+      "$type": "BizHawk.Emulation.Cores.Consoles.Nintendo.QuickNES.QuickNES+QuickNESSyncSettings, BizHawk.Emulation.Cores",
+      "Port1": 1,
+      "Port2": 0
+    },
+    "BizHawk.Emulation.Cores.Nintendo.NES.NES": {
+      "$type": "BizHawk.Emulation.Cores.Nintendo.NES.NES+NESSyncSettings, BizHawk.Emulation.Cores",
+      "BoardProperties": {},
+      "Controls": {
+        "Famicom": false,
+        "FamicomExpPort": "UnpluggedFam",
+        "NesLeftPort": "ControllerNES",
+        "NesRightPort": "UnpluggedNES"
+      },
+      "InitialWRamStatePattern": [],
+      "RegionOverride": 0,
+      "VSDipswitches": {
+        "Dip_Switch_1": false,
+        "Dip_Switch_2": false,
+        "Dip_Switch_3": false,
+        "Dip_Switch_4": false,
+        "Dip_Switch_5": false,
+        "Dip_Switch_6": false,
+        "Dip_Switch_7": false,
+        "Dip_Switch_8": false
+      }
+    }
+  },
+  "CustomToolSettings": {
+    "BizHawk.Client.EmuHawk.LuaConsole": {
+      "Settings": {
+        "$type": "BizHawk.Client.EmuHawk.LuaConsole+LuaConsoleSettings, BizHawk.Client.EmuHawk",
+        "Columns": {
+          "$type": "BizHawk.Client.EmuHawk.RollColumns, BizHawk.Client.EmuHawk",
+          "$values": [
+            {
+              "Emphasis": false,
+              "Left": 0,
+              "Name": "Icon",
+              "Right": 22,
+              "Rotatable": false,
+              "Text": " ",
+              "Type": 3,
+              "Visible": true,
+              "Width": 22
+            },
+            {
+              "Emphasis": false,
+              "Left": 22,
+              "Name": "Script",
+              "Right": 114,
+              "Rotatable": false,
+              "Text": "Script",
+              "Type": 2,
+              "Visible": true,
+              "Width": 92
+            },
+            {
+              "Emphasis": false,
+              "Left": 114,
+              "Name": "PathName",
+              "Right": 414,
+              "Rotatable": false,
+              "Text": "Path",
+              "Type": 2,
+              "Visible": true,
+              "Width": 300
+            }
+          ]
+        },
+        "DisableLuaScriptsOnLoad": false,
+        "ReloadOnScriptFileChange": false,
+        "SplitDistance": 280,
+        "ToggleAllIfNoneSelected": true,
+        "WarnedOnceOnOverwrite": false
+      }
+    }
+  },
+  "DefaultAuthor": "default user",
+  "DispAllowTearing": false,
+  "DispAutoPrescale": false,
+  "DispChromeAllowDoubleClickFullscreen": true,
+  "DispChromeCaptionWindowed": true,
+  "DispChromeFrameWindowed": 2,
+  "DispChromeFullscreenAutohideMouse": true,
+  "DispChromeMenuFullscreen": false,
+  "DispChromeMenuWindowed": true,
+  "DispChromeStatusBarFullscreen": false,
+  "DispChromeStatusBarWindowed": true,
+  "DispCropBottom": 0,
+  "DispCropLeft": 0,
+  "DispCropRight": 0,
+  "DispCropTop": 0,
+  "DispCustomUserARHeight": -1,
+  "DispCustomUserARWidth": -1,
+  "DispCustomUserArx": -1.0,
+  "DispCustomUserAry": -1.0,
+  "DispFinalFilter": 0,
+  "DispFixAspectRatio": true,
+  "DispFixScaleInteger": false,
+  "DispFullscreenHacks": false,
+  "DispManagerAR": 1,
+  "DispMethod": 2,
+  "DispPrescale": 1,
+  "DispSpeedupFeatures": 2,
+  "DispUserFilterPath": "",
+  "DisplayFps": false,
+  "DisplayFrameCounter": false,
+  "DisplayInput": false,
+  "DisplayLagCounter": false,
+  "DisplayMessages": false,
+  "DisplayRamWatch": false,
+  "DisplayRerecordCount": false,
+  "DisplaySubtitles": true,
+  "DontTryOtherCores": false,
+  "FFmpegCustomCommand": "-c:a foo -c:v bar -f baz",
+  "FFmpegFormat": "",
+  "FirmwareUserSpecifications": {},
+  "FirstBoot": true,
+  "FlushSaveRamFrames": 0,
+  "Fps": {
+    "Anchor": 0,
+    "X": 0,
+    "Y": 0
+  },
+  "FrameCounter": {
+    "Anchor": 0,
+    "X": 0,
+    "Y": 14
+  },
+  "FrameProgressDelayMs": 500,
+  "FrameSkip": 4,
+  "GCAdapterSupportEnabled": false,
+  "GbAsSgb": false,
+  "GifWriterDelay": -1,
+  "GifWriterFrameskip": 3,
+  "HandleAlternateKeyboardLayouts": false,
+  "HotkeyBindings": {
+    "Accept Background Input": "",
+    "Add Branch": "Alt+Insert",
+    "Analog Decr. by 10": "Shift+Down",
+    "Analog Decrement": "Down",
+    "Analog Incr. by 10": "Shift+Up",
+    "Analog Increment": "Up",
+    "Analog Maximum": "Right",
+    "Analog Minimum": "Left",
+    "Autofire": "",
+    "Autohold": "",
+    "Cheats": "",
+    "Clear Autohold": "",
+    "Clear Frames": "Delete",
+    "Clone # Times": "Ctrl+Shift+Insert",
+    "Clone Frames": "Ctrl+Insert",
+    "Close ROM": "Ctrl+W",
+    "Decrease Speed": "Minus",
+    "Delete Branch": "Alt+Delete",
+    "Delete Frames": "Ctrl+Delete",
+    "Display FPS": "",
+    "Do Search": "",
+    "Exit Program": "",
+    "Fast Forward": "Tab",
+    "Flush SaveRAM": "Ctrl+S",
+    "Frame Advance": "F",
+    "Frame Counter": "",
+    "Frame Inch": "",
+    "Full Screen": "Alt+Enter",
+    "GB Toggle BG": "",
+    "GB Toggle Obj": "",
+    "GB Toggle Window": "",
+    "Hard Reset": "",
+    "Hex Editor": "",
+    "Increase Speed": "Equals",
+    "Input Display": "",
+    "Insert # Frames": "Shift+Insert",
+    "Insert Frame": "Insert",
+    "Lag Counter": "",
+    "Larger Window": "Alt+Up",
+    "Load Last ROM": "",
+    "Load Named State": "",
+    "Load State 1": "",
+    "Load State 10": "",
+    "Load State 2": "",
+    "Load State 3": "",
+    "Load State 4": "",
+    "Load State 5": "",
+    "Load State 6": "",
+    "Load State 7": "",
+    "Load State 8": "",
+    "Load State 9": "",
+    "Lua Console": "",
+    "New Search": "",
+    "Next Compare To": "",
+    "Next Operator": "",
+    "Next Screen Layout": "",
+    "Next Slot": "",
+    "Open RA Overlay": "Escape",
+    "Open ROM": "Ctrl+O",
+    "Pause": "Pause",
+    "Play Movie": "",
+    "Play from beginning": "",
+    "Previous Compare To": "",
+    "Previous Operator": "",
+    "Previous Screen Layout": "",
+    "Previous Slot": "",
+    "Quick Load": "P",
+    "Quick Save": "I",
+    "RA Cancel": "Z",
+    "RA Confirm": "X",
+    "RA Down": "Down",
+    "RA Left": "Left",
+    "RA Quit": "Backspace",
+    "RA Right": "Right",
+    "RA Up": "Up",
+    "RAM Search": "",
+    "RAM Watch": "",
+    "Reboot Core": "",
+    "Record A/V": "",
+    "Record Movie": "",
+    "Redo": "Ctrl+Y",
+    "Reselect Clip.": "Ctrl+B",
+    "Reset Speed": "",
+    "Rewind": "",
+    "Save Movie": "",
+    "Save Named State": "",
+    "Save State 1": "",
+    "Save State 10": "",
+    "Save State 2": "",
+    "Save State 3": "",
+    "Save State 4": "",
+    "Save State 5": "",
+    "Save State 6": "",
+    "Save State 7": "",
+    "Save State 8": "",
+    "Save State 9": "",
+    "Screen Client to Clipboard": "Ctrl+Shift+C",
+    "Screen Raw to Clipboard": "Ctrl+C",
+    "Screen Rotate": "",
+    "Screenshot": "F12",
+    "Sel. bet. Markers": "Ctrl+A",
+    "Select All": "Ctrl+Shift+A",
+    "Select State 1": "Number1",
+    "Select State 10": "Number0",
+    "Select State 2": "Number2",
+    "Select State 3": "Number3",
+    "Select State 4": "Number4",
+    "Select State 5": "Number5",
+    "Select State 6": "Number6",
+    "Select State 7": "Number7",
+    "Select State 8": "Number8",
+    "Select State 9": "Number9",
+    "Show Cursor": "",
+    "Smaller Window": "Alt+Down",
+    "Soft Reset": "",
+    "Stop A/V": "",
+    "Stop Movie": "",
+    "TAStudio": "",
+    "Toggle All Cheats": "",
+    "Toggle Auto-Restore": "Shift+R",
+    "Toggle BG 1": "",
+    "Toggle BG 2": "",
+    "Toggle BG 3": "",
+    "Toggle BG 4": "",
+    "Toggle BG Input": "",
+    "Toggle Display Nothing": "",
+    "Toggle Follow Cursor": "Shift+F",
+    "Toggle Key Priority": "",
+    "Toggle Last Lua Script": "",
+    "Toggle Menu": "",
+    "Toggle Messages": "",
+    "Toggle OBJ 1": "",
+    "Toggle OBJ 2": "",
+    "Toggle OBJ 3": "",
+    "Toggle OBJ 4": "",
+    "Toggle Skip Lag Frame": "",
+    "Toggle Sound": "",
+    "Toggle Throttle": "",
+    "Toggle Turbo Seek": "Shift+S",
+    "Toggle read-only": "Q",
+    "ToolBox": "Shift+T",
+    "Trace Logger": "",
+    "Turbo": "Shift+Tab",
+    "Undo": "Ctrl+Z",
+    "Virtual Pad": "",
+    "Volume Down": "",
+    "Volume Up": "",
+    "X Down Large": "",
+    "X Down Small": "",
+    "X Up Large": "",
+    "X Up Small": "",
+    "Y Down Large": "",
+    "Y Down Small": "",
+    "Y Up Large": "",
+    "Y Up Small": ""
+  },
+  "HotkeyConfigAutoTab": true,
+  "InputConfigAutoTab": true,
+  "InputDisplay": {
+    "Anchor": 0,
+    "X": 0,
+    "Y": 28
+  },
+  "InputHotkeyOverrideOptions": 0,
+  "JmdCompression": 3,
+  "JmdThreads": 3,
+  "LagCounter": {
+    "Anchor": 0,
+    "X": 0,
+    "Y": 42
+  },
+  "LastInputColor": -23296,
+  "LastWrittenFrom": "2.11.1",
+  "LastWrittenFromDetailed": "Version 2.11.1",
+  "LibretroCore": null,
+  "MainFormMouseCaptureForcesTopmost": false,
+  "MainFormStayOnTop": false,
+  "MainWindowMaximized": false,
+  "MainWindowPosition": "78, 78",
+  "MainWindowSize": "602, 532",
+  "MergeLAndRModifierKeys": true,
+  "Messages": {
+    "Anchor": 2,
+    "X": 0,
+    "Y": 0
+  },
+  "MessagesColor": -1,
+  "ModifierKeys": [],
+  "MovieInputColor": -8355712,
+  "Movies": {
+    "DefaultTasStateManagerSettings": {
+      "AncientStateInterval": 5000,
+      "AncientStoreType": 0,
+      "CurrentBufferSize": 256,
+      "CurrentStoreType": 0,
+      "CurrentTargetFrameLength": 500,
+      "CurrentUseCompression": false,
+      "GapsBufferSize": 64,
+      "GapsStoreType": 0,
+      "GapsTargetFrameLength": 125,
+      "GapsUseCompression": false,
+      "RecentBufferSize": 128,
+      "RecentStoreType": 0,
+      "RecentTargetFrameLength": 2000,
+      "RecentUseCompression": false
+    },
+    "EnableBackupMovies": true,
+    "MovieCompressionLevel": 2,
+    "MovieEndAction": 1,
+    "MoviesOnDisk": false,
+    "VBAStyleMovieLoadState": false
+  },
+  "MuteFrameAdvance": true,
+  "N64UseCircularAnalogConstraint": true,
+  "NoMixedInputHokeyOverride": false,
+  "OSDMessageDuration": 2,
+  "OpposingDirPolicy": 0,
+  "PathEntries": {
+    "LastRomPath": ".",
+    "Paths": [
+      {
+        "Path": ".",
+        "System": "Global_NULL",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "Global_NULL",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./Firmware",
+        "System": "Global_NULL",
+        "Type": "Firmware"
+      },
+      {
+        "Path": "./Movies",
+        "System": "Global_NULL",
+        "Type": "Movies"
+      },
+      {
+        "Path": "./Movies/backup",
+        "System": "Global_NULL",
+        "Type": "Movie backups"
+      },
+      {
+        "Path": ".",
+        "System": "Global_NULL",
+        "Type": "A/V Dumps"
+      },
+      {
+        "Path": "./Tools",
+        "System": "Global_NULL",
+        "Type": "Tools"
+      },
+      {
+        "Path": "./Lua",
+        "System": "Global_NULL",
+        "Type": "Lua"
+      },
+      {
+        "Path": "./.",
+        "System": "Global_NULL",
+        "Type": "Watch (.wch)"
+      },
+      {
+        "Path": ".",
+        "System": "Global_NULL",
+        "Type": "Debug Logs"
+      },
+      {
+        "Path": "./Movies/Macros",
+        "System": "Global_NULL",
+        "Type": "Macros"
+      },
+      {
+        "Path": ".",
+        "System": "Global_NULL",
+        "Type": "Multi-Disk Bundles"
+      },
+      {
+        "Path": "./ExternalTools",
+        "System": "Global_NULL",
+        "Type": "External Tools"
+      },
+      {
+        "Path": "",
+        "System": "Global_NULL",
+        "Type": "Temp Files"
+      },
+      {
+        "Path": "./3DS",
+        "System": "3DS",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "3DS",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "3DS",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "3DS",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "3DS",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./User",
+        "System": "3DS",
+        "Type": "User"
+      },
+      {
+        "Path": "./32X",
+        "System": "32X",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "32X",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "32X",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "32X",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "32X",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "32X",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Amiga",
+        "System": "Amiga",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "Amiga",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "Amiga",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "Amiga",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "Amiga",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "Amiga",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Atari 2600",
+        "System": "A26",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "A26",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "A26",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "A26",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "A26",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Atari 7800",
+        "System": "A78",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "A78",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "A78",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "A78",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "A78",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "A78",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./AmstradCPC",
+        "System": "AmstradCPC",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "AmstradCPC",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "AmstradCPC",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "AmstradCPC",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "AmstradCPC",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Apple II",
+        "System": "AppleII",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "AppleII",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "AppleII",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "AppleII",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "AppleII",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "AppleII",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Arcade",
+        "System": "Arcade",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "Arcade",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "Arcade",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "Arcade",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "Arcade",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "Arcade",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./C64",
+        "System": "C64",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "C64",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "C64",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "C64",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "C64",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "C64",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Channel F",
+        "System": "ChannelF",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "ChannelF",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "ChannelF",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "ChannelF",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "ChannelF",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Coleco",
+        "System": "Coleco",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "Coleco",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "Coleco",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "Coleco",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "Coleco",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Gameboy Link",
+        "System": "GBL",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "GBL",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "GBL",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "GBL",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "GBL",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "GBL",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Palettes",
+        "System": "GBL",
+        "Type": "Palettes"
+      },
+      {
+        "Path": "./Gameboy",
+        "System": "GB_GBC_SGB",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "GB_GBC_SGB",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "GB_GBC_SGB",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "GB_GBC_SGB",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "GB_GBC_SGB",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "GB_GBC_SGB",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Palettes",
+        "System": "GB_GBC_SGB",
+        "Type": "Palettes"
+      },
+      {
+        "Path": "./GBA",
+        "System": "GBA",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "GBA",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "GBA",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "GBA",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "GBA",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "GBA",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Genesis",
+        "System": "GEN",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "GEN",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "GEN",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "GEN",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "GEN",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "GEN",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Game Gear",
+        "System": "GG",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "GG",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "GG",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "GG",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "GG",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "GG",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Dual Game Gear",
+        "System": "GGL",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "GGL",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "GGL",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "GGL",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "GGL",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "GGL",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Intellivision",
+        "System": "INTV",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "INTV",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "INTV",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "INTV",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "INTV",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "INTV",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Palettes",
+        "System": "INTV",
+        "Type": "Palettes"
+      },
+      {
+        "Path": "./Jaguar",
+        "System": "Jaguar",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "Jaguar",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "Jaguar",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "Jaguar",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "Jaguar",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "Jaguar",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Libretro",
+        "System": "Libretro",
+        "Type": "Base"
+      },
+      {
+        "Path": "%recent%",
+        "System": "Libretro",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./Cores",
+        "System": "Libretro",
+        "Type": "Cores"
+      },
+      {
+        "Path": "./System",
+        "System": "Libretro",
+        "Type": "System"
+      },
+      {
+        "Path": "./State",
+        "System": "Libretro",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "Libretro",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "Libretro",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "Libretro",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Lynx",
+        "System": "Lynx",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "Lynx",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "Lynx",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "Lynx",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "Lynx",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "Lynx",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./MSX",
+        "System": "MSX",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "MSX",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "MSX",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "MSX",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "MSX",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "MSX",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./N64",
+        "System": "N64",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "N64",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "N64",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "N64",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "N64",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "N64",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./NDS",
+        "System": "NDS",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "NDS",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "NDS",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "NDS",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "NDS",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "NDS",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./NES",
+        "System": "NES",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "NES",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "NES",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "NES",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "NES",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "NES",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Palettes",
+        "System": "NES",
+        "Type": "Palettes"
+      },
+      {
+        "Path": "./NGP",
+        "System": "NGP",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "NGP",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "NGP",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "NGP",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "NGP",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "NGP",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./O2",
+        "System": "O2",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "O2",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "O2",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "O2",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "O2",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "O2",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./PC Engine",
+        "System": "PCE_PCECD_SGX_SGXCD",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "PCE_PCECD_SGX_SGXCD",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "PCE_PCECD_SGX_SGXCD",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "PCE_PCECD_SGX_SGXCD",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "PCE_PCECD_SGX_SGXCD",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "PCE_PCECD_SGX_SGXCD",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./PCFX",
+        "System": "PCFX",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "PCFX",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "PCFX",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "PCFX",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "PCFX",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "PCFX",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./PSX",
+        "System": "PSX",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "PSX",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "PSX",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "PSX",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "PSX",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "PSX",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Saturn",
+        "System": "SAT",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "SAT",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "SAT",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "SAT",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "SAT",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "SAT",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Satellaview",
+        "System": "BSX",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "BSX",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "BSX",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "BSX",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "BSX",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "BSX",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./SG-1000",
+        "System": "SG",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "SG",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "SG",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "SG",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "SG",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "SG",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./SMS",
+        "System": "SMS",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "SMS",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "SMS",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "SMS",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "SMS",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "SMS",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./SNES",
+        "System": "SNES",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "SNES",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "SNES",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "SNES",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "SNES",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "SNES",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./TI83",
+        "System": "TI83",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "TI83",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "TI83",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "TI83",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "TI83",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "TI83",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./TIC80",
+        "System": "TIC80",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "TIC80",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "TIC80",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "TIC80",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "TIC80",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "TIC80",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./Uzebox",
+        "System": "UZE",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "UZE",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "UZE",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "UZE",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "UZE",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "UZE",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./VB",
+        "System": "VB",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "VB",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "VB",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "VB",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "VB",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "VB",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./VEC",
+        "System": "VEC",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "VEC",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "VEC",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "VEC",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "VEC",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "VEC",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./WonderSwan",
+        "System": "WSWAN",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "WSWAN",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "WSWAN",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./SaveRAM",
+        "System": "WSWAN",
+        "Type": "Save RAM"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "WSWAN",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "WSWAN",
+        "Type": "Cheats"
+      },
+      {
+        "Path": "./ZXSpectrum",
+        "System": "ZXSpectrum",
+        "Type": "Base"
+      },
+      {
+        "Path": ".",
+        "System": "ZXSpectrum",
+        "Type": "ROM"
+      },
+      {
+        "Path": "./State",
+        "System": "ZXSpectrum",
+        "Type": "Savestates"
+      },
+      {
+        "Path": "./Screenshots",
+        "System": "ZXSpectrum",
+        "Type": "Screenshots"
+      },
+      {
+        "Path": "./Cheats",
+        "System": "ZXSpectrum",
+        "Type": "Cheats"
+      }
+    ],
+    "UseRecentForRoms": false
+  },
+  "PauseWhenMenuActivated": true,
+  "PlayMovieIncludeSubDir": false,
+  "PlayMovieMatchHash": true,
+  "PreferredCores": {
+    "A26": "Atari2600Hawk",
+    "BSX": "BSNESv115+",
+    "GB": "Gambatte",
+    "GBC": "Gambatte",
+    "GBL": "GambatteLink",
+    "GEN": "Genplus-gx",
+    "GG": "Genplus-gx",
+    "N64": "Mupen64Plus",
+    "NES": "NesHawk",
+    "PCE": "TurboNyma",
+    "PCECD": "TurboNyma",
+    "PSX": "Nymashock",
+    "SG": "Genplus-gx",
+    "SGB": "Gambatte",
+    "SGX": "TurboNyma",
+    "SGXCD": "TurboNyma",
+    "SMS": "Genplus-gx",
+    "SNES": "Snes9x",
+    "TI83": "Emu83"
+  },
+  "PreferredPlatformsForExtensions": {
+    ".bin": "",
+    ".cue": "",
+    ".img": "",
+    ".iso": "",
+    ".rom": ""
+  },
+  "RAAllowUnofficialCheevos": false,
+  "RAAutostart": false,
+  "RACheevosActive": true,
+  "RAHardcoreMode": false,
+  "RALBoardsActive": false,
+  "RARichPresenceActive": true,
+  "RASoundEffects": true,
+  "RAToken": "",
+  "RAUsername": "",
+  "RamWatchDefinePrevious": 2,
+  "RamWatches": {
+    "Anchor": 0,
+    "X": 0,
+    "Y": 70
+  },
+  "ReRecordCounter": {
+    "Anchor": 0,
+    "X": 0,
+    "Y": 56
+  },
+  "RecentCores": [
+    "NesHawk",
+    "NesHawk",
+    "NesHawk",
+    "NesHawk",
+    "NesHawk"
+  ],
+  "RecentLua": {
+    "AutoLoad": false,
+    "Frozen": false,
+    "MAX_RECENT_FILES": 8,
+    "recentlist": []
+  },
+  "RecentLuaSession": {
+    "AutoLoad": false,
+    "Frozen": false,
+    "MAX_RECENT_FILES": 8,
+    "recentlist": []
+  },
+  "RecentMacros": {
+    "AutoLoad": false,
+    "Frozen": false,
+    "MAX_RECENT_FILES": 8,
+    "recentlist": []
+  },
+  "RecentMovies": {
+    "AutoLoad": false,
+    "Frozen": false,
+    "MAX_RECENT_FILES": 8,
+    "recentlist": []
+  },
+  "RecentRoms": {
+    "AutoLoad": false,
+    "Frozen": false,
+    "MAX_RECENT_FILES": 10,
+    "recentlist": []
+  },
+  "RecentWatches": {
+    "AutoLoad": false,
+    "Frozen": false,
+    "MAX_RECENT_FILES": 8,
+    "recentlist": []
+  },
+  "RelativeMouseSensitivity": 100,
+  "ResizeWithFramebuffer": true,
+  "Rewind": {
+    "AllowOutOfOrderStates": true,
+    "AllowSlowStates": false,
+    "BackingStore": 0,
+    "BufferSize": 512,
+    "Enabled": false,
+    "TargetFrameLength": 600,
+    "TargetRewindInterval": 5,
+    "UseCompression": false,
+    "UseDelta": false,
+    "UseFixedRewindInterval": false
+  },
+  "RunInBackground": true,
+  "RunLuaDuringTurbo": true,
+  "SaveSlot": 10,
+  "SaveWindowPosition": true,
+  "Savestates": {
+    "BigScreenshotSize": 131072,
+    "CompressionLevelNormal": 1,
+    "CompressionLevelRewind": 0,
+    "MakeBackups": true,
+    "NoLowResLargeScreenshots": false,
+    "SaveScreenshot": true,
+    "Type": 0
+  },
+  "ScaleOSDWithSystemScale": true,
+  "ScreenshotCaptureOsd": true,
+  "SelectedProfile": 0,
+  "ShowContextMenu": true,
+  "SingleInstanceMode": false,
+  "SkipLagFrame": false,
+  "SkipOutdatedOsCheck": false,
+  "SkipRATelemetryWarning": false,
+  "SkipSuperuserPrivsCheck": false,
+  "SkipWaterboxIntegrityChecks": false,
+  "SnowyNullHawk": 2,
+  "SoundBufferSizeMs": 100,
+  "SoundDevice": "",
+  "SoundEnabled": true,
+  "SoundEnabledNormal": true,
+  "SoundEnabledRWFF": true,
+  "SoundOutputMethod": 1,
+  "SoundThrottle": false,
+  "SoundVolume": 100,
+  "SoundVolumeRWFF": 50,
+  "SpeedPercent": 100,
+  "SpeedPercentAlternate": 400,
+  "StackOSDMessages": true,
+  "StartFullscreen": false,
+  "StartPaused": false,
+  "SuperHawkThrottle": false,
+  "SuppressAskSave": false,
+  "TargetDisplayFilter": 0,
+  "TargetScanlineFilterIntensity": 128,
+  "TargetZoomFactors": {
+    "GB": 3,
+    "GBA": 3,
+    "GBC": 3,
+    "N64": 1,
+    "NES": 2,
+    "NULL": 2,
+    "WSWAN": 3
+  },
+  "TrustedExtTools": {},
+  "TurboSeek": false,
+  "Unthrottled": false,
+  "UpdateAutoCheckEnabled": false,
+  "UpdateIgnoreVersion": "",
+  "UpdateLastCheckTimeUtc": "2026-10-25T15:01:09.2956027Z",
+  "UpdateLatestVersion": "2.11.1",
+  "UseDefaultAuthor": true,
+  "UseStaticWindowTitles": false,
+  "VSync": false,
+  "VSyncThrottle": false,
+  "VideoWriter": "",
+  "VideoWriterAudioSync": true
+}

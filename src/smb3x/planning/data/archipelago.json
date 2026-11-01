@@ -1,0 +1,11 @@
+{
+  "authors": [
+    "SMB3X contributors"
+  ],
+  "compatible_version": 7,
+  "game": "Super Mario Bros. 3: Expanded Multiworld",
+  "maximum_ap_version": "0.6.8",
+  "minimum_ap_version": "0.6.8",
+  "version": 7,
+  "world_version": "0.28.0"
+}

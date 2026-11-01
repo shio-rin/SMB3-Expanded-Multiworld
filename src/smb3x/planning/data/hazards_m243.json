@@ -1,0 +1,902 @@
+{
+  "version": "m243-hazards-1",
+  "status": "private-production-candidate",
+  "baseline_registry_sha256": "d6b80b7fd40728c9493c360ecb44cada23e91dc75cad3d2c8e302187a34565b2",
+  "additional_sources": [
+    {
+      "block_id": "smb3-prg1-w1-1-5/main/356:power:83:22",
+      "kind": "power",
+      "content_id": "smb3-prg1-w1-1-5",
+      "area": "main",
+      "area_id": "0d:aa41:0e",
+      "loaded_parents": [
+        "smb3-prg1-w1-1-5"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 43585,
+          "tileset": 14
+        }
+      ],
+      "object_index": 356,
+      "source_rom_offset": 109493,
+      "source_bytes": "365300",
+      "symbol": "W105L",
+      "tileset": 14,
+      "layout": 43585,
+      "x": 83,
+      "y": 22,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w3-3-8/main/40:note_power:16:14",
+      "kind": "note_power",
+      "content_id": "smb3-prg1-w3-3-8",
+      "area": "main",
+      "area_id": "0d:ac59:0e",
+      "loaded_parents": [
+        "smb3-prg1-w3-3-8"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 44121,
+          "tileset": 14
+        }
+      ],
+      "object_index": 40,
+      "source_rom_offset": 109713,
+      "source_bytes": "4e1001",
+      "symbol": "W308L",
+      "tileset": 14,
+      "layout": 44121,
+      "x": 16,
+      "y": 14,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "original-area/0d:b3d8:0e/86:brick_power:50:21",
+      "kind": "brick_power",
+      "content_id": null,
+      "area": "0d:b3d8:0e",
+      "area_id": "0d:b3d8:0e",
+      "loaded_parents": [
+        "smb3-prg1-w5-5-2",
+        "smb3-prg1-w5-5-5"
+      ],
+      "native_contexts": [
+        {
+          "bq": true,
+          "layout": 42359,
+          "parent": "smb3-prg1-w5-5-2",
+          "tileset": 142
+        },
+        {
+          "bq": true,
+          "layout": 44802,
+          "parent": "smb3-prg1-w5-5-5",
+          "tileset": 132
+        }
+      ],
+      "object_index": 86,
+      "source_rom_offset": 111678,
+      "source_bytes": "353206",
+      "symbol": "BigQBlock5L",
+      "tileset": 14,
+      "layout": 46040,
+      "x": 50,
+      "y": 21,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w6-6-8/main/247:power:76:23",
+      "kind": "power",
+      "content_id": "smb3-prg1-w6-6-8",
+      "area": "main",
+      "area_id": "0d:b8b4:0e",
+      "loaded_parents": [
+        "smb3-prg1-w6-6-8"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 47284,
+          "tileset": 14
+        }
+      ],
+      "object_index": 247,
+      "source_rom_offset": 113083,
+      "source_bytes": "374c01",
+      "symbol": "W608L",
+      "tileset": 14,
+      "layout": 47284,
+      "x": 76,
+      "y": 23,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "original-area/0f:a5cd:01/89:power:37:18",
+      "kind": "power",
+      "content_id": null,
+      "area": "0f:a5cd:01",
+      "area_id": "0f:a5cd:01",
+      "loaded_parents": [
+        "smb3-prg1-w7-7-5"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 42445,
+          "tileset": 1
+        }
+      ],
+      "object_index": 89,
+      "source_rom_offset": 124470,
+      "source_bytes": "322500",
+      "symbol": "W705_UnderL",
+      "tileset": 1,
+      "layout": 42445,
+      "x": 37,
+      "y": 18,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w1-1-3/main/91:brick_power:37:24",
+      "kind": "brick_power",
+      "content_id": "smb3-prg1-w1-1-3",
+      "area": "main",
+      "area_id": "0f:ae09:01",
+      "loaded_parents": [
+        "smb3-prg1-w1-1-3"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 44553,
+          "tileset": 1
+        }
+      ],
+      "object_index": 91,
+      "source_rom_offset": 126580,
+      "source_bytes": "382507",
+      "symbol": "W103L",
+      "tileset": 1,
+      "layout": 44553,
+      "x": 37,
+      "y": 24,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w3-3-9/main/285:note_power:94:7",
+      "kind": "note_power",
+      "content_id": "smb3-prg1-w3-3-9",
+      "area": "main",
+      "area_id": "0f:b108:01",
+      "loaded_parents": [
+        "smb3-prg1-w3-3-9"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 45320,
+          "tileset": 1
+        }
+      ],
+      "object_index": 285,
+      "source_rom_offset": 127541,
+      "source_bytes": "475e01",
+      "symbol": "W309L",
+      "tileset": 1,
+      "layout": 45320,
+      "x": 94,
+      "y": 7,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w3-3-3/main/78:note_power:39:20",
+      "kind": "note_power",
+      "content_id": "smb3-prg1-w3-3-3",
+      "area": "main",
+      "area_id": "0f:be69:01",
+      "loaded_parents": [
+        "smb3-prg1-w3-3-3"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 48745,
+          "tileset": 1
+        }
+      ],
+      "object_index": 78,
+      "source_rom_offset": 130759,
+      "source_bytes": "542701",
+      "symbol": "W303L",
+      "tileset": 1,
+      "layout": 48745,
+      "x": 39,
+      "y": 20,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w1-1-2/main/265:note_power:96:17",
+      "kind": "note_power",
+      "content_id": "smb3-prg1-w1-1-2",
+      "area": "main",
+      "area_id": "10:af2a:03",
+      "loaded_parents": [
+        "smb3-prg1-w1-1-2"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 44842,
+          "tileset": 3
+        }
+      ],
+      "object_index": 265,
+      "source_rom_offset": 135235,
+      "source_bytes": "516002",
+      "symbol": "W102L",
+      "tileset": 3,
+      "layout": 44842,
+      "x": 96,
+      "y": 17,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w2-2-2/main/89:wood_power:26:19",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w2-2-2",
+      "area": "main",
+      "area_id": "10:b898:03",
+      "loaded_parents": [
+        "smb3-prg1-w2-2-2"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 47256,
+          "tileset": 3
+        }
+      ],
+      "object_index": 89,
+      "source_rom_offset": 137473,
+      "source_bytes": "531a05",
+      "symbol": "W202L",
+      "tileset": 3,
+      "layout": 47256,
+      "x": 26,
+      "y": 19,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w3-3-1/main/35:power:8:23",
+      "kind": "power",
+      "content_id": "smb3-prg1-w3-3-1",
+      "area": "main",
+      "area_id": "12:b30a:06",
+      "loaded_parents": [
+        "smb3-prg1-w3-3-1"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 45834,
+          "tileset": 6
+        }
+      ],
+      "object_index": 35,
+      "source_rom_offset": 152381,
+      "source_bytes": "370800",
+      "symbol": "W301L",
+      "tileset": 6,
+      "layout": 45834,
+      "x": 8,
+      "y": 23,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w3-3-1/main/218:power:78:20",
+      "kind": "power",
+      "content_id": "smb3-prg1-w3-3-1",
+      "area": "main",
+      "area_id": "12:b30a:06",
+      "loaded_parents": [
+        "smb3-prg1-w3-3-1"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 45834,
+          "tileset": 6
+        }
+      ],
+      "object_index": 218,
+      "source_rom_offset": 152564,
+      "source_bytes": "344e00",
+      "symbol": "W301L",
+      "tileset": 6,
+      "layout": 45834,
+      "x": 78,
+      "y": 20,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w7-7-9/main/123:note_power:28:22",
+      "kind": "note_power",
+      "content_id": "smb3-prg1-w7-7-9",
+      "area": "main",
+      "area_id": "14:b23f:09",
+      "loaded_parents": [
+        "smb3-prg1-w7-7-9"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 45631,
+          "tileset": 9
+        }
+      ],
+      "object_index": 123,
+      "source_rom_offset": 168650,
+      "source_bytes": "561c01",
+      "symbol": "W709L",
+      "tileset": 9,
+      "layout": 45631,
+      "x": 28,
+      "y": 22,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "original-area/14:b8a7:09/88:brick_power:11:21",
+      "kind": "brick_power",
+      "content_id": null,
+      "area": "14:b8a7:09",
+      "area_id": "14:b8a7:09",
+      "loaded_parents": [
+        "smb3-prg1-w2-2-5"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 47271,
+          "tileset": 9
+        }
+      ],
+      "object_index": 88,
+      "source_rom_offset": 170255,
+      "source_bytes": "350b07",
+      "symbol": "W205_BonusL",
+      "tileset": 9,
+      "layout": 47271,
+      "x": 11,
+      "y": 21,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w2-2-4/main/643:note_power:128:14",
+      "kind": "note_power",
+      "content_id": "smb3-prg1-w2-2-4",
+      "area": "main",
+      "area_id": "14:bc78:09",
+      "loaded_parents": [
+        "smb3-prg1-w2-2-4"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 48248,
+          "tileset": 9
+        }
+      ],
+      "object_index": 643,
+      "source_rom_offset": 171787,
+      "source_bytes": "4e8002",
+      "symbol": "W204L",
+      "tileset": 9,
+      "layout": 48248,
+      "x": 128,
+      "y": 14,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w4-4-1/main/58:giant_power:30:21",
+      "kind": "giant_power",
+      "content_id": "smb3-prg1-w4-4-1",
+      "area": "main",
+      "area_id": "13:ab88:0b",
+      "loaded_parents": [
+        "smb3-prg1-w4-4-1"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 43912,
+          "tileset": 11
+        }
+      ],
+      "object_index": 58,
+      "source_rom_offset": 158674,
+      "source_bytes": "151e40",
+      "symbol": "W401L",
+      "tileset": 11,
+      "layout": 43912,
+      "x": 30,
+      "y": 21,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w4-4-1/main/183:giant_power:66:17",
+      "kind": "giant_power",
+      "content_id": "smb3-prg1-w4-4-1",
+      "area": "main",
+      "area_id": "13:ab88:0b",
+      "loaded_parents": [
+        "smb3-prg1-w4-4-1"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 43912,
+          "tileset": 11
+        }
+      ],
+      "object_index": 183,
+      "source_rom_offset": 158799,
+      "source_bytes": "114240",
+      "symbol": "W401L",
+      "tileset": 11,
+      "layout": 43912,
+      "x": 66,
+      "y": 17,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w4-4-2/main/27:giant_power:40:21",
+      "kind": "giant_power",
+      "content_id": "smb3-prg1-w4-4-2",
+      "area": "main",
+      "area_id": "13:b067:0b",
+      "loaded_parents": [
+        "smb3-prg1-w4-4-2"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 45159,
+          "tileset": 11
+        }
+      ],
+      "object_index": 27,
+      "source_rom_offset": 159890,
+      "source_bytes": "152840",
+      "symbol": "W402L",
+      "tileset": 11,
+      "layout": 45159,
+      "x": 40,
+      "y": 21,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w4-4-5/main/24:giant_power:24:21",
+      "kind": "giant_power",
+      "content_id": "smb3-prg1-w4-4-5",
+      "area": "main",
+      "area_id": "13:b72c:0b",
+      "loaded_parents": [
+        "smb3-prg1-w4-4-5"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 46892,
+          "tileset": 11
+        }
+      ],
+      "object_index": 24,
+      "source_rom_offset": 161620,
+      "source_bytes": "151840",
+      "symbol": "W405L",
+      "tileset": 11,
+      "layout": 46892,
+      "x": 24,
+      "y": 21,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "original-area/10:a9d7:03/233:note_power:47:7",
+      "kind": "note_power",
+      "content_id": null,
+      "area": "10:a9d7:03",
+      "area_id": "10:a9d7:03",
+      "loaded_parents": [
+        "smb3-prg1-w6-6-9"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 43479,
+          "tileset": 3
+        }
+      ],
+      "object_index": 233,
+      "source_rom_offset": 133840,
+      "source_bytes": "472f01",
+      "symbol": "W609_UnderL",
+      "tileset": 3,
+      "layout": 43479,
+      "x": 47,
+      "y": 7,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "original-area/10:acdc:03/163:power:47:6",
+      "kind": "power",
+      "content_id": null,
+      "area": "10:acdc:03",
+      "area_id": "10:acdc:03",
+      "loaded_parents": [
+        "smb3-prg1-w6-6-6"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 44252,
+          "tileset": 3
+        }
+      ],
+      "object_index": 163,
+      "source_rom_offset": 134543,
+      "source_bytes": "262f00",
+      "symbol": "W606_UnderL",
+      "tileset": 3,
+      "layout": 44252,
+      "x": 47,
+      "y": 6,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "original-area/10:acdc:03/377:power:100:11",
+      "kind": "power",
+      "content_id": null,
+      "area": "10:acdc:03",
+      "area_id": "10:acdc:03",
+      "loaded_parents": [
+        "smb3-prg1-w6-6-6"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 44252,
+          "tileset": 3
+        }
+      ],
+      "object_index": 377,
+      "source_rom_offset": 134757,
+      "source_bytes": "2b6400",
+      "symbol": "W606_UnderL",
+      "tileset": 3,
+      "layout": 44252,
+      "x": 100,
+      "y": 11,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w1-1-3/main/124:wood_power:60:23",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w1-1-3",
+      "area": "main",
+      "area_id": "0f:ae09:01",
+      "loaded_parents": [
+        "smb3-prg1-w1-1-3"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 44553,
+          "tileset": 1
+        }
+      ],
+      "object_index": 124,
+      "source_rom_offset": 126613,
+      "source_bytes": "573c05",
+      "symbol": "W103L",
+      "tileset": 1,
+      "layout": 44553,
+      "x": 60,
+      "y": 23,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w5-5-1/main/49:wood_power:14:23",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w5-5-1",
+      "area": "main",
+      "area_id": "0f:b44b:01",
+      "loaded_parents": [
+        "smb3-prg1-w5-5-1"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 46155,
+          "tileset": 1
+        }
+      ],
+      "object_index": 49,
+      "source_rom_offset": 128140,
+      "source_bytes": "570e05",
+      "symbol": "W501L",
+      "tileset": 1,
+      "layout": 46155,
+      "x": 14,
+      "y": 23,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w5-5-5/main/60:wood_power:26:22",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w5-5-5",
+      "area": "main",
+      "area_id": "11:af02:04",
+      "loaded_parents": [
+        "smb3-prg1-w5-5-5"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 44802,
+          "tileset": 4
+        }
+      ],
+      "object_index": 60,
+      "source_rom_offset": 143182,
+      "source_bytes": "561a05",
+      "symbol": "W505L",
+      "tileset": 4,
+      "layout": 44802,
+      "x": 26,
+      "y": 22,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w3-3-7/main/40:wood_power:2:22",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w3-3-7",
+      "area": "main",
+      "area_id": "0f:b8bc:01",
+      "loaded_parents": [
+        "smb3-prg1-w3-3-7"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 47292,
+          "tileset": 1
+        }
+      ],
+      "object_index": 40,
+      "source_rom_offset": 129268,
+      "source_bytes": "560205",
+      "symbol": "W307L",
+      "tileset": 1,
+      "layout": 47292,
+      "x": 2,
+      "y": 22,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w3-3-7/main/208:wood_power:78:25",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w3-3-7",
+      "area": "main",
+      "area_id": "0f:b8bc:01",
+      "loaded_parents": [
+        "smb3-prg1-w3-3-7"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 47292,
+          "tileset": 1
+        }
+      ],
+      "object_index": 208,
+      "source_rom_offset": 129436,
+      "source_bytes": "594e04",
+      "symbol": "W307L",
+      "tileset": 1,
+      "layout": 47292,
+      "x": 78,
+      "y": 25,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w3-3-7/main/356:wood_power:118:21",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w3-3-7",
+      "area": "main",
+      "area_id": "0f:b8bc:01",
+      "loaded_parents": [
+        "smb3-prg1-w3-3-7"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 47292,
+          "tileset": 1
+        }
+      ],
+      "object_index": 356,
+      "source_rom_offset": 129584,
+      "source_bytes": "557604",
+      "symbol": "W307L",
+      "tileset": 1,
+      "layout": 47292,
+      "x": 118,
+      "y": 21,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w5-5-5/main/240:wood_power:104:24",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w5-5-5",
+      "area": "main",
+      "area_id": "11:af02:04",
+      "loaded_parents": [
+        "smb3-prg1-w5-5-5"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 44802,
+          "tileset": 4
+        }
+      ],
+      "object_index": 240,
+      "source_rom_offset": 143362,
+      "source_bytes": "586805",
+      "symbol": "W505L",
+      "tileset": 4,
+      "layout": 44802,
+      "x": 104,
+      "y": 24,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w5-5-7/main/187:wood_power:34:23",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w5-5-7",
+      "area": "main",
+      "area_id": "13:aeb8:0d",
+      "loaded_parents": [
+        "smb3-prg1-w5-5-7"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 44728,
+          "tileset": 13
+        }
+      ],
+      "object_index": 187,
+      "source_rom_offset": 159619,
+      "source_bytes": "572204",
+      "symbol": "W507L",
+      "tileset": 13,
+      "layout": 44728,
+      "x": 34,
+      "y": 23,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w2-2-1/main/267:wood_power:106:20",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w2-2-1",
+      "area": "main",
+      "area_id": "14:b45f:09",
+      "loaded_parents": [
+        "smb3-prg1-w2-2-1"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 46175,
+          "tileset": 9
+        }
+      ],
+      "object_index": 267,
+      "source_rom_offset": 169338,
+      "source_bytes": "546a05",
+      "symbol": "W201L",
+      "tileset": 9,
+      "layout": 46175,
+      "x": 106,
+      "y": 20,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    },
+    {
+      "block_id": "smb3-prg1-w2-2-5/main/75:wood_power:30:25",
+      "kind": "wood_power",
+      "content_id": "smb3-prg1-w2-2-5",
+      "area": "main",
+      "area_id": "14:b73a:09",
+      "loaded_parents": [
+        "smb3-prg1-w2-2-5"
+      ],
+      "native_contexts": [
+        {
+          "bq": false,
+          "layout": 46906,
+          "tileset": 9
+        }
+      ],
+      "object_index": 75,
+      "source_rom_offset": 169877,
+      "source_bytes": "591e05",
+      "symbol": "W205L",
+      "tileset": 9,
+      "layout": 46906,
+      "x": 30,
+      "y": 25,
+      "mandatory": false,
+      "native_certification": "m243-native-source-1"
+    }
+  ],
+  "counts": {
+    "canonical_sources": 72,
+    "classifications": {
+      "already-admitted-unchanged": 40,
+      "newly-admitted-after-native-verification": 32,
+      "protected-resource": 2,
+      "unresolved-native-placement": 23,
+      "unresolved-secondary-ownership-or-return": 6
+    },
+    "frozen_sources": 59,
+    "main_sources": 66,
+    "main_stage_identities": 36,
+    "native_rows": 73,
+    "new_sources": 13,
+    "secondary_rooms": 5,
+    "secondary_sources": 6,
+    "stage_identities": 40
+  },
+  "protected_source_offsets": [
+    133297,
+    142706
+  ],
+  "research_commit": "de66f8e88d3c1252e21d385afe0e21780bd8a6d6"
+}

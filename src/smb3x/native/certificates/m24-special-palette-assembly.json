@@ -1,0 +1,24 @@
+{
+  "input_sha256": "cdcbb419eec7079ec92aff26d6d07d8754ca69b4c2d1a212b4dae87999018811",
+  "code": "9014bdac97482089c09009bd00cbf004a86898606860ad0a07f036adb67ef00b20b0c09060bd00cf4c5bc02089c09006bd00cc4c5bc0ad0a07c90ad048ad1e00c902d041ae2707e007b03abd10ce4c5bc0ae2707e008b02dbd00cef028cd08ceb023a8a50048a50148b920ce8500b960ce8501a000b10099de7dc8c010d0f6688501688500adde7d60aeffc7f020caad0a07dd00c8d012adb97edd00c9d00aadba7edd00cad0023860cae0ffd0e11860aeffc7f0f9caadb77edd00c8d012adb97edd00c9d00aadba7edd00cad0023860cae0ffd0e11860",
+  "code_sha256": "5ebd3184086c72ae12e7e7216516229ede6d2148ad8f7865fa1feada3a47c94a",
+  "symbols": {
+    "PaletteDone": 49285,
+    "FindNext": 49295,
+    "MapPalette": 49233,
+    "ContentExtensionEnd": 49367,
+    "FindBQParent": 49328,
+    "FindBQNext": 49334,
+    "FindSkip": 49321,
+    "PaletteContent": 49174,
+    "ContentExtension": 49152,
+    "FindBQSkip": 49360,
+    "SelectPalette": 49243,
+    "ContentNotFound": 49326,
+    "AirshipFallback": 49206,
+    "PaletteCopy": 49269,
+    "MusicFallback": 49172,
+    "FindContent": 49289,
+    "OrdinaryPalette": 49195
+  }
+}

@@ -1,0 +1,235 @@
+[
+  {
+    "id": "vanilla",
+    "name": "Daylight",
+    "tilesets": "native",
+    "background": null,
+    "status": "accepted M17 baseline; R3 captures only",
+    "human_approval": "baseline only"
+  },
+  {
+    "id": "plains-midnight",
+    "name": "Midnight",
+    "tilesets": [
+      1
+    ],
+    "table": "PalSet_Plains",
+    "selector": 0,
+    "background": [
+      15,
+      15,
+      48,
+      60,
+      15,
+      15,
+      49,
+      17,
+      15,
+      15,
+      44,
+      28,
+      15,
+      15,
+      49,
+      33
+    ],
+    "sprites": "unchanged native opaque entries",
+    "intended_environment": "ordinary outdoor primary area",
+    "exclusions": [
+      "all unlisted tilesets",
+      "secondary areas without separate validation",
+      "special darkness and forced palettes"
+    ],
+    "restrictions": [
+      "shared selector0 record affects every user in disposable ROM",
+      "palette cycling and fades remain native",
+      "human aesthetic/readability approval pending"
+    ],
+    "provenance": "R3 original authored color choices, valid native NES indices",
+    "status": "native regression passed (targeted)",
+    "screenshots": [
+      "output/graphics-curated/curated-plains-midnight-mario/stage-walk.ppm"
+    ],
+    "human_approval": false
+  },
+  {
+    "id": "plains-sunset",
+    "name": "Sunset",
+    "tilesets": [
+      1
+    ],
+    "table": "PalSet_Plains",
+    "selector": 0,
+    "background": [
+      38,
+      15,
+      48,
+      60,
+      38,
+      15,
+      54,
+      23,
+      38,
+      15,
+      42,
+      26,
+      38,
+      15,
+      55,
+      39
+    ],
+    "sprites": "unchanged native opaque entries",
+    "intended_environment": "ordinary outdoor primary area",
+    "exclusions": [
+      "all unlisted tilesets",
+      "secondary areas without separate validation",
+      "special darkness and forced palettes"
+    ],
+    "restrictions": [
+      "shared selector0 record affects every user in disposable ROM",
+      "palette cycling and fades remain native",
+      "human aesthetic/readability approval pending"
+    ],
+    "provenance": "R3 original authored color choices, valid native NES indices",
+    "status": "native regression passed (targeted)",
+    "screenshots": [
+      "output/graphics-curated/curated-plains-sunset-mario/stage-walk.ppm"
+    ],
+    "human_approval": false
+  },
+  {
+    "id": "plains-dusk",
+    "name": "Dusk",
+    "tilesets": [
+      1
+    ],
+    "table": "PalSet_Plains",
+    "selector": 0,
+    "background": [
+      4,
+      15,
+      48,
+      60,
+      4,
+      15,
+      52,
+      20,
+      4,
+      15,
+      42,
+      26,
+      4,
+      15,
+      50,
+      18
+    ],
+    "sprites": "unchanged native opaque entries",
+    "intended_environment": "ordinary outdoor primary area",
+    "exclusions": [
+      "all unlisted tilesets",
+      "secondary areas without separate validation",
+      "special darkness and forced palettes"
+    ],
+    "restrictions": [
+      "shared selector0 record affects every user in disposable ROM",
+      "palette cycling and fades remain native",
+      "human aesthetic/readability approval pending"
+    ],
+    "provenance": "R3 original authored color choices, valid native NES indices",
+    "status": "native regression passed (targeted)",
+    "screenshots": [
+      "output/graphics-curated/curated-plains-dusk-mario/stage-walk.ppm"
+    ],
+    "human_approval": false
+  },
+  {
+    "id": "hills-autumn",
+    "name": "Autumn",
+    "tilesets": [
+      3
+    ],
+    "table": "PalSet_HillsUnder",
+    "selector": 0,
+    "background": [
+      33,
+      15,
+      48,
+      60,
+      33,
+      15,
+      54,
+      39,
+      33,
+      15,
+      39,
+      23,
+      33,
+      15,
+      39,
+      23
+    ],
+    "sprites": "unchanged native opaque entries",
+    "intended_environment": "ordinary outdoor primary area",
+    "exclusions": [
+      "all unlisted tilesets",
+      "secondary areas without separate validation",
+      "special darkness and forced palettes"
+    ],
+    "restrictions": [
+      "shared selector0 record affects every user in disposable ROM",
+      "palette cycling and fades remain native",
+      "human aesthetic/readability approval pending"
+    ],
+    "provenance": "R3 original authored color choices, valid native NES indices",
+    "status": "native regression passed (targeted)",
+    "screenshots": [
+      "output/graphics-curated/curated-hills-autumn-mario/stage-walk.ppm"
+    ],
+    "human_approval": false
+  },
+  {
+    "id": "map-midnight",
+    "name": "Night Map",
+    "tilesets": [
+      0
+    ],
+    "table": "PalSet_Maps",
+    "selector": 0,
+    "background": [
+      15,
+      15,
+      48,
+      60,
+      15,
+      49,
+      33,
+      1,
+      15,
+      17,
+      42,
+      1,
+      15,
+      48,
+      22,
+      1
+    ],
+    "sprites": "unchanged native opaque entries",
+    "intended_environment": "W1 map",
+    "exclusions": [
+      "all unlisted tilesets",
+      "secondary areas without separate validation",
+      "special darkness and forced palettes"
+    ],
+    "restrictions": [
+      "shared selector0 record affects every user in disposable ROM",
+      "palette cycling and fades remain native",
+      "human aesthetic/readability approval pending"
+    ],
+    "provenance": "R3 original authored color choices, valid native NES indices",
+    "status": "native regression passed (targeted)",
+    "screenshots": [
+      "output/graphics-curated/curated-map-midnight-mario/map.ppm"
+    ],
+    "human_approval": false
+  }
+]

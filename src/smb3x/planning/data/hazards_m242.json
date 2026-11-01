@@ -1,0 +1,2356 @@
+{
+  "version": "m242-hazards-1",
+  "status": "certified-for-production",
+  "contents": [
+    {
+      "content_id": "classic/lost-levels/1-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 208,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 9,
+              "kind": "brick_power",
+              "x": 19,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 12,
+              "kind": "power",
+              "x": 28,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 30,
+              "kind": "power",
+              "x": 89,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": [
+            {
+              "id": "open-region-120",
+              "spawn_column": 120,
+              "activation_column": 124,
+              "native_certification": "m21-sun-controller-clear-120",
+              "maximum_added": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/1-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 224,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 6,
+              "kind": "power",
+              "x": 21,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 15,
+              "kind": "power",
+              "x": 78,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 23,
+              "kind": "power",
+              "x": 109,
+              "y": 18,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": [
+            {
+              "id": "open-region-40",
+              "spawn_column": 40,
+              "activation_column": 44,
+              "native_certification": "m21-sun-controller-clear-40",
+              "maximum_added": 1
+            },
+            {
+              "id": "open-region-80",
+              "spawn_column": 80,
+              "activation_column": 84,
+              "native_certification": "m21-sun-controller-clear-80",
+              "maximum_added": 1
+            },
+            {
+              "id": "open-region-120",
+              "spawn_column": 120,
+              "activation_column": 124,
+              "native_certification": "m21-sun-controller-clear-120",
+              "maximum_added": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/1-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 14,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 29,
+              "kind": "power",
+              "x": 10,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 58,
+              "kind": "brick_power",
+              "x": 69,
+              "y": 21,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1",
+              "reason": "Buried behind lower native brick row; ordinary Small-Mario bump is obstructed. Excluded pending separate powered-form access audit."
+            },
+            {
+              "object_index": 80,
+              "kind": "brick_power",
+              "x": 150,
+              "y": 21,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1",
+              "reason": "Buried behind lower native brick row; ordinary Small-Mario bump is obstructed. Excluded pending separate powered-form access audit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/1-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 14,
+              "kind": "power",
+              "x": 59,
+              "y": 23,
+              "mandatory": false,
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/classic-hazard-matrix-v1/classic-smb1-1-3-poison/native-v1/result.json"
+            }
+          ],
+          "sun_zones": []
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/4-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 240,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 9,
+              "kind": "power",
+              "x": 25,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 27,
+              "kind": "power",
+              "x": 148,
+              "y": 22,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": []
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smb1/8-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 240,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 11,
+              "kind": "brick_power",
+              "x": 66,
+              "y": 18,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            },
+            {
+              "object_index": 23,
+              "kind": "brick_power",
+              "x": 116,
+              "y": 18,
+              "mandatory": false,
+              "native_certification": "m21-normal-block-selector-and-mushroom-lifecycle-1"
+            }
+          ],
+          "sun_zones": []
+        }
+      ]
+    },
+    {
+      "content_id": "classic/smw/yoshis-island-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 208,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 8,
+              "kind": "power",
+              "x": 33,
+              "y": 23,
+              "mandatory": false,
+              "native_certification": "m22-smw-collision-block-lifecycle-2",
+              "evidence": "generated/m22/smw-collision-fix/hazards-v1/poison/native-v1/result.json"
+            },
+            {
+              "object_index": 38,
+              "kind": "power",
+              "x": 111,
+              "y": 23,
+              "mandatory": false,
+              "native_certification": "m22-smw-collision-block-lifecycle-2",
+              "evidence": "generated/m22/smw-collision-fix/hazards-v1/poison/native-v1/result.json"
+            }
+          ],
+          "sun_zones": [
+            {
+              "id": "open-region-40",
+              "spawn_column": 40,
+              "activation_column": 44,
+              "maximum_added": 1,
+              "native_certification": "m22-smw-collision-normal-sun-clear-2",
+              "evidence": "generated/m22/smw-collision-fix/hazards-v1/sun-40/native-v2/result.json"
+            },
+            {
+              "id": "open-region-80",
+              "spawn_column": 80,
+              "activation_column": 84,
+              "maximum_added": 1,
+              "native_certification": "m22-smw-collision-normal-sun-clear-2",
+              "evidence": "generated/m22/smw-collision-fix/hazards-v1/sun-80/native-v1/result.json"
+            },
+            {
+              "id": "open-region-128",
+              "spawn_column": 128,
+              "activation_column": 132,
+              "maximum_added": 1,
+              "native_certification": "m22-smw-collision-normal-sun-clear-2",
+              "evidence": "generated/m22/smw-collision-fix/hazards-v1/sun-128/native-v2/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 34,
+              "kind": "power",
+              "x": 15,
+              "y": 19,
+              "mandatory": false,
+              "native_tile": 97,
+              "native_certification": "m21-native-plains-blocks-1",
+              "legacy_object_index": 319,
+              "source_rom_offset": 129972,
+              "source_bytes": "330f01",
+              "source_file": "PRG/levels/Plains/1-1.asm",
+              "identity_note": "M21 used tile-buffer offset319; M22.1 uses verified source-stream offset34. Historical M21/M22 registry and manifests remain unchanged."
+            },
+            {
+              "object_index": 150,
+              "kind": "power",
+              "x": 92,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 130088,
+              "source_bytes": "375c01",
+              "source_file": "PRG/levels/Plains/1-1.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w1-1-1-92/result.json",
+                "generated/m221/poison-super-v1/w1-1-1-92/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [
+            {
+              "id": "open-region-40",
+              "spawn_column": 40,
+              "activation_column": 44,
+              "maximum_added": 1,
+              "native_certification": "m22-normal-controller-sun-clear-1",
+              "evidence": "generated/m22/original-sun-matrix-v1/1-1-40/native-v2/result.json"
+            },
+            {
+              "id": "open-region-80",
+              "spawn_column": 80,
+              "activation_column": 84,
+              "maximum_added": 1,
+              "native_certification": "m22-normal-controller-sun-clear-1",
+              "evidence": "generated/m22/original-sun-matrix-v1/1-1-80/native-v2/result.json"
+            },
+            {
+              "id": "open-region-112",
+              "spawn_column": 112,
+              "activation_column": 116,
+              "maximum_added": 1,
+              "native_certification": "m22-normal-controller-sun-clear-1",
+              "evidence": "generated/m22/original-sun-matrix-v1/1-1-112/native-v2/result.json"
+            }
+          ],
+          "excluded_blocks": [
+            {
+              "object_index": 80,
+              "kind": "power",
+              "x": 41,
+              "y": 24,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 130018,
+              "source_bytes": "382901",
+              "source_file": "PRG/levels/Plains/1-1.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w1-1-1-41/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 110,
+              "kind": "power",
+              "x": 36,
+              "y": 21,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 135080,
+              "source_bytes": "352401",
+              "source_file": "PRG/levels/Hills/1-2.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/1-2/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [
+            {
+              "id": "open-region-40",
+              "spawn_column": 40,
+              "activation_column": 44,
+              "maximum_added": 1,
+              "native_certification": "m22-normal-controller-sun-clear-1",
+              "evidence": "generated/m22/original-sun-matrix-v1/1-2-40/native-v2/result.json"
+            },
+            {
+              "id": "open-region-80",
+              "spawn_column": 80,
+              "activation_column": 84,
+              "maximum_added": 1,
+              "native_certification": "m22-normal-controller-sun-clear-1",
+              "evidence": "generated/m22/original-sun-matrix-v1/1-2-80/native-v2/result.json"
+            },
+            {
+              "id": "open-region-120",
+              "spawn_column": 120,
+              "activation_column": 124,
+              "maximum_added": 1,
+              "native_certification": "m22-normal-controller-sun-clear-1",
+              "evidence": "generated/m22/original-sun-matrix-v1/1-2-120/native-v2/result.json"
+            }
+          ],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 160,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 91,
+              "kind": "brick_power",
+              "x": 37,
+              "y": 24,
+              "mandatory": false,
+              "native_tile": 105,
+              "source_rom_offset": 126580,
+              "source_bytes": "382507",
+              "source_file": "PRG/levels/Plains/1-3.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: powered-form fixture could not establish safe emergence/movement",
+              "evidence": "generated/m221/poison-super-v1/w1-1-3-37/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-4",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 4,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 126,
+              "kind": "brick_power",
+              "x": 60,
+              "y": 22,
+              "mandatory": false,
+              "native_tile": 105,
+              "source_rom_offset": 144783,
+              "source_bytes": "363c07",
+              "source_file": "PRG/levels/HighUp/1-4.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w1-1-4-60/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-5",
+      "areas": [
+        {
+          "id": "main",
+          "width": 144,
+          "tileset": 14,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 356,
+              "kind": "power",
+              "x": 83,
+              "y": 22,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 109493,
+              "source_bytes": "365300",
+              "source_file": "PRG/levels/Under/1-5.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: AssertionError [ERR_ASSERTION]: Small Mario native poison damage",
+              "evidence": "generated/m221/poison-native-v1/w1-1-5-83/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w1-1-6",
+      "areas": [
+        {
+          "id": "main",
+          "width": 160,
+          "tileset": 4,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 60,
+              "kind": "power",
+              "x": 25,
+              "y": 21,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 144372,
+              "source_bytes": "351901",
+              "source_file": "PRG/levels/HighUp/1-6.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/1-6/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 192,
+          "tileset": 9,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 78,
+              "kind": "power",
+              "x": 21,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 169149,
+              "source_bytes": "371501",
+              "source_file": "PRG/levels/Desert/2-1.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/2-1/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 147,
+              "kind": "brick_power",
+              "x": 72,
+              "y": 25,
+              "mandatory": false,
+              "native_tile": 105,
+              "source_rom_offset": 169218,
+              "source_bytes": "394807",
+              "source_file": "PRG/levels/Desert/2-1.asm",
+              "native_certification": "m22-native-block-candidate-pending",
+              "reason": "Ground-adjacent, enclosed or unreviewed optional high placement; retain native reward."
+            }
+          ],
+          "excluded_sun_regions": [
+            {
+              "id": "open-region-40",
+              "spawn_column": 40,
+              "activation_column": 44,
+              "maximum_added": 1,
+              "native_certification": "m221-controller-route-pending",
+              "reason": "Bounded normal-controller certification did not complete; no compatibility claim. Other regions in the same content remain unproven without a complete base route.",
+              "evidence": "generated/m221/sun-search-v2/matrix.json"
+            },
+            {
+              "id": "open-region-80",
+              "spawn_column": 80,
+              "activation_column": 84,
+              "maximum_added": 1,
+              "native_certification": "m221-controller-route-pending",
+              "reason": "Bounded normal-controller certification did not complete; no compatibility claim. Other regions in the same content remain unproven without a complete base route.",
+              "evidence": "generated/m221/sun-search-v2/matrix.json"
+            },
+            {
+              "id": "open-region-120",
+              "spawn_column": 120,
+              "activation_column": 124,
+              "maximum_added": 1,
+              "native_certification": "m221-controller-route-pending",
+              "reason": "Bounded normal-controller certification did not complete; no compatibility claim. Other regions in the same content remain unproven without a complete base route.",
+              "evidence": "generated/m221/sun-search-v2/matrix.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 144,
+          "tileset": 9,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 39,
+              "kind": "power",
+              "x": 17,
+              "y": 16,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 170316,
+              "source_bytes": "301101",
+              "source_file": "PRG/levels/Desert/2-3.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w2-2-3-17/result.json"
+            },
+            {
+              "object_index": 102,
+              "kind": "power",
+              "x": 69,
+              "y": 11,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 170379,
+              "source_bytes": "2b4501",
+              "source_file": "PRG/levels/Desert/2-3.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w2-2-3-69/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-4",
+      "areas": [
+        {
+          "id": "main",
+          "width": 160,
+          "tileset": 9,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 484,
+              "kind": "power",
+              "x": 91,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 171628,
+              "source_bytes": "375b01",
+              "source_file": "PRG/levels/Desert/2-4.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/2-4/native-v3/result.json"
+            },
+            {
+              "object_index": 202,
+              "kind": "power",
+              "x": 23,
+              "y": 25,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 171346,
+              "source_bytes": "391701",
+              "source_file": "PRG/levels/Desert/2-4.asm",
+              "native_certification": "m242-neshawk-small-super-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 202,
+              "kind": "power",
+              "x": 23,
+              "y": 25,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 171346,
+              "source_bytes": "391701",
+              "source_file": "PRG/levels/Desert/2-4.asm",
+              "native_certification": "m22-native-block-candidate-pending",
+              "reason": "Ground-adjacent, enclosed or unreviewed optional high placement; retain native reward."
+            },
+            {
+              "object_index": 277,
+              "kind": "power",
+              "x": 45,
+              "y": 25,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 171421,
+              "source_bytes": "392d01",
+              "source_file": "PRG/levels/Desert/2-4.asm",
+              "native_certification": "m22-native-block-candidate-pending",
+              "reason": "Ground-adjacent, enclosed or unreviewed optional high placement; retain native reward."
+            }
+          ],
+          "excluded_sun_regions": [
+            {
+              "id": "open-region-32",
+              "spawn_column": 32,
+              "activation_column": 36,
+              "maximum_added": 1,
+              "native_certification": "m221-controller-route-pending",
+              "reason": "Bounded normal-controller certification did not complete; no compatibility claim. Other regions in the same content remain unproven without a complete base route.",
+              "evidence": "generated/m221/sun-search-v2/matrix.json"
+            },
+            {
+              "id": "open-region-64",
+              "spawn_column": 64,
+              "activation_column": 68,
+              "maximum_added": 1,
+              "native_certification": "m221-controller-route-pending",
+              "reason": "Bounded normal-controller certification did not complete; no compatibility claim. Other regions in the same content remain unproven without a complete base route.",
+              "evidence": "generated/m221/sun-search-v2/matrix.json"
+            },
+            {
+              "id": "open-region-112",
+              "spawn_column": 112,
+              "activation_column": 116,
+              "maximum_added": 1,
+              "native_certification": "m221-controller-route-pending",
+              "reason": "Bounded normal-controller certification did not complete; no compatibility claim. Other regions in the same content remain unproven without a complete base route.",
+              "evidence": "generated/m221/sun-search-v2/matrix.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w2-2-5",
+      "areas": [
+        {
+          "id": "main",
+          "width": 160,
+          "tileset": 9,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 36,
+              "kind": "power",
+              "x": 11,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 169838,
+              "source_bytes": "370b01",
+              "source_file": "PRG/levels/Desert/2-5.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/2-5/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [
+            {
+              "id": "open-region-40",
+              "spawn_column": 40,
+              "activation_column": 44,
+              "maximum_added": 1,
+              "native_certification": "m221-fresh-small-controller-card-return-1",
+              "evidence": "generated/m221/sun-composite-routes-v7/w2-2-5-40/result.json",
+              "lifecycle_evidence": "generated/m221/sun-lifecycle-composite-2-5-v1/result.json",
+              "certification_scope": "Fresh normal Small-Mario controller replay from stage entry to native card and physical return; pre-entry world/map setup disclosed. Lifecycle contact/retry fixtures separately assisted.",
+              "graphics_contract": "m221-source-scoped-bank10-sun-composite-1"
+            },
+            {
+              "id": "open-region-80",
+              "spawn_column": 80,
+              "activation_column": 84,
+              "maximum_added": 1,
+              "native_certification": "m221-fresh-small-controller-card-return-1",
+              "evidence": "generated/m221/sun-composite-routes-v10/w2-2-5-80/result.json",
+              "lifecycle_evidence": "generated/m221/sun-lifecycle-composite-2-5-v1/result.json",
+              "certification_scope": "Fresh normal Small-Mario controller replay from stage entry to native card and physical return; pre-entry world/map setup disclosed. Lifecycle contact/retry fixtures separately assisted.",
+              "graphics_contract": "m221-source-scoped-bank10-sun-composite-1"
+            },
+            {
+              "id": "open-region-112",
+              "spawn_column": 112,
+              "activation_column": 116,
+              "maximum_added": 1,
+              "native_certification": "m221-fresh-small-controller-card-return-1",
+              "evidence": "generated/m221/sun-composite-routes-v7/w2-2-5-112/result.json",
+              "lifecycle_evidence": "generated/m221/sun-lifecycle-composite-2-5-v1/result.json",
+              "certification_scope": "Fresh normal Small-Mario controller replay from stage entry to native card and physical return; pre-entry world/map setup disclosed. Lifecycle contact/retry fixtures separately assisted.",
+              "graphics_contract": "m221-source-scoped-bank10-sun-composite-1"
+            }
+          ],
+          "excluded_blocks": [
+            {
+              "object_index": 355,
+              "kind": "power",
+              "x": 121,
+              "y": 3,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 170157,
+              "source_bytes": "237901",
+              "source_file": "PRG/levels/Desert/2-5.asm",
+              "native_certification": "m22-native-block-candidate-pending",
+              "reason": "Ground-adjacent, enclosed or unreviewed optional high placement; retain native reward."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 6,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 206,
+              "kind": "power",
+              "x": 73,
+              "y": 3,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 152552,
+              "source_bytes": "234900",
+              "source_file": "PRG/levels/Water/3-1.asm",
+              "native_certification": "m242-neshawk-small-super-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 4,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 74,
+              "kind": "power",
+              "x": 25,
+              "y": 19,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 141354,
+              "source_bytes": "331900",
+              "source_file": "PRG/levels/HighUp/3-2.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w3-3-2-25/result.json",
+                "generated/m221/poison-super-v1/w3-3-2-25/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 173,
+              "kind": "power",
+              "x": 126,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 141453,
+              "source_bytes": "377e00",
+              "source_file": "PRG/levels/HighUp/3-2.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w3-3-2-126/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 192,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 148,
+              "kind": "brick_power",
+              "x": 90,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 104,
+              "source_rom_offset": 130829,
+              "source_bytes": "325a06",
+              "source_file": "PRG/levels/Plains/3-3.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/3-3/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-4",
+      "areas": [
+        {
+          "id": "main",
+          "width": 208,
+          "tileset": 14,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 224,
+              "kind": "power",
+              "x": 108,
+              "y": 20,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 112649,
+              "source_bytes": "346c00",
+              "source_file": "PRG/levels/Under/3-4.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w3-3-4-108/result.json",
+                "generated/m221/poison-super-v1/w3-3-4-108/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            },
+            {
+              "object_index": 361,
+              "kind": "power",
+              "x": 164,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 112786,
+              "source_bytes": "32a401",
+              "source_file": "PRG/levels/Under/3-4.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w3-3-4-164/result.json",
+                "generated/m221/poison-super-v1/w3-3-4-164/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            },
+            {
+              "object_index": 88,
+              "kind": "power",
+              "x": 37,
+              "y": 22,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 112513,
+              "source_bytes": "362501",
+              "source_file": "PRG/levels/Under/3-4.asm",
+              "native_certification": "m242-neshawk-small-super-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 88,
+              "kind": "power",
+              "x": 37,
+              "y": 22,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 112513,
+              "source_bytes": "362501",
+              "source_file": "PRG/levels/Under/3-4.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: AssertionError [ERR_ASSERTION]: native mushroom movement",
+              "evidence": "generated/m221/poison-native-v1/w3-3-4-37/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-5",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 6,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 102,
+              "kind": "power",
+              "x": 24,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 151760,
+              "source_bytes": "321800",
+              "source_file": "PRG/levels/Water/3-5.asm",
+              "native_certification": "m242-neshawk-small-super-1"
+            },
+            {
+              "object_index": 259,
+              "kind": "power",
+              "x": 83,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 151917,
+              "source_bytes": "325300",
+              "source_file": "PRG/levels/Water/3-5.asm",
+              "native_certification": "m242-neshawk-small-super-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-6",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 4,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 39,
+              "kind": "power",
+              "x": 18,
+              "y": 17,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 141680,
+              "source_bytes": "311200",
+              "source_file": "PRG/levels/HighUp/3-6.asm",
+              "native_certification": "m242-neshawk-small-super-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 39,
+              "kind": "power",
+              "x": 18,
+              "y": 17,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 141680,
+              "source_bytes": "311200",
+              "source_file": "PRG/levels/HighUp/3-6.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w3-3-6-18/result.json"
+            },
+            {
+              "object_index": 144,
+              "kind": "brick_power",
+              "x": 61,
+              "y": 24,
+              "mandatory": false,
+              "native_tile": 105,
+              "source_rom_offset": 141785,
+              "source_bytes": "383d07",
+              "source_file": "PRG/levels/HighUp/3-6.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w3-3-6-61/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-7",
+      "areas": [
+        {
+          "id": "main",
+          "width": 160,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [
+            {
+              "id": "open-region-32",
+              "spawn_column": 32,
+              "activation_column": 36,
+              "maximum_added": 1,
+              "native_certification": "m221-fresh-small-controller-card-return-1",
+              "evidence": "generated/m221/sun-composite-routes-v11/w3-3-7-32/result.json",
+              "lifecycle_evidence": "generated/m221/sun-lifecycle-composite-3-7-v1/result.json",
+              "certification_scope": "Fresh normal Small-Mario controller replay from stage entry to native card and physical return; pre-entry world/map setup disclosed. Lifecycle contact/retry fixtures separately assisted.",
+              "graphics_contract": "m221-source-scoped-bank10-sun-composite-1"
+            },
+            {
+              "id": "open-region-72",
+              "spawn_column": 72,
+              "activation_column": 76,
+              "maximum_added": 1,
+              "native_certification": "m221-fresh-small-controller-card-return-1",
+              "evidence": "generated/m221/sun-composite-routes-v9/w3-3-7-72/result.json",
+              "lifecycle_evidence": "generated/m221/sun-lifecycle-composite-3-7-v1/result.json",
+              "certification_scope": "Fresh normal Small-Mario controller replay from stage entry to native card and physical return; pre-entry world/map setup disclosed. Lifecycle contact/retry fixtures separately assisted.",
+              "graphics_contract": "m221-source-scoped-bank10-sun-composite-1"
+            },
+            {
+              "id": "open-region-112",
+              "spawn_column": 112,
+              "activation_column": 116,
+              "maximum_added": 1,
+              "native_certification": "m221-fresh-small-controller-card-return-1",
+              "evidence": "generated/m221/sun-composite-routes-v8/w3-3-7-112/result.json",
+              "lifecycle_evidence": "generated/m221/sun-lifecycle-composite-3-7-v1/result.json",
+              "certification_scope": "Fresh normal Small-Mario controller replay from stage entry to native card and physical return; pre-entry world/map setup disclosed. Lifecycle contact/retry fixtures separately assisted.",
+              "graphics_contract": "m221-source-scoped-bank10-sun-composite-1"
+            }
+          ],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-8",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 14,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w3-3-9",
+      "areas": [
+        {
+          "id": "main",
+          "width": 144,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 43,
+              "kind": "brick_power",
+              "x": 29,
+              "y": 6,
+              "mandatory": false,
+              "native_tile": 105,
+              "source_rom_offset": 127299,
+              "source_bytes": "261d07",
+              "source_file": "PRG/levels/Plains/3-9.asm",
+              "native_certification": "m242-neshawk-small-super-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 11,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 11,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 48,
+          "tileset": 11,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-4",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 11,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 122,
+              "kind": "power",
+              "x": 17,
+              "y": 11,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 160567,
+              "source_bytes": "2b1100",
+              "source_file": "PRG/levels/Giant/4-4.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w4-4-4-17/result.json",
+                "generated/m221/poison-super-v1/w4-4-4-17/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-5",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 11,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 60,
+              "kind": "power",
+              "x": 48,
+              "y": 20,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 161656,
+              "source_bytes": "343000",
+              "source_file": "PRG/levels/Giant/4-5.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w4-4-5-48/result.json",
+                "generated/m221/poison-super-v1/w4-4-5-48/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w4-4-6",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 143,
+              "kind": "power",
+              "x": 57,
+              "y": 22,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 125822,
+              "source_bytes": "363901",
+              "source_file": "PRG/levels/Plains/4-6A.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/4-6/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 144,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 127,
+              "kind": "power",
+              "x": 32,
+              "y": 19,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 128218,
+              "source_bytes": "332001",
+              "source_file": "PRG/levels/Plains/5-1.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/5-1/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [],
+          "excluded_sun_zones": [],
+          "sun_exclusion_reason": "Actual NesHawk/PPU conflict: Chain Chomp/Nipper/Buster/Cannon shared sprite-bank overwrites. Normal route passed, graphics coexistence not certified."
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 240,
+          "tileset": 14,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-4",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 13,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 134,
+              "kind": "power",
+              "x": 11,
+              "y": 17,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 162530,
+              "source_bytes": "310b01",
+              "source_file": "PRG/levels/Sky/5-4.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w5-5-4-11/result.json",
+                "generated/m221/poison-super-v1/w5-5-4-11/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-5",
+      "areas": [
+        {
+          "id": "main",
+          "width": 160,
+          "tileset": 4,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 108,
+              "kind": "power",
+              "x": 47,
+              "y": 21,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 143230,
+              "source_bytes": "352f01",
+              "source_file": "PRG/levels/HighUp/5-5.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w5-5-5-47/result.json",
+                "generated/m221/poison-super-v1/w5-5-5-47/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            },
+            {
+              "object_index": 255,
+              "kind": "brick_power",
+              "x": 101,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 105,
+              "source_rom_offset": 143377,
+              "source_bytes": "326507",
+              "source_file": "PRG/levels/HighUp/5-5.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w5-5-5-101/result.json",
+                "generated/m221/poison-super-v1/w5-5-5-101/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-6",
+      "areas": [
+        {
+          "id": "main",
+          "width": 112,
+          "tileset": 13,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 75,
+              "kind": "power",
+              "x": 50,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 160156,
+              "source_bytes": "373201",
+              "source_file": "PRG/levels/Sky/5-6.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w5-5-6-50/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-7",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 13,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-8",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 13,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 162,
+              "kind": "power",
+              "x": 19,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 158481,
+              "source_bytes": "321301",
+              "source_file": "PRG/levels/Sky/5-8.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w5-5-8-19/result.json",
+                "generated/m221/poison-super-v1/w5-5-8-19/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            },
+            {
+              "object_index": 195,
+              "kind": "power",
+              "x": 99,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 158514,
+              "source_bytes": "326301",
+              "source_file": "PRG/levels/Sky/5-8.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w5-5-8-99/result.json",
+                "generated/m221/poison-super-v1/w5-5-8-99/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w5-5-9",
+      "areas": [
+        {
+          "id": "main",
+          "width": 160,
+          "tileset": 13,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 144,
+          "tileset": 12,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 29,
+              "kind": "power",
+              "x": 16,
+              "y": 20,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 143961,
+              "source_bytes": "341000",
+              "source_file": "PRG/levels/Ice/6-1.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/6-1/native-v3/result.json"
+            },
+            {
+              "object_index": 121,
+              "kind": "power",
+              "x": 84,
+              "y": 19,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 144053,
+              "source_bytes": "335401",
+              "source_file": "PRG/levels/Ice/6-1.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/6-1/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-10",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 12,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 57,
+              "kind": "power",
+              "x": 35,
+              "y": 21,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 145884,
+              "source_bytes": "352300",
+              "source_file": "PRG/levels/Ice/6-10.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/6-10/native-v3/result.json"
+            },
+            {
+              "object_index": 174,
+              "kind": "power",
+              "x": 56,
+              "y": 22,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 146001,
+              "source_bytes": "363800",
+              "source_file": "PRG/levels/Ice/6-10.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/6-10/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 144,
+          "tileset": 12,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 27,
+              "kind": "power",
+              "x": 34,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 143735,
+              "source_bytes": "372201",
+              "source_file": "PRG/levels/Ice/6-2.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w6-6-2-34/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 144,
+          "tileset": 12,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 66,
+              "kind": "power",
+              "x": 26,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 142013,
+              "source_bytes": "371a01",
+              "source_file": "PRG/levels/Ice/6-3.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w6-6-3-26/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-4",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 12,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 157,
+              "kind": "power",
+              "x": 59,
+              "y": 17,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 145106,
+              "source_bytes": "313b01",
+              "source_file": "PRG/levels/Ice/6-4.asm",
+              "native_certification": "m22-source-backed-block-lifecycle-1",
+              "evidence": "generated/m22/original-poison-matrix-v1/6-4/native-v3/result.json"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-5",
+      "areas": [
+        {
+          "id": "main",
+          "width": 96,
+          "tileset": 12,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-6",
+      "areas": [
+        {
+          "id": "main",
+          "width": 64,
+          "tileset": 12,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-7",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 12,
+          "vertical": false,
+          "autoscroll": true,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 198,
+              "kind": "power",
+              "x": 73,
+              "y": 21,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 146368,
+              "source_bytes": "354900",
+              "source_file": "PRG/levels/Ice/6-7.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w6-6-7-73/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-8",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 14,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 67,
+              "kind": "power",
+              "x": 13,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 112903,
+              "source_bytes": "320d01",
+              "source_file": "PRG/levels/Under/6-8.asm",
+              "native_certification": "m242-neshawk-small-super-1"
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 67,
+              "kind": "power",
+              "x": 13,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 112903,
+              "source_bytes": "320d01",
+              "source_file": "PRG/levels/Under/6-8.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:",
+              "evidence": "generated/m221/poison-native-v1/w6-6-8-13/result.json"
+            },
+            {
+              "object_index": 247,
+              "kind": "power",
+              "x": 76,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 113083,
+              "source_bytes": "374c01",
+              "source_file": "PRG/levels/Under/6-8.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: AssertionError [ERR_ASSERTION]: native mushroom movement",
+              "evidence": "generated/m221/poison-native-v1/w6-6-8-76/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w6-6-9",
+      "areas": [
+        {
+          "id": "main",
+          "width": 96,
+          "tileset": 12,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 64,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 128,
+          "tileset": 9,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": [
+            {
+              "object_index": 98,
+              "kind": "power",
+              "x": 23,
+              "y": 9,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 168032,
+              "source_bytes": "291700",
+              "source_file": "PRG/levels/Desert/7-2.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: Error: native timeout",
+              "evidence": "generated/m221/poison-native-v1/w7-7-2-23/result.json"
+            },
+            {
+              "object_index": 308,
+              "kind": "power",
+              "x": 74,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 97,
+              "source_rom_offset": 168242,
+              "source_bytes": "324a01",
+              "source_file": "PRG/levels/Desert/7-2.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: AssertionError [ERR_ASSERTION]: Small Mario native poison damage",
+              "evidence": "generated/m221/poison-native-v1/w7-7-2-74/result.json"
+            },
+            {
+              "object_index": 401,
+              "kind": "power",
+              "x": 106,
+              "y": 17,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 168335,
+              "source_bytes": "316a00",
+              "source_file": "PRG/levels/Desert/7-2.asm",
+              "native_certification": "m221-engineering-candidate-not-certified",
+              "reason": "Native placement certification incomplete: AssertionError [ERR_ASSERTION]: Small Mario native poison damage",
+              "evidence": "generated/m221/poison-native-v1/w7-7-2-106/result.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-3",
+      "areas": [
+        {
+          "id": "main",
+          "width": 208,
+          "tileset": 3,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 178,
+              "kind": "power",
+              "x": 101,
+              "y": 19,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 136006,
+              "source_bytes": "336500",
+              "source_file": "PRG/levels/Hills/7-3.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w7-7-3-101/result.json",
+                "generated/m221/poison-super-v1/w7-7-3-101/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": [],
+          "excluded_sun_regions": [
+            {
+              "id": "open-region-40",
+              "spawn_column": 40,
+              "activation_column": 44,
+              "maximum_added": 1,
+              "native_certification": "m221-controller-route-pending",
+              "reason": "Bounded normal-controller certification did not complete; no compatibility claim. Other regions in the same content remain unproven without a complete base route.",
+              "evidence": "generated/m221/sun-search-v2/matrix.json"
+            },
+            {
+              "id": "open-region-80",
+              "spawn_column": 80,
+              "activation_column": 84,
+              "maximum_added": 1,
+              "native_certification": "m221-controller-route-pending",
+              "reason": "Bounded normal-controller certification did not complete; no compatibility claim. Other regions in the same content remain unproven without a complete base route.",
+              "evidence": "generated/m221/sun-search-v2/matrix.json"
+            },
+            {
+              "id": "open-region-128",
+              "spawn_column": 128,
+              "activation_column": 132,
+              "maximum_added": 1,
+              "native_certification": "m221-controller-route-pending",
+              "reason": "Bounded normal-controller certification did not complete; no compatibility claim. Other regions in the same content remain unproven without a complete base route.",
+              "evidence": "generated/m221/sun-search-v2/matrix.json"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-4",
+      "areas": [
+        {
+          "id": "main",
+          "width": 80,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-5",
+      "areas": [
+        {
+          "id": "main",
+          "width": 64,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-6",
+      "areas": [
+        {
+          "id": "main",
+          "width": 80,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-7",
+      "areas": [
+        {
+          "id": "main",
+          "width": 64,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-8",
+      "areas": [
+        {
+          "id": "main",
+          "width": 208,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 131,
+              "kind": "brick_power",
+              "x": 62,
+              "y": 23,
+              "mandatory": false,
+              "native_tile": 105,
+              "source_rom_offset": 126978,
+              "source_bytes": "373e07",
+              "source_file": "PRG/levels/Plains/7-8.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w7-7-8-62/result.json",
+                "generated/m221/poison-super-v1/w7-7-8-62/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w7-7-9",
+      "areas": [
+        {
+          "id": "main",
+          "width": 160,
+          "tileset": 9,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 51,
+              "kind": "power",
+              "x": 12,
+              "y": 18,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 168578,
+              "source_bytes": "320c00",
+              "source_file": "PRG/levels/Desert/7-9.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w7-7-9-12/result.json",
+                "generated/m221/poison-super-v1/w7-7-9-12/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            },
+            {
+              "object_index": 324,
+              "kind": "power",
+              "x": 92,
+              "y": 16,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 168851,
+              "source_bytes": "305c00",
+              "source_file": "PRG/levels/Desert/7-9.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w7-7-9-92/result.json",
+                "generated/m221/poison-super-v1/w7-7-9-92/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            },
+            {
+              "object_index": 423,
+              "kind": "power",
+              "x": 122,
+              "y": 14,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 168950,
+              "source_bytes": "2e7a00",
+              "source_file": "PRG/levels/Desert/7-9.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w7-7-9-122/result.json",
+                "generated/m221/poison-super-v1/w7-7-9-122/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w8-8-1",
+      "areas": [
+        {
+          "id": "main",
+          "width": 176,
+          "tileset": 1,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [
+            {
+              "object_index": 77,
+              "kind": "power",
+              "x": 24,
+              "y": 21,
+              "mandatory": false,
+              "native_tile": 96,
+              "source_rom_offset": 128996,
+              "source_bytes": "351800",
+              "source_file": "PRG/levels/Plains/8-1.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w8-8-1-24/result.json",
+                "generated/m221/poison-super-v1/w8-8-1-24/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            },
+            {
+              "object_index": 208,
+              "kind": "brick_power",
+              "x": 80,
+              "y": 22,
+              "mandatory": false,
+              "native_tile": 105,
+              "source_rom_offset": 129127,
+              "source_bytes": "365007",
+              "source_file": "PRG/levels/Plains/8-1.asm",
+              "native_certification": "m221-native-small-super-bump-movement-damage-retry-1",
+              "evidence": [
+                "generated/m221/poison-native-v1/w8-8-1-80/result.json",
+                "generated/m221/poison-super-v1/w8-8-1-80/result.json"
+              ],
+              "certification_scope": "Assisted contact/position fixtures; native bump, emergence, motion, damage; Small death/reentry and Super shrink. No unassisted stage-clear claim."
+            }
+          ],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    },
+    {
+      "content_id": "smb3-prg1-w8-8-2",
+      "areas": [
+        {
+          "id": "main",
+          "width": 240,
+          "tileset": 14,
+          "vertical": false,
+          "autoscroll": false,
+          "existing_sun": false,
+          "blocks": [],
+          "sun_zones": [],
+          "excluded_blocks": []
+        }
+      ]
+    }
+  ],
+  "exclusions": [
+    "All unlisted native and special areas",
+    "Water, vertical, autoscroll and scripted scenes",
+    "Native Sun stages",
+    "1-Up, Star, vine, switch, note and unique blocks",
+    "Unreviewed pipe-adjacent or unsupported blocks",
+    "Lakitu and dense Hammer Bro stages for additional Suns"
+  ],
+  "certification": {
+    "version": "m221-hazard-certification-1",
+    "human_accepted": false,
+    "scope": "Original expansion: per-block Small/Super native fixtures; new Suns require fresh normal controller card/return replay and separate native lifecycle diagnostics. Retained Classic metadata/evidence unchanged."
+  }
+}

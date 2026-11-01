@@ -1,0 +1,12 @@
+[
+  {"name":"1-Up","id":"0x534D3381","kind":"life","weight":18},
+  {"name":"World 2 Pass","id":"0x534D3382","kind":"permanent","weight":0},
+  {"name":"Super Mushroom","id":"0x534D3383","kind":"inventory","native":1,"weight":24},
+  {"name":"Fire Flower","id":"0x534D3384","kind":"inventory","native":2,"weight":18},
+  {"name":"Super Leaf","id":"0x534D3385","kind":"inventory","native":3,"weight":20},
+  {"name":"Starman","id":"0x534D3386","kind":"inventory","native":9,"weight":10},
+  {"name":"Frog Suit","id":"0x534D3387","kind":"inventory","native":4,"weight":4},
+  {"name":"Tanooki Suit","id":"0x534D3388","kind":"inventory","native":5,"weight":3},
+  {"name":"Hammer Suit","id":"0x534D3389","kind":"inventory","native":6,"weight":2},
+  {"name":"P-Wing","id":"0x534D338A","kind":"inventory","native":8,"weight":1}
+]

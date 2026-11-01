@@ -1,0 +1,614 @@
+{
+  "version": "m22-contents-2",
+  "parent_sha256": "5b32d4c3faf90bc62120ed83162a71b4b4bcec78cfe8eedb1f1b0e03c57741fc",
+  "contents": [
+    {
+      "content_id": "classic/lost-levels/1-1",
+      "source_family": "smb2j",
+      "display_name": "SMB2J FDS 1-1",
+      "adaptation_version": "m21-smb2j-1",
+      "source_sha256": "08e591e1da5dc8740ec3fbf3adecf008c2c113f2058fe3711cb2f989cf756b4d",
+      "tileset": 3,
+      "layout": 34304,
+      "objects": 56064,
+      "areas": [
+        {
+          "id": "classic/lost-levels/1-1/main",
+          "tileset": 3,
+          "layout": 34304,
+          "objects": 56064,
+          "bank": 49,
+          "terrain_length": 370,
+          "terrain_sha256": "60e736ca471cd84ec1f3e99bbf97c29f863e933d891f6876e45072ae38a20ed7",
+          "enemy_length": 98,
+          "enemy_sha256": "b90d9a8c9501cad54d1d145f0871fc249dfc133133bdb18d410b41f19c962a09",
+          "reserved_enemy_bytes": 101,
+          "alternate": null,
+          "header": {
+            "music": 0,
+            "background_palette": 0,
+            "graphics_index": 19,
+            "width_screens": 13
+          }
+        }
+      ],
+      "mandatory_items": [],
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "difficulty": {
+        "estimate": 4,
+        "scale": "1-5",
+        "basis": "adapted geometry; independent of logical reachability"
+      },
+      "native_storage_kind": "m21-copied-generator-banked-data",
+      "certified": true,
+      "status": "native-certified-human-review-pending",
+      "human_accepted": false,
+      "adaptations": [
+        "Source castle facade at0 omitted; native cloud/bush scenery is not a castle reconstruction.",
+        "Pipe32: clip only the below-floor row outside native tile RAM; cap remains at source row.",
+        "Pipe45: clip only the below-floor row outside native tile RAM; cap remains at source row.",
+        "Source background scenery switch retains native ground geometry.",
+        "Source castle facade at192 omitted; native cloud/bush scenery is not a castle reconstruction.",
+        "End scroll lock replaced by native card/final-screen contract.",
+        "Optional underground enemy-stream dependency omitted; all source pipes visibly sealed.",
+        "Source small-block meanings independently decoded from SMB2J jump/metatile tables, not assumed identical to SMB1.",
+        "Source poison blocks use safe ordinary mushroom/flower rewards when unselected; optional hazard policy is independent of completion.",
+        "Native SMB3 red/green Koopas, hopping Paratroopas and green plants replace source behavior; no FDS physics or player controls.",
+        "Source hidden 1-Up unconditional; optional coin room and Warp routing omitted. Enemy groups use native 32-pixel spacing."
+      ],
+      "certification": {
+        "version": "m22-native-content-certification-1",
+        "evidence": [
+          {
+            "path": "generated/m22/retained-classic-replays-v1/classic-lost-levels-1-1/native-v2/result.json",
+            "sha256": "209a88c815a6a5ccdc9886da965205408084c5b71a4af458b941a2688c27631a"
+          }
+        ],
+        "scope": "Fresh normal Small-Mario controller route and physical check. Pre-entry map setup is assisted. Separate lifecycle/ownership fixtures remain assisted. Human aesthetics and acceptance are not inferred."
+      }
+    },
+    {
+      "content_id": "classic/smb1/1-1",
+      "source_family": "smb1",
+      "display_name": "SMB1 NES 1-1",
+      "adaptation_version": "m22-smb1-coin-room-1",
+      "source_sha256": "e5c17c42783f430029ab90aa37c73d51c2c320898e533b3ff196dad38c50ae42",
+      "tileset": 3,
+      "layout": 34674,
+      "objects": 56165,
+      "areas": [
+        {
+          "id": "classic/smb1/1-1/main",
+          "tileset": 3,
+          "layout": 34674,
+          "objects": 56165,
+          "bank": 49,
+          "terrain_length": 461,
+          "terrain_sha256": "2c3788d82a4afb897e00ee62664f969df65c1886ec924d20a5dc33885a3d682c",
+          "enemy_length": 56,
+          "enemy_sha256": "154bb4ec3d14e2f38515f9785df0f28006004392d8f87a1f3d732eb8794ae76f",
+          "reserved_enemy_bytes": 59,
+          "alternate": "classic/smb1/1-1/underground",
+          "header": {
+            "music": 0,
+            "background_palette": 0,
+            "graphics_index": 19,
+            "width_screens": 14
+          }
+        },
+        {
+          "id": "classic/smb1/1-1/underground",
+          "tileset": 14,
+          "layout": 34304,
+          "objects": 56224,
+          "bank": 50,
+          "terrain_length": 205,
+          "terrain_sha256": "4be1dbe6ed08c9e9a639ea93bffa5e3bf4a5b84c875ffc75a8b44cd58ee5042b",
+          "enemy_length": 2,
+          "enemy_sha256": "4b3a43f592f577fcfcb5b0e1f42bec5182c9edc414e1f667528f56e7cf0be11d",
+          "reserved_enemy_bytes": 5,
+          "alternate": "classic/smb1/1-1/main",
+          "header": {
+            "music": 1,
+            "background_palette": 3,
+            "graphics_index": 3,
+            "width_screens": 1
+          }
+        }
+      ],
+      "mandatory_items": [],
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "difficulty": {
+        "estimate": 2,
+        "scale": "1-5",
+        "basis": "adapted geometry; independent of logical reachability"
+      },
+      "native_storage_kind": "m21-copied-generator-banked-data",
+      "certified": true,
+      "status": "native-certified-human-review-pending",
+      "human_accepted": false,
+      "adaptations": [
+        "Hidden 1-Up made unconditional; source visibility depends on prior coin history.",
+        "Decorative castle omitted after native goal; no castle entry or extra check.",
+        "Flagpole/castle ending replaced by native SMB3 card at x=216, aligned with the final-screen frame.",
+        "Enemy group at x=54 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+        "Enemy group at x=100 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+        "Enemy group at x=117 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+        "Enemy group at x=127 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+        "Enemy group at x=131 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+        "Shift enemy group at x=177 left 1 column(s) to keep its 32-pixel spacing clear of pipe collision tiles.",
+        "Enemy group at x=177 uses 32-pixel SMB3 grid spacing instead of source 24-pixel dynamic spawn spacing.",
+        "SMB3 Hills ground/solid wood blocks replace SMB1 ground/hard blocks; no physics changes.",
+        "M22 restores the optional source pipe57 ->19-coin underground room ->later pipe163 route.",
+        "Native upward pipes replace side exit; room is bounded by masonry, with no Warp Zone or extra AP check."
+      ],
+      "certification": {
+        "version": "m22-native-content-certification-1",
+        "evidence": [
+          {
+            "path": "generated/m22/coinroom-route-v4/result.json",
+            "sha256": "26229e84e0e968f7bf15219817dc69bdb5d69de423f0170fc157e8be4a9ffeda"
+          },
+          {
+            "path": "generated/m22/coinroom-neshawk-v2/evidence/result.txt",
+            "sha256": "97c2e7779ef4acf67f0bf8935091ce5686bb05207b6a82379bc12cad720fcb85"
+          }
+        ],
+        "scope": "Fresh normal Small-Mario controller route and physical check. Pre-entry map setup is assisted. Separate lifecycle/ownership fixtures remain assisted. Human aesthetics and acceptance are not inferred."
+      }
+    },
+    {
+      "content_id": "classic/smb1/1-2",
+      "source_family": "smb1",
+      "display_name": "SMB1 NES 1-2",
+      "adaptation_version": "m21-underground-2",
+      "source_sha256": "e5c17c42783f430029ab90aa37c73d51c2c320898e533b3ff196dad38c50ae42",
+      "tileset": 14,
+      "layout": 34509,
+      "objects": 56229,
+      "areas": [
+        {
+          "id": "classic/smb1/1-2/main",
+          "tileset": 14,
+          "layout": 34509,
+          "objects": 56229,
+          "bank": 50,
+          "terrain_length": 542,
+          "terrain_sha256": "04424bb136c1739aacd3c3c592cd432cf6ee05654ec37b4a697d15236bbf0aac",
+          "enemy_length": 56,
+          "enemy_sha256": "0f81e8318b06fd8a13e26834f73f6deaf9acbc5fa2239ea2eb3eebb887966352",
+          "reserved_enemy_bytes": 59,
+          "alternate": "classic/smb1/1-2/surface",
+          "header": {
+            "music": 1,
+            "background_palette": 3,
+            "graphics_index": 3,
+            "width_screens": 11
+          }
+        },
+        {
+          "id": "classic/smb1/1-2/surface",
+          "tileset": 3,
+          "layout": 35135,
+          "objects": 56288,
+          "bank": 49,
+          "terrain_length": 29,
+          "terrain_sha256": "03f1111b9fbb98d5eebd62e0eec7a6c72d0eebdba2a3ff59ca2ee71e91b193a8",
+          "enemy_length": 5,
+          "enemy_sha256": "51c83e120f1d14dba2ebc1dc252415a6178b1337907a9ae8fb03dd1c2c1804bb",
+          "reserved_enemy_bytes": 8,
+          "alternate": "classic/smb1/1-2/main",
+          "header": {
+            "music": 0,
+            "background_palette": 0,
+            "graphics_index": 19,
+            "width_screens": 3
+          }
+        }
+      ],
+      "mandatory_items": [],
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "difficulty": {
+        "estimate": 2,
+        "scale": "1-5",
+        "basis": "adapted geometry; independent of logical reachability"
+      },
+      "native_storage_kind": "m21-copied-generator-banked-data",
+      "certified": true,
+      "status": "native-certified-human-review-pending",
+      "human_accepted": false,
+      "adaptations": [
+        "Source pipe at column103 is visibly sealed with native non-entry caps; optional coin room omitted.",
+        "Source pipe at column109 is visibly sealed with native non-entry caps; optional coin room omitted.",
+        "Source pipe at column115 is visibly sealed with native non-entry caps; optional coin room omitted.",
+        "Omit source record at 166:15/47 after mandatory exit; Warp Zone never enters AP routing.",
+        "Omit source record at 169:14/0f after mandatory exit; Warp Zone never enters AP routing.",
+        "Omit source record at 176:14/02 after mandatory exit; Warp Zone never enters AP routing.",
+        "Omit source record at 178:13/47 after mandatory exit; Warp Zone never enters AP routing.",
+        "Omit source record at 178:8/7a after mandatory exit; Warp Zone never enters AP routing.",
+        "Omit source record at 182:8/7a after mandatory exit; Warp Zone never enters AP routing.",
+        "Omit source record at 186:8/7a after mandatory exit; Warp Zone never enters AP routing.",
+        "Omit source record at 186:14/01 after mandatory exit; Warp Zone never enters AP routing.",
+        "Omit source record at 189:14/0f after mandatory exit; Warp Zone never enters AP routing.",
+        "Omit source record at 198:13/45 after mandatory exit; Warp Zone never enters AP routing.",
+        "Source lift generator 27 at155 uses a static five-column native landing; no SMB1 platform timing claimed.",
+        "Source lift generator 27 at155 uses a static five-column native landing; no SMB1 platform timing claimed.",
+        "Exit Buzzy at column162 starts above the closing brick platform, not inside its lower row.",
+        "Source side exit becomes an upward-entered native pipe at column166; mandatory Underground-to-surface transition retained.",
+        "Main source geometry through column165 retained; lower floor row clipped below SMB3 tile RAM as in M19.",
+        "Source checkpoint, Warp Zone and optional coin room omitted. No mandatory power-up.",
+        "Full-height closing brick wall at columns168..175; mandatory pipe at166..167 remains unobstructed."
+      ],
+      "certification": {
+        "version": "m22-native-content-certification-1",
+        "evidence": [
+          {
+            "path": "generated/m22/retained-classic-replays-v1/classic-smb1-1-2/native-v2/result.json",
+            "sha256": "263797cbb513c79dd4afc67f1704539b744d116587e58eab554a793852da4ba5"
+          }
+        ],
+        "scope": "Fresh normal Small-Mario controller route and physical check. Pre-entry map setup is assisted. Separate lifecycle/ownership fixtures remain assisted. Human aesthetics and acceptance are not inferred."
+      }
+    },
+    {
+      "content_id": "classic/smb1/1-3",
+      "source_family": "smb1",
+      "display_name": "SMB1 NES 1-3",
+      "adaptation_version": "m21-smb1-athletic-1",
+      "source_sha256": "e5c17c42783f430029ab90aa37c73d51c2c320898e533b3ff196dad38c50ae42",
+      "tileset": 3,
+      "layout": 35164,
+      "objects": 56296,
+      "areas": [
+        {
+          "id": "classic/smb1/1-3/main",
+          "tileset": 3,
+          "layout": 35164,
+          "objects": 56296,
+          "bank": 49,
+          "terrain_length": 246,
+          "terrain_sha256": "147eb9fbb35a268e854eb8f154a1faabe5464cfe1dd63a2734286053f2527979",
+          "enemy_length": 41,
+          "enemy_sha256": "68078eeb3711031b873245d4b5916515b5e79c2bfe443afae989a56f9e4a1801",
+          "reserved_enemy_bytes": 44,
+          "alternate": null,
+          "header": {
+            "music": 0,
+            "background_palette": 0,
+            "graphics_index": 19,
+            "width_screens": 11
+          }
+        }
+      ],
+      "mandatory_items": [],
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "difficulty": {
+        "estimate": 2,
+        "scale": "1-5",
+        "basis": "adapted geometry; independent of logical reachability"
+      },
+      "native_storage_kind": "m21-copied-generator-banked-data",
+      "certified": true,
+      "status": "native-certified-human-review-pending",
+      "human_accepted": false,
+      "adaptations": [
+        "Source castle facade omitted; no castle entrance.",
+        "Source frenzy-end marker omitted; no source frenzy enabled.",
+        "Source castle facade omitted; no castle entrance.",
+        "Hard-mode-only source enemy 17 at18 omitted from ordinary adaptation.",
+        "Hard-mode-only source enemy 17 at82 omitted from ordinary adaptation.",
+        "Tree canopy top elevations and spans retained as native wooden ledges; noncolliding source trunks omitted.",
+        "Source vertical/horizontal platforms use self-contained native SMB3 oscillators; source timing and platform width are adapted.",
+        "Native card replaces flagpole; no power-up requirement is introduced."
+      ],
+      "certification": {
+        "version": "m22-native-content-certification-1",
+        "evidence": [
+          {
+            "path": "generated/m22/retained-classic-replays-v1/classic-smb1-1-3/native-v1/result.json",
+            "sha256": "01e6984516c55dc9fffeb7fd593ced391327c921f452296c63efa132c4365c62"
+          }
+        ],
+        "scope": "Fresh normal Small-Mario controller route and physical check. Pre-entry map setup is assisted. Separate lifecycle/ownership fixtures remain assisted. Human aesthetics and acceptance are not inferred."
+      }
+    },
+    {
+      "content_id": "classic/smb1/4-1",
+      "source_family": "smb1",
+      "display_name": "SMB1 NES 4-1",
+      "adaptation_version": "m21-classics-1",
+      "source_sha256": "e5c17c42783f430029ab90aa37c73d51c2c320898e533b3ff196dad38c50ae42",
+      "tileset": 3,
+      "layout": 35410,
+      "objects": 56340,
+      "areas": [
+        {
+          "id": "classic/smb1/4-1/main",
+          "tileset": 3,
+          "layout": 35410,
+          "objects": 56340,
+          "bank": 49,
+          "terrain_length": 332,
+          "terrain_sha256": "02a33d00255e81153acbc8e701061424438bf20d98d8d1605ae7f2cc2aca3826",
+          "enemy_length": 23,
+          "enemy_sha256": "cd3ece6ec80b8ee9c9009a7b5706c89a6c1a66378bf4c367080bb73f02104777",
+          "reserved_enemy_bytes": 26,
+          "alternate": null,
+          "header": {
+            "music": 0,
+            "background_palette": 0,
+            "graphics_index": 19,
+            "width_screens": 15
+          }
+        }
+      ],
+      "mandatory_items": [],
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "difficulty": {
+        "estimate": 2,
+        "scale": "1-5",
+        "basis": "adapted geometry; independent of logical reachability"
+      },
+      "native_storage_kind": "m21-copied-generator-banked-data",
+      "certified": true,
+      "status": "native-certified-human-review-pending",
+      "human_accepted": false,
+      "adaptations": [
+        "Decorative castle omitted after native goal; no castle entry or extra check.",
+        "Source terrain/scenery attribute {'x': 6, 'y': 14, 'code': 64, 'source_offset': 4} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Hidden 1-Up made unconditional; source visibility depends on prior coin history.",
+        "Optional coin-room pipe at x=132 is non-enterable; coin room omitted, main-route geometry retained.",
+        "Source end-frenzy marker omitted; native Lakitu flee event is used near goal.",
+        "Decorative castle omitted after native goal; no castle entry or extra check.",
+        "Remove empty columns 192..207 before the final staircase to fit the native 15-screen tile RAM limit; omit the Lakitu respawn in that removed run.",
+        "Flagpole/castle ending replaced by native SMB3 card at x=232, aligned with the final-screen frame.",
+        "Source enemy-stream area dependency 2ec266 retained in private IR; disabled with sealed optional pipe.",
+        "Omit SMB1 Lakitu respawn record: the existing native pursuer remains active; do not spawn a second simultaneous Lakitu.",
+        "Lakitu cloud uses native row 18 so its head remains visible above the playfield border.",
+        "SMB3 Hills ground/solid wood blocks replace SMB1 ground/hard blocks; no physics changes."
+      ],
+      "certification": {
+        "version": "m22-native-content-certification-1",
+        "evidence": [
+          {
+            "path": "generated/m22/retained-classic-replays-v1/classic-smb1-4-1/native-v1/result.json",
+            "sha256": "24c727dd44a458bdfe140e600c66a48bf2c5ed3f30c349e6303475b1cbeb5497"
+          }
+        ],
+        "scope": "Fresh normal Small-Mario controller route and physical check. Pre-entry map setup is assisted. Separate lifecycle/ownership fixtures remain assisted. Human aesthetics and acceptance are not inferred."
+      }
+    },
+    {
+      "content_id": "classic/smb1/8-3",
+      "source_family": "smb1",
+      "display_name": "SMB1 NES 8-3",
+      "adaptation_version": "m21-classics-1",
+      "source_sha256": "e5c17c42783f430029ab90aa37c73d51c2c320898e533b3ff196dad38c50ae42",
+      "tileset": 3,
+      "layout": 35742,
+      "objects": 56366,
+      "areas": [
+        {
+          "id": "classic/smb1/8-3/main",
+          "tileset": 3,
+          "layout": 35742,
+          "objects": 56366,
+          "bank": 49,
+          "terrain_length": 227,
+          "terrain_sha256": "2833550b25694ac9f4944e8f85ae1a3f04c98bafde1d7be82b406f4afe4699d0",
+          "enemy_length": 50,
+          "enemy_sha256": "109951879154f3d6635073788e0811720c105b13c5901157895501683cde8624",
+          "reserved_enemy_bytes": 53,
+          "alternate": null,
+          "header": {
+            "music": 0,
+            "background_palette": 0,
+            "graphics_index": 14,
+            "width_screens": 15
+          }
+        }
+      ],
+      "mandatory_items": [],
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "difficulty": {
+        "estimate": 4,
+        "scale": "1-5",
+        "basis": "adapted geometry; independent of logical reachability"
+      },
+      "native_storage_kind": "m21-copied-generator-banked-data",
+      "certified": true,
+      "status": "native-certified-human-review-pending",
+      "human_accepted": false,
+      "adaptations": [
+        "Decorative castle omitted after native goal; no castle entry or extra check.",
+        "Source terrain/scenery attribute {'x': 23, 'y': 14, 'code': 66, 'source_offset': 6} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 31, 'y': 14, 'code': 64, 'source_offset': 8} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 36, 'y': 14, 'code': 66, 'source_offset': 12} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 50, 'y': 14, 'code': 64, 'source_offset': 14} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 78, 'y': 14, 'code': 66, 'source_offset': 38} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 84, 'y': 14, 'code': 64, 'source_offset': 40} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 87, 'y': 14, 'code': 66, 'source_offset': 44} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 93, 'y': 14, 'code': 64, 'source_offset': 46} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 96, 'y': 14, 'code': 66, 'source_offset': 50} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 106, 'y': 14, 'code': 64, 'source_offset': 52} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 131, 'y': 14, 'code': 66, 'source_offset': 70} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 165, 'y': 14, 'code': 64, 'source_offset': 74} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 171, 'y': 14, 'code': 66, 'source_offset': 78} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 191, 'y': 14, 'code': 64, 'source_offset': 82} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 196, 'y': 14, 'code': 0, 'source_offset': 86} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 207, 'y': 14, 'code': 49, 'source_offset': 96} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Source terrain/scenery attribute {'x': 219, 'y': 14, 'code': 66, 'source_offset': 100} uses the explicitly generated Hills ground and native background; castle-wall artwork is not ported.",
+        "Decorative castle omitted after native goal; no castle entry or extra check.",
+        "Flagpole/castle ending replaced by native SMB3 card at x=232, aligned with the final-screen frame.",
+        "Source frenzy Bullet Bill request replaced by native terrain cannons; no global encounter state.",
+        "Source frenzy Bullet Bill request replaced by native terrain cannons; no global encounter state.",
+        "Raise six ground Hammer Bro spawn origins one tile to row 24; retain platforms and ground height.",
+        "SMB3 Hills ground/solid wood blocks replace SMB1 ground/hard blocks; no physics changes."
+      ],
+      "certification": {
+        "version": "m22-native-content-certification-1",
+        "evidence": [
+          {
+            "path": "generated/m22/retained-classic-replays-v1/classic-smb1-8-3/native-v1/result.json",
+            "sha256": "c42ed6b132fe55bfcfa576432f0990725316fd937d3246b3036a48f9a666522f"
+          }
+        ],
+        "scope": "Fresh normal Small-Mario controller route and physical check. Pre-entry map setup is assisted. Separate lifecycle/ownership fixtures remain assisted. Human aesthetics and acceptance are not inferred."
+      }
+    },
+    {
+      "content_id": "classic/smw/yoshis-island-2",
+      "source_family": "smw",
+      "display_name": "SMW Yoshi's Island2 (bounded NES adaptation)",
+      "adaptation_version": "m22-smw-yi2-3",
+      "source_sha256": "cf8970c719a96189990e9053a1b75378f682ccd7e52f5d0192b0ceed5b84a693",
+      "tileset": 3,
+      "layout": 35969,
+      "objects": 56419,
+      "areas": [
+        {
+          "id": "classic/smw/yoshis-island-2/main",
+          "tileset": 3,
+          "layout": 35969,
+          "objects": 56419,
+          "bank": 49,
+          "terrain_length": 409,
+          "terrain_sha256": "e9497ade850c0f0b341bca46281fba6d891d8579e25734edd940959d825583bc",
+          "enemy_length": 56,
+          "enemy_sha256": "d8408360b74609111b80dc69ac15e7cd8c7b63a47d7d300a349d1e71a63deb45",
+          "reserved_enemy_bytes": 59,
+          "alternate": null,
+          "header": {
+            "music": 0,
+            "background_palette": 0,
+            "graphics_index": 19,
+            "width_screens": 13
+          }
+        }
+      ],
+      "mandatory_items": [],
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "difficulty": {
+        "estimate": 2,
+        "scale": "1-5",
+        "basis": "adapted geometry; independent of logical reachability"
+      },
+      "native_storage_kind": "m21-copied-generator-banked-data",
+      "certified": true,
+      "status": "native-collision-corrected-human-retest-pending",
+      "human_accepted": false,
+      "adaptations": [
+        "Horizontal coordinates compacted5/8 from320columns; main-route landmark sequences fit208columns.",
+        "Ledge interiors and open edges use top-solid, side/underside-passable native grass with non-colliding speckled fill at authored heights. Explicit solid edges remain native solid grass walls; bottom clipping respects the 27-row buffer.",
+        "Native grass/wood/brick and closed pipes; upper vine lane and optional bonus room omitted.",
+        "Compressed adjacent pipes retain separate two-column caps; the shorter left pipe abuts its taller neighbor. Native Piranha origins bind to the converted pipe mouth, not the walking-enemy Y offset.",
+        "Yoshi blocks become ordinary power-ups; shell/shellless Koopas start as native Koopas; stomp/kick interactions stay native.",
+        "A compressed adjacent coin block shares the first Yoshi replacement cell; the power-up landmark takes precedence.",
+        "Opening8 Koopas reduced to4; Chucks become Koopas and Monty Moles become Goombas; no new enemy physics.",
+        "Switch Palace blocks, midpoint, berries and Dragon Coin collection semantics omitted; optional coins do not create checks.",
+        "No Yoshi/Cape/flight requirement; native card replaces goal tape. Scenery and native traversal require separate certification."
+      ],
+      "certification": {
+        "version": "m22-smw-collision-certification-2",
+        "evidence": [
+          {
+            "path": "generated/m22/smw-collision-fix/normal-route-v3/result.json",
+            "sha256": "5a45f699da5bbd7336ea425914411d4cc398c13cf7095a554258292c8355ded5"
+          },
+          {
+            "path": "generated/m22/smw-collision-fix/collision-v5/result.json",
+            "sha256": "39588260de2caebdda8b2bc6ea600ec638b5d53b4bdc94308c384647b0c43f26"
+          },
+          {
+            "path": "generated/m22/smw-collision-fix/content-scope-v2/result.json",
+            "sha256": "eda9709d881ac0185196fffcbf809614b47c5fcbe287f1ba1a1ba62567fb7dc7"
+          },
+          {
+            "path": "generated/m22/smw-collision-fix/neshawk-route-v2/evidence/result.txt",
+            "sha256": "5424754b66c4b8cc4f0079c4a1a3d567d02febd6d6f62f84d0fadfb2fbe6d764"
+          }
+        ],
+        "scope": "Fresh normal Small-Mario controller clears in JSNES and actual NesHawk; assisted map setup only. Separate Small/Super collision fixtures disclose setup and enemy removal. Shared initialization scope verified across twelve loaded entries. Human correction acceptance remains pending."
+      }
+    },
+    {
+      "content_id": "classic/world-e/a-musical-trek",
+      "source_family": "world_e",
+      "display_name": "SMA4 World-e A Musical Trek (visual-reference adaptation)",
+      "adaptation_version": "m22-worlde-musical-trek-1",
+      "source_sha256": "788fb04e41461a204a3cd408c18a558cd6bb5222eeb37e2f1152c64299aab3f3",
+      "tileset": 3,
+      "layout": 36378,
+      "objects": 56478,
+      "areas": [
+        {
+          "id": "classic/world-e/a-musical-trek/main",
+          "tileset": 3,
+          "layout": 36378,
+          "objects": 56478,
+          "bank": 49,
+          "terrain_length": 257,
+          "terrain_sha256": "9bb5ae22adb896e5e833fc341f76052bca2e8dfc46246ff6a8fb901c376cf718",
+          "enemy_length": 35,
+          "enemy_sha256": "97527d749622ef59dd501f585bccca422594872900038efc8c6a1dbe1c8c4db5",
+          "reserved_enemy_bytes": 38,
+          "alternate": null,
+          "header": {
+            "music": 0,
+            "background_palette": 0,
+            "graphics_index": 19,
+            "width_screens": 15
+          }
+        }
+      ],
+      "mandatory_items": [],
+      "completion_contract": "native-card-and-physical-map-return",
+      "return_contract": "unchanged-physical-entrance-and-clear-bit",
+      "compatibility_group": "ordinary-card-horizontal-v1",
+      "difficulty": {
+        "estimate": 2,
+        "scale": "1-5",
+        "basis": "adapted geometry; independent of logical reachability"
+      },
+      "native_storage_kind": "m21-copied-generator-banked-data",
+      "certified": true,
+      "status": "native-certified-human-review-pending",
+      "human_accepted": false,
+      "adaptations": [
+        "Visual reference reconstruction from Nintendo/Peardian map, not extracted or decoded GBA level data.",
+        "Main note-block staircase, separated platforms, long valley, bowl and sparse ending islands retained with7/8 horizontal spacing.",
+        "Optional Coin Heaven/pipe rooms, Advance Coins and exclusive collectibles omitted; no disconnected enterable pipes.",
+        "Two moving wood platforms become static landings; sparse native Paratroopa/Para-Goomba substitutes; no mandatory enemy bounce.",
+        "Native Hills clouds and sky replace GBA distant hills; native card/ground conclusion and no new AP checks."
+      ],
+      "certification": {
+        "version": "m22-native-content-certification-1",
+        "evidence": [
+          {
+            "path": "generated/m22/worlde-route-v3/result.json",
+            "sha256": "f7d540e6135bb815ae32feba24cc19a9155887d44be23c248995380cfdbe0281"
+          },
+          {
+            "path": "generated/m22/worlde-neshawk-v3/evidence/result.txt",
+            "sha256": "55e57f384a662225f39ea05a31bdd3efa78c6e11ee6f712a1ac56ef5cc1b526c"
+          }
+        ],
+        "scope": "Fresh normal Small-Mario controller route and physical check. Pre-entry map setup is assisted. Separate lifecycle/ownership fixtures remain assisted. Human aesthetics and acceptance are not inferred."
+      }
+    }
+  ]
+}

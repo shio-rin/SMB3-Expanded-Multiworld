@@ -1,0 +1,305 @@
+[
+  {
+    "world": 1,
+    "native_world": 0,
+    "supported": true,
+    "unlock_bit": 1,
+    "pass_name": null,
+    "start": [
+      64,
+      32,
+      0,
+      0,
+      0
+    ],
+    "map_pages": 1,
+    "max_scroll": 0,
+    "native_pan_limit": 16,
+    "castle": [
+      128,
+      192,
+      0
+    ],
+    "evidence": "Southbird PRG030 Map_Y_Starts; PRG010 World_Map_Max_PanR; World1L/S",
+    "sections": [
+      {
+        "id": "main",
+        "pages": [
+          0
+        ],
+        "camera": "pan",
+        "arrival": "start"
+      }
+    ]
+  },
+  {
+    "world": 2,
+    "native_world": 1,
+    "supported": true,
+    "unlock_bit": 2,
+    "pass_name": "World 2 Pass",
+    "start": [
+      160,
+      32,
+      0,
+      0,
+      0
+    ],
+    "map_pages": 2,
+    "max_scroll": 256,
+    "native_pan_limit": 32,
+    "castle": [
+      96,
+      32,
+      1
+    ],
+    "evidence": "Southbird PRG030 Map_Y_Starts; PRG010 World_Map_Max_PanR; World2L/S",
+    "sections": [
+      {
+        "id": "main",
+        "pages": [
+          0,
+          1
+        ],
+        "camera": "pan",
+        "arrival": "start"
+      }
+    ]
+  },
+  {
+    "world": 3,
+    "native_world": 2,
+    "supported": true,
+    "unlock_bit": 4,
+    "pass_name": "World 3 Pass",
+    "start": [
+      160,
+      32,
+      0,
+      0,
+      0
+    ],
+    "map_pages": 3,
+    "max_scroll": 512,
+    "native_pan_limit": 48,
+    "castle": [
+      128,
+      144,
+      2
+    ],
+    "evidence": "Southbird PRG030 Map_Y_Starts; PRG010 World_Map_Max_PanR; World3L/S",
+    "sections": [
+      {
+        "id": "main",
+        "pages": [
+          0,
+          1,
+          2
+        ],
+        "camera": "pan",
+        "arrival": "start"
+      }
+    ]
+  },
+  {
+    "world": 4,
+    "native_world": 3,
+    "supported": true,
+    "unlock_bit": 8,
+    "pass_name": "World 4 Pass",
+    "start": [
+      64,
+      32,
+      0,
+      0,
+      0
+    ],
+    "map_pages": 2,
+    "max_scroll": 256,
+    "native_pan_limit": 48,
+    "castle": [
+      96,
+      128,
+      0
+    ],
+    "evidence": "Southbird PRG030 Map_Y_Starts; PRG010 World_Map_Max_PanR; World4L/S",
+    "sections": [
+      {
+        "id": "main",
+        "pages": [
+          0,
+          1
+        ],
+        "camera": "pan",
+        "arrival": "start"
+      }
+    ]
+  },
+  {
+    "world": 5,
+    "native_world": 4,
+    "supported": true,
+    "unlock_bit": 16,
+    "pass_name": "World 5 Pass",
+    "start": [
+      128,
+      32,
+      0,
+      0,
+      0
+    ],
+    "map_pages": 2,
+    "max_scroll": 256,
+    "native_pan_limit": 0,
+    "castle": [
+      160,
+      32,
+      1
+    ],
+    "evidence": "Southbird PRG030 Map_Y_Starts; PRG010 World_Map_Max_PanR; World5L/S; exact PRG1 audit",
+    "sections": [
+      {
+        "id": "ground",
+        "pages": [
+          0
+        ],
+        "camera": "fixed",
+        "arrival": "saved"
+      },
+      {
+        "id": "sky",
+        "pages": [
+          1
+        ],
+        "camera": "fixed",
+        "arrival": "saved"
+      }
+    ]
+  },
+  {
+    "world": 6,
+    "native_world": 5,
+    "supported": true,
+    "unlock_bit": 32,
+    "pass_name": "World 6 Pass",
+    "start": [
+      96,
+      32,
+      0,
+      0,
+      0
+    ],
+    "map_pages": 3,
+    "max_scroll": 512,
+    "native_pan_limit": 48,
+    "castle": [
+      96,
+      192,
+      2
+    ],
+    "evidence": "Southbird PRG030 Map_Y_Starts; PRG010 World_Map_Max_PanR; World6L/S; exact PRG1 audit",
+    "sections": [
+      {
+        "id": "main",
+        "pages": [
+          0,
+          1,
+          2
+        ],
+        "camera": "pan",
+        "arrival": "start"
+      }
+    ]
+  },
+  {
+    "world": 7,
+    "native_world": 6,
+    "supported": true,
+    "unlock_bit": 64,
+    "pass_name": "World 7 Pass",
+    "start": [
+      48,
+      32,
+      0,
+      0,
+      0
+    ],
+    "map_pages": 2,
+    "max_scroll": 256,
+    "native_pan_limit": 32,
+    "castle": [
+      144,
+      128,
+      1
+    ],
+    "evidence": "Southbird World7L/S; PRG002 PipewayCtlr tables; PRG030 Map_Y_Starts",
+    "sections": [
+      {
+        "id": "pipe-network",
+        "pages": [
+          0,
+          1
+        ],
+        "camera": "pan",
+        "arrival": "saved"
+      }
+    ]
+  },
+  {
+    "world": 8,
+    "native_world": 7,
+    "supported": true,
+    "unlock_bit": 128,
+    "pass_name": "World 8 Pass",
+    "start": [
+      80,
+      32,
+      0,
+      0,
+      0
+    ],
+    "map_pages": 4,
+    "max_scroll": 768,
+    "native_pan_limit": 0,
+    "castle": [
+      112,
+      192,
+      3
+    ],
+    "evidence": "Southbird PRG030 Map_Y_Starts; PRG010 W8 fixed-camera exclusion; exact PRG1 World8L/S",
+    "sections": [
+      {
+        "id": "military",
+        "pages": [
+          0
+        ],
+        "camera": "fixed",
+        "arrival": "saved"
+      },
+      {
+        "id": "hand-traps",
+        "pages": [
+          1
+        ],
+        "camera": "fixed",
+        "arrival": "saved"
+      },
+      {
+        "id": "darkness",
+        "pages": [
+          2
+        ],
+        "camera": "fixed",
+        "arrival": "saved"
+      },
+      {
+        "id": "bowser",
+        "pages": [
+          3
+        ],
+        "camera": "fixed",
+        "arrival": "saved"
+      }
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+# Original games and any generated ROM images
+roms-private/
+generated/
+archipelago-dev/
+references/
+runtime/
+*.nes
+*.sfc
+*.smc
+*.gb
+*.gbc
+*.gba
+
+# Emulator saves, states, recordings, and screenshots
+*.sav
+*.srm
+*.state
+*.State
+*.State*
+*.bk2
+*.tasproj
+*.png
+*.bmp
+
+# Local settings, secrets, and temporary files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.log
+*.tmp
+*.bak
+*.swp
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+tmp/
+temp/

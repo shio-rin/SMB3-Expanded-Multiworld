@@ -1,0 +1,10 @@
+[
+  {"world": 1, "stage": "1-1", "name": "World 1-1 Clear", "id": "0x534D3301", "signal": "map_bit", "address": "0x7D04", "bit": "0x80", "entry": {"x_hi": "0x00", "x": "0x40", "y": "0x20"}, "verification": "BizHawk 2.10 confirmed"},
+  {"world": 1, "stage": "1-2", "name": "World 1-2 Clear", "id": "0x534D3302", "signal": "map_bit", "address": "0x7D08", "bit": "0x80", "entry": {"x_hi": "0x00", "x": "0x80", "y": "0x20"}, "verification": "disassembly-backed; BizHawk pending"},
+  {"world": 1, "stage": "1-3", "name": "World 1-3 Clear", "id": "0x534D3303", "signal": "map_bit", "address": "0x7D0A", "bit": "0x80", "entry": {"x_hi": "0x00", "x": "0xA0", "y": "0x20"}, "verification": "disassembly-backed; BizHawk pending"},
+  {"world": 1, "stage": "1-4", "name": "World 1-4 Clear", "id": "0x534D3304", "signal": "map_bit", "address": "0x7D0A", "bit": "0x20", "entry": {"x_hi": "0x00", "x": "0xA0", "y": "0x40"}, "verification": "disassembly-backed; BizHawk pending"},
+  {"world": 1, "stage": "1-5", "name": "World 1-5 Clear", "id": "0x534D3305", "signal": "map_bit", "address": "0x7D04", "bit": "0x01", "entry": {"x_hi": "0x00", "x": "0x40", "y": "0xA0"}, "verification": "disassembly-backed; BizHawk pending"},
+  {"world": 1, "stage": "1-6", "name": "World 1-6 Clear", "id": "0x534D3306", "signal": "map_bit", "address": "0x7D08", "bit": "0x01", "entry": {"x_hi": "0x00", "x": "0x80", "y": "0xA0"}, "verification": "disassembly-backed; BizHawk pending"},
+  {"world": 1, "stage": "fortress", "name": "World 1-Fortress Clear", "id": "0x534D3307", "signal": "map_bit", "address": "0x7D06", "bit": "0x08", "entry": {"x_hi": "0x00", "x": "0x60", "y": "0x60"}, "verification": "disassembly-backed; BizHawk pending"},
+  {"world": 1, "stage": "airship", "name": "World 1-Airship Clear", "id": "0x534D3308", "signal": "king_return", "address": "0x073C", "bit": "0x01", "tileset": 10, "verification": "disassembly-backed; BizHawk pending"}
+]
