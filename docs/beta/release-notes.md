@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
-# SMB3X â€” First Public Beta
+# SMB3X — First Public Beta
 
-**Prepared prerelease â€” unpublished draft for owner review.** Proposed tag
+**Prepared prerelease — unpublished draft for owner review.** Proposed tag
 `v0.36.0-beta.1`; APWorld `0.36.0`, sealed candidate `36.0.0-rc1`.
 
 Explore all eight Super Mario Bros. 3 worlds with **125 randomized reward checks**

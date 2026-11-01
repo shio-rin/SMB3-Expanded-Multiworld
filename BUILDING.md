@@ -23,7 +23,7 @@ Choose a fresh output; existing archives are never overwritten. The builder chec
 sibling `.build.json` with source commit, recipe/resource identity and member hashes.
 See NOTICE.md before any distribution.
 
-## Edit â†’ test â†’ recipe review â†’ clean build
+## Edit → test → recipe review → clean build
 
 1. Edit actual implementation under `src/smb3x`; run affected tests (TESTING.md).
 2. Run `python tools/update_recipe.py --propose ../recipe-review.json`.
