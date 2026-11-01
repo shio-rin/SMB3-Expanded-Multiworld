@@ -9,7 +9,7 @@ from ..client.persistence.atomic import save_json as atomic
 from .dialogs import confirm, select
 from ..shared.serialization import fingerprint, read, sha
 from .paths import home
-from ..shared.emulators import profile, identify
+from ..shared.emulators import profile, identify, EmulatorCompatibilityError
 NES_CORE = 'BizHawk.Emulation.Cores.Nintendo.NES.NES'
 CONFIG_SCHEMA = 'm233-core-config-1'
 NES_PRESENTATION_KEYS = frozenset(('APU_vol', 'BackgroundColor', 'ClipLeftAndRight', 'DispBackground', 'DispSprites', 'NTSC_BottomLine', 'NTSC_TopLine', 'PAL_BottomLine', 'PAL_TopLine', 'Palette'))
@@ -27,11 +27,11 @@ def required_configuration(config, version='2.10'):
     try:
         return dict(schema=CONFIG_SCHEMA, core=config['PreferredCores']['NES'], core_settings={k: v for k, v in config['CoreSettings'][NES_CORE].items() if k not in NES_PRESENTATION_KEYS}, sync_settings=config['CoreSyncSettings'][NES_CORE], safety={k: config[k] for k in ('AutoLoadLastSaveSlot', 'SingleInstanceMode', 'RunLuaDuringTurbo')}, rewind=config['Rewind']['Enabled'], autoload={k: config[k]['AutoLoad'] for k in ('RecentLua', 'RecentLuaSession', 'RecentRoms', 'RecentMovies')})
     except (KeyError, TypeError, AttributeError) as exc:
-        raise ValueError('Managed BizHawk core configuration is incomplete at ' + str(exc) + '; original settings and saves were retained') from exc
+        raise EmulatorCompatibilityError('Managed BizHawk core configuration is incomplete at ' + str(exc) + '; original settings and saves were retained') from exc
 
 def validate_configuration(config, version='2.10'):
     if config.get('LastWrittenFrom') != version or config.get('LastWrittenFromDetailed') != 'Version ' + version:
-        raise ValueError('Managed configuration version differs from BizHawk ' + version + '; keep the original settings and saves')
+        raise EmulatorCompatibilityError('Managed configuration version differs from BizHawk ' + version + '; keep the original settings and saves')
     required = required_configuration(config, version)
     expected = required_configuration(configuration(version), version)
     if required != expected:
@@ -56,7 +56,7 @@ def validate_configuration(config, version='2.10'):
             if first == 'autoload':
                 return '.'.join([*rest, 'AutoLoad'])
             return '.'.join(rest if first == 'safety' else path)
-        raise ValueError('Managed BizHawk core/sync setting differs: ' + ', '.join((field(x) for x in changes[:5])) + '. Restore these supported settings before reopening; saves and preferences were retained.')
+        raise EmulatorCompatibilityError('Managed BizHawk core/sync setting differs: ' + ', '.join((field(x) for x in changes[:5])) + '. Restore these supported settings before reopening; saves and preferences were retained.')
     return required
 
 def preference_values(config, version='2.10'):

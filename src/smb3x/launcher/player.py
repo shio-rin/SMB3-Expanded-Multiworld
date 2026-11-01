@@ -1,39 +1,56 @@
 # SPDX-License-Identifier: MPL-2.0
 """Managed player entry: validate ownership, prepare once, connect and Resume."""
 from pathlib import Path
-import logging, os
+import logging, os, sys
 from ..shared.resources import RESOURCE_ROOT as ROOT
 from ..client.persistence.atomic import save_json as atomic
 from .preparation import prepare
 from .history import cached_runtime
 from .preferences import configuration
-from .dialogs import confirm, question, select
+from .dialogs import confirm, question, select, SetupCancelled
 from .player_file import container
 from .emulator import emulator_identity, play, require_session_emulator
 from ..shared.serialization import fingerprint, read, sha
 from .paths import home
 from .windows import optional_association, protect, retire_orphan
 from .runtime import verify as verify_resources
+from ..shared.emulators import EmulatorCompatibilityError
+
+
+def log_compatibility_failure():
+    """Keep the full diagnostic in file logs, without a second console traceback."""
+    logger = logging.getLogger()
+    logger.warning('SMB3X compatibility check failed: %s', sys.exc_info()[1])
+    record = logger.makeRecord('SMB3X', logging.ERROR, __file__, 0,
+                               'Compatibility diagnostic; files retained', (), sys.exc_info())
+    for handler in logger.handlers:
+        if isinstance(handler, logging.FileHandler):
+            handler.handle(record)
 
 def select_emulator(root, remembered):
     """Offer a profile choice for new games, retain exact ownership for Resume."""
-    emulator = Path(remembered or '')
     owner_path = root / 'emulator-identity.json'
-    try:
-        identity = emulator_identity(emulator)
-        require_session_emulator(root, identity)
-    except (ValueError, OSError):
-        title = ('Select this session\'s BizHawk ' + str(read(owner_path).get('profile', 'unknown'))
-                 + ' / NesHawk installation') if owner_path.exists() else 'Select a supported BizHawk / NesHawk installation'
-    else:
-        if owner_path.exists() or confirm('Use verified BizHawk ' + identity['profile']
-                + ' / NesHawk for this new game? Choose No to select another supported installation. '
-                'This game will remain bound to the selected version.'):
-            return emulator
-        title = 'Select a supported BizHawk / NesHawk installation'
-    emulator = select(title, [('BizHawk', ('.exe',))])
-    require_session_emulator(root, emulator_identity(emulator))
-    return emulator
+    title = ('Select this session\'s BizHawk ' + str(read(owner_path).get('profile', 'unknown'))
+             + ' / NesHawk installation') if owner_path.exists() else 'Select a supported BizHawk / NesHawk installation'
+    emulator = Path(remembered) if remembered else None
+    remembered_choice = emulator is not None
+    while True:
+        if emulator is None:
+            emulator = select(title, [('BizHawk', ('.exe',))])
+        try:
+            identity = emulator_identity(emulator)
+            require_session_emulator(root, identity)
+        except EmulatorCompatibilityError as exc:
+            log_compatibility_failure()
+            if not confirm(str(exc) + '\n\nChoose another BizHawk installation? Choose No to stop safely.'):
+                return None
+        else:
+            if not remembered_choice or owner_path.exists() or confirm('Use verified BizHawk ' + identity['profile']
+                    + ' / NesHawk for this new game? Choose No to select another supported installation. '
+                    'This game will remain bound to the selected version.'):
+                return emulator
+        emulator = None
+        remembered_choice = False
 
 def main(args, cache, resource_id):
     import Utils
@@ -67,6 +84,8 @@ def main(args, cache, resource_id):
                 original = select('Select your clean SMB3 USA Rev A ROM', [('NES ROM', ('.nes',))])
                 verify_base(original.read_bytes())
             emulator = select_emulator(root, settings.get('emulator'))
+            if emulator is None:
+                return
             settings.update(rom=str(original), emulator=str(emulator))
             if os.name == 'nt' and (not settings.get('association_asked')):
                 if confirm('Open future .apsmb3x player files with Archipelago? This optional convenience registers only the SMB3X file type for your Windows account.'):
@@ -91,7 +110,13 @@ def main(args, cache, resource_id):
             atomic(connection, dict(server=server, password=protect(password), override_server=bool(saved.get('override_server'))))
             play(cache, resource_id, root, prepared / 'game', original, emulator, server, password or None)
     except Exception as exc:
-        logging.exception('SMB3 stopped; original files retained')
+        if isinstance(exc, SetupCancelled):
+            logging.info(str(exc))
+            return
+        if isinstance(exc, EmulatorCompatibilityError):
+            log_compatibility_failure()
+        else:
+            logging.exception('SMB3 stopped; original files retained')
         if str(exc).startswith(('Room password required', 'Room connection refused')) and 'root' in locals() and confirm(str(exc) + '\n\nUpdate the remembered room details for the next time you open this player file?'):
             try:
                 old = read(root / 'connection.json') if (root / 'connection.json').is_file() else {}
@@ -105,4 +130,6 @@ def main(args, cache, resource_id):
             except Exception:
                 logging.exception('Room details were not updated')
         Utils.messagebox('SMB3X - Action needed', str(exc) + '\n\nExisting saves are retained. Logs: ' + str(base / 'sessions'), error=True)
+        if isinstance(exc, EmulatorCompatibilityError):
+            return
         raise

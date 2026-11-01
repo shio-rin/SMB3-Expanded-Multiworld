@@ -3,11 +3,15 @@
 from pathlib import Path
 from ..shared.resources import RESOURCE_ROOT as ROOT
 
+class SetupCancelled(ValueError):
+    """The player chose to stop setup; no fatal launcher exception."""
+
+
 def select(title, patterns):
     import Utils
     value = Utils.open_filename(title, patterns)
     if not value:
-        raise ValueError('Selection cancelled; existing saves were preserved')
+        raise SetupCancelled('Selection cancelled; existing saves were preserved')
     return Path(value).resolve()
 
 def question(title, prompt, initial='', secret=False):
@@ -20,7 +24,7 @@ def question(title, prompt, initial='', secret=False):
     finally:
         root.destroy()
     if value is None:
-        raise ValueError('Setup cancelled; existing saves were preserved')
+        raise SetupCancelled('Setup cancelled; existing saves were preserved')
     return value if secret else value.strip()
 
 def confirm(prompt):

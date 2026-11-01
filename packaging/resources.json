@@ -8,7 +8,7 @@
     "maximum_ap_version": "0.6.8",
     "minimum_ap_version": "0.6.8",
     "version": 7,
-    "world_version": "0.36.1"
+    "world_version": "0.36.2"
   },
   "baseline": {
     "role": "Accepted M28 gameplay; no archive/cache is a build prerequisite",
@@ -185,7 +185,7 @@
       "owned canonical SMB3 USA Revision A ROM"
     ]
   },
-  "release": "36.0.1-rc1",
+  "release": "36.0.2-rc1",
   "resources": {
     "__init__.py": {
       "output_sha256": "3ee95cc1dca09bbdb3b3e2240c534657d564b68925a51e3079d28ed8d95ff545",
@@ -404,9 +404,9 @@
       "transform": "lf"
     },
     "launcher/config/emulators.json": {
-      "output_sha256": "efed8e05e44de7034762570637c9d4cd2265460d6eedd43f62c0c56282b6e4fe",
+      "output_sha256": "ae30f044bc2b8da310cd43e46e772e976a6de44f91892004a4e77980c8f8dffa",
       "source": "src/smb3x/launcher/config/emulators.json",
-      "source_lf_sha256": "efed8e05e44de7034762570637c9d4cd2265460d6eedd43f62c0c56282b6e4fe",
+      "source_lf_sha256": "ae30f044bc2b8da310cd43e46e772e976a6de44f91892004a4e77980c8f8dffa",
       "transform": "lf"
     },
     "launcher/config/neshawk-2.11.1.json": {
@@ -434,15 +434,15 @@
       "transform": "lf"
     },
     "launcher/dialogs.py": {
-      "output_sha256": "08cff3481f6644f45fb4e2bcdc9746c515fe42250fdd452e192f72906b554569",
+      "output_sha256": "2e2ae69a4e5bfe36db601b6f40db8dcb7e6d6ce700eee53e000cef6b0c5ff1b3",
       "source": "src/smb3x/launcher/dialogs.py",
-      "source_lf_sha256": "08cff3481f6644f45fb4e2bcdc9746c515fe42250fdd452e192f72906b554569",
+      "source_lf_sha256": "2e2ae69a4e5bfe36db601b6f40db8dcb7e6d6ce700eee53e000cef6b0c5ff1b3",
       "transform": "lf"
     },
     "launcher/emulator.py": {
-      "output_sha256": "a6ddec78ac339f7124d399106b94bafa764f4b363d46befc2397d07dc4aee385",
+      "output_sha256": "21210302c3b00bcc3da85a571ee2a7462cd8113fec5ac9e05401996eb9c00b7f",
       "source": "src/smb3x/launcher/emulator.py",
-      "source_lf_sha256": "a6ddec78ac339f7124d399106b94bafa764f4b363d46befc2397d07dc4aee385",
+      "source_lf_sha256": "21210302c3b00bcc3da85a571ee2a7462cd8113fec5ac9e05401996eb9c00b7f",
       "transform": "lf"
     },
     "launcher/history.py": {
@@ -458,9 +458,9 @@
       "transform": "lf"
     },
     "launcher/player.py": {
-      "output_sha256": "64878ac269eba194f3673381b7f0152c19d3873a80c21ceec8e01354d5484406",
+      "output_sha256": "0e7e54d3ffd92846cd8bc6dbb511a50d0d4502741b559aa60aec1b66c8e1c283",
       "source": "src/smb3x/launcher/player.py",
-      "source_lf_sha256": "64878ac269eba194f3673381b7f0152c19d3873a80c21ceec8e01354d5484406",
+      "source_lf_sha256": "0e7e54d3ffd92846cd8bc6dbb511a50d0d4502741b559aa60aec1b66c8e1c283",
       "transform": "lf"
     },
     "launcher/player_file.py": {
@@ -470,9 +470,9 @@
       "transform": "lf"
     },
     "launcher/preferences.py": {
-      "output_sha256": "37e373cf8d53f039a7c8684d95a9130ad23bd606101b054c89be880df1e38f58",
+      "output_sha256": "e4cbf87fb39cffd0aa1a809070334124fe654078121aa5431532f6fe91002917",
       "source": "src/smb3x/launcher/preferences.py",
-      "source_lf_sha256": "37e373cf8d53f039a7c8684d95a9130ad23bd606101b054c89be880df1e38f58",
+      "source_lf_sha256": "e4cbf87fb39cffd0aa1a809070334124fe654078121aa5431532f6fe91002917",
       "transform": "lf"
     },
     "launcher/preparation.py": {
@@ -1370,9 +1370,9 @@
       "transform": "lf"
     },
     "shared/emulators.py": {
-      "output_sha256": "ee2e521f54c3b2d812ad05eff04932428768f7f5360189a3098b61dc0341e6da",
+      "output_sha256": "f573d1224012febd006b7671c61317a7619f82c429cd4f2218758a3b3ded3b6d",
       "source": "src/smb3x/shared/emulators.py",
-      "source_lf_sha256": "ee2e521f54c3b2d812ad05eff04932428768f7f5360189a3098b61dc0341e6da",
+      "source_lf_sha256": "f573d1224012febd006b7671c61317a7619f82c429cd4f2218758a3b3ded3b6d",
       "transform": "lf"
     },
     "shared/identity.py": {
@@ -1508,7 +1508,7 @@
       "transform": "lf"
     }
   },
-  "runtime": "m36-python-2",
+  "runtime": "m36-python-3",
   "schema": 1,
   "seed_policy": "No historical development denylist; all identity/ROM/cache/checkpoint checks retained",
   "slot_release": "m27-1",

@@ -6,13 +6,12 @@ All three pass the M35 managed check/reward/consumption, offline/reconnect and
 two-cold-Resume fixtures. The private handoff records evidence and limitations.
 Independent Sol verification passed for both M35 and M36. The M36 membership evidence correction did not change the source or package. Tests run on Windows 10 Pro 22H2; The owner reports one successful fresh 2.11.1 Windows 11 check and cold Resume; broader Windows 11 acceptance is not inferred. Other versions/platforms are not approved automatically.
 
-`shared/emulators.py` identifies the executable by SHA256, then verifies every
-required file in the official DLL directory. The 0.36.1 fix branch also accepts
-exact hash-verified optional System.CommandLine language assemblies; arbitrary
-additional or modified binaries still reject. See [the correction and retest
-guide](beta/bizhawk-localization-fix.md). `launcher/config/emulators.json` holds the
-reviewed identities, config filename and State requirements. No emulator binary
-is packaged. Each session stores its exact emulator identity before creating a
+`shared/emulators.py` identifies the executable by SHA256 and verifies the reviewed
+NES/client/Lua dependencies. Unrelated cores, plugins and language files may be
+present or absent. See the [0.36.2 dependency design and owner retest](beta/bizhawk-practical-installations.md).
+`launcher/config/emulators.json` records the dependency selection separately from
+the stable session fingerprint, configuration and State contracts. No emulator
+binary is packaged. Each session stores its exact emulator identity before creating a
 native lifetime. Cross-version Resume is unsupported in every direction. Reopen
 the same player file with its original emulator; do not delete or edit saves.
 

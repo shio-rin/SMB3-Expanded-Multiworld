@@ -11,7 +11,7 @@ from .windows import close_owned_emulator, process_identity, retire_orphan
 from .dialogs import confirm
 from .connection import connected
 from ..shared.serialization import fingerprint, sha
-from ..shared.emulators import identify, profile
+from ..shared.emulators import identify, profile, EmulatorCompatibilityError, verify_frontend
 from ..shared.serialization import read
 
 def lua_strings(v):
@@ -32,11 +32,11 @@ def require_session_emulator(session_root, identity):
     if path.exists():
         previous = read(path)
         if previous != identity:
-            raise ValueError('This session is bound to BizHawk ' + str(previous.get('profile', 'unknown'))
+            raise EmulatorCompatibilityError('This session is bound to BizHawk ' + str(previous.get('profile', 'unknown'))
                              + ' and its exact core/configuration. Reopen with that installation. '
                              'Cross-version Resume is unsupported; existing saves were retained.')
     elif (session_root / 'saves/EPOCH.json').exists() or (session_root / 'saves/LATEST.json').exists():
-        raise ValueError('Session emulator ownership record is missing; preserve this session and its matching runtime.')
+        raise EmulatorCompatibilityError('Session emulator ownership record is missing; preserve this session and its matching runtime.')
 
 
 def play(cache, resource_id, session_root, game, original, emulator, server, password):
@@ -58,6 +58,9 @@ def play(cache, resource_id, session_root, game, original, emulator, server, pas
     for name in ('json.lua', 'x64/socket-windows-5-1.dll', 'x64/socket-windows-5-4.dll'):
         if not (lua / name).is_file():
             raise ValueError('Official Archipelago Lua support missing: ' + str(lua / name))
+    # Validate the selected audio backend before opening a new epoch or resuming.
+    config_path, config = managed_configuration(session_root, emulator)
+    verify_frontend(emulator, config)
     bind = binding(cache, game, build, session, emu_id, lua, resource_id)
     identity_path = session_root / 'emulator-identity.json'
     if not identity_path.exists():
@@ -79,7 +82,6 @@ def play(cache, resource_id, session_root, game, original, emulator, server, pas
     else:
         run, live = store.new_run()
     retire_orphan(session_root, session_root.name, close=True)
-    config_path, config = managed_configuration(session_root, emulator)
     ctl = dict(schema=3, run=run, token=uuid.uuid4().hex, location_ids=bind['location_ids'], resume=folder.as_posix() if folder else None, marker=marker, restored_at=(store.recovery or {}).get('saved'), recovery_kind=(store.recovery or {}).get('kind'), user_start_paused=config['StartPaused'], emulator_version=version, lua_version=profile(version)['lua'])
     write_new(live / 'control.json', ctl)
     write_new(live / 'emulator.json', config)

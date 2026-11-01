@@ -6,6 +6,8 @@ version string. Historical runtimes retain their own original contracts.
 """
 from pathlib import Path
 import json
+import hashlib
+import xml.etree.ElementTree as ET
 from .resources import RESOURCE_ROOT
 from .serialization import sha
 
@@ -21,40 +23,106 @@ def profile(version):
         raise ValueError('Unsupported emulator profile; verified versions: ' + ', '.join(profiles())) from exc
 
 
-def identify(exe):
-    """Verify required runtime files and any explicitly approved language resources.
+class EmulatorCompatibilityError(ValueError):
+    """An actionable, known installation/session compatibility failure."""
 
-    Optional assemblies are exact path/hash pairs for this profile's dependency
-    version. A resources.dll filename alone never grants an integrity exemption.
-    They do not alter the required-file identity stored in existing sessions.
+
+def loader_policy(raw):
+    """Pin CLR startup/loading policy, not appSettings or GC preferences."""
+    def node(element):
+        return [element.tag, sorted(element.attrib.items()),
+                (element.text or '').strip(), [node(child) for child in element]]
+    root = ET.fromstring(raw)
+    policy = [root.tag, sorted(root.attrib.items()), []]
+    for element in root:
+        if element.tag in ('startup', 'runtime'):
+            value = node(element)
+            if element.tag == 'runtime':
+                value[3] = [child for child in value[3] if not child[0].startswith('gc')]
+            policy[2].append(value)
+    return hashlib.sha256(json.dumps(policy, sort_keys=True,
+                                    separators=(',', ':')).encode()).hexdigest()
+
+
+def _verify_files(exe, selected, names):
+    missing, modified, collisions = [], [], []
+    for name in names:
+        expected = selected['files'][name]
+        path = exe if name == 'EmuHawk.exe' else exe.parent / name
+        if not path.is_file():
+            missing.append(name)
+        elif sha(path) != expected:
+            modified.append(name)
+        if name.startswith('dll/'):
+            # CLR application-base probing precedes AssemblyResolve's dll/ path;
+            # Win32 native DLL search also checks the executable directory first.
+            # Check only names capable of shadowing a dependency, never all extras.
+            base = Path(name).name
+            stem = Path(base).stem
+            probes = [base]
+            if name in selected['managed_files']:
+                probes += [stem + '/' + base, stem + '.exe', stem + '/' + stem + '.exe']
+            for relative in probes:
+                candidate = exe.parent / relative
+                if candidate.is_file() and sha(candidate) != expected:
+                    collisions.append(relative)
+    return [('Missing critical files', missing), ('Modified critical files', modified),
+            ('Conflicting dependency copies', collisions)]
+
+
+def identify(exe):
+    """Verify the reviewed NES/client/Lua closure; unrelated files are not inputs.
+
+    `files` remains the immutable historical profile fingerprint for sessions.
+    `validation_files` is the separately reviewed execution dependency set.
     """
     exe = Path(exe).resolve()
-    executable_hash = sha(exe)
+    try:
+        executable_hash = sha(exe)
+    except OSError as exc:
+        raise EmulatorCompatibilityError('Cannot read the selected BizHawk executable: ' + str(exe)
+                                        + '. Supported versions: ' + ', '.join(profiles())) from exc
     found = next((p for p in profiles().values() if p['files']['EmuHawk.exe'] == executable_hash), None)
     if found is None:
-        raise ValueError('Unrecognized or modified BizHawk executable. Verified Windows x64 releases: '
-                         + ', '.join(profiles()) + '. Select a complete unmodified official installation; keep existing saves.')
-    actual = {'EmuHawk.exe': executable_hash}
-    actual.update({p.relative_to(exe.parent).as_posix(): sha(p)
-                   for p in sorted((exe.parent / 'dll').rglob('*')) if p.is_file()})
-    required = found['files']
-    optional = found.get('optional_files', {})
-    differences = {
-        'Missing required files': sorted(required.keys() - actual.keys()),
-        'Modified required files': sorted(k for k in required.keys() & actual.keys()
-                                          if actual[k] != required[k]),
-        'Modified optional language resources': sorted(k for k in optional.keys() & actual.keys()
-                                                       if actual[k] != optional[k]),
-        'Unapproved additional files': sorted(actual.keys() - required.keys() - optional.keys()),
-    }
+        raise EmulatorCompatibilityError('Unrecognized or modified BizHawk executable. Supported Windows x64 versions: '
+                                          + ', '.join(profiles()) + '. Existing files and saves are retained.')
+    try:
+        differences = _verify_files(exe, found, found['validation_files'])
+        config = Path(str(exe) + '.config')
+        if not config.is_file() or loader_policy(config.read_bytes()) != found['loader_config_sha256']:
+            differences.append(('Incompatible CLR loader configuration', [config.name]))
+    except (OSError, ET.ParseError) as exc:
+        raise EmulatorCompatibilityError('Cannot verify a critical BizHawk dependency or loader configuration: '
+                                        + str(exc) + '. Supported versions: ' + ', '.join(profiles())) from exc
     details = [label + ' (' + str(len(paths)) + '): ' + ', '.join(paths)
-               for label, paths in differences.items() if paths]
+               for label, paths in differences if paths]
     if details:
-        raise ValueError('BizHawk ' + found['version'] + ' core/runtime integrity mismatch.\n'
+        raise EmulatorCompatibilityError('BizHawk ' + found['version'] + ' critical runtime integrity mismatch.\n'
                          + '\n'.join(details)
-                         + '\nSelect a complete official installation in a separate folder; do not mix versions.'
-                           ' Only hash-verified language resources are optional. Keep existing saves.')
+                         + '\nSupported versions: ' + ', '.join(profiles())
+                         + '. Select an installation with matching critical components. '
+                           'Unrelated cores, plugins and language files may remain. Existing saves are retained.')
     return found
+
+
+def verify_frontend(exe, config):
+    """Check OpenAL only when selected, not when the player uses XAudio2.
+
+    These are specific load targets of OpenALSoundOutput, not an extras allowlist.
+    """
+    if config.get('SoundOutputMethod') != 2:
+        return
+    exe = Path(exe).resolve()
+    selected = identify(exe)
+    try:
+        differences = _verify_files(exe, selected, selected['frontend_files'])
+    except OSError as exc:
+        raise EmulatorCompatibilityError('Cannot read a selected OpenAL audio dependency: ' + str(exc)) from exc
+    details = [label + ': ' + ', '.join(paths) for label, paths in differences if paths]
+    if details:
+        raise EmulatorCompatibilityError('Selected OpenAL audio dependencies failed verification.\n'
+                                        + '\n'.join(details) + '\nUse matching OpenAL components or select '
+                                        'XAudio2 in your audio preferences. Existing saves are retained.')
 
 
 def bound_profile(emulator):
