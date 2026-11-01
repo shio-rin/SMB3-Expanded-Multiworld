@@ -1,8 +1,9 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Contributing
 
-This is a local release proposal. Original project contributions use MPL-2.0; the specific third-party/publication
-holds in NOTICE.md remain. Contributions must be yours to license under MPL-2.0,
+This beta is staged privately for owner review. Original project contributions use
+MPL-2.0; the specific third-party uncertainties in NOTICE.md remain. Read the
+[current licensing addendum](docs/beta/licensing.md) for release status. Contributions must be yours to license under MPL-2.0,
 or identify their separate compatible terms and retain all required notices.
 Do not add MPL notices to uncertain or excluded material. Substantial implementation, testing and documentation were
 produced with OpenAI Codex and ChatGPT under human direction. Describe assistance

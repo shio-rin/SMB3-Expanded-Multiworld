@@ -2,12 +2,14 @@
 # Security and sensitive reports
 
 APWorlds execute Python; install only a trusted package and verify its published
-hash when a release is eventually approved. Hashes establish matching bytes, not
+hash against the approved release checksum. Hashes establish matching bytes, not
 an independent code signature or rights clearance.
 
-No public security contact has been established. Report privately through the
-maintainer's existing channel until a contact is approved. Do not open a public
-issue containing secrets or publish an exploit against someone's active room.
+For an ordinary reproducible bug, use GitHub Issues. For a sensitive vulnerability,
+use the repository's private vulnerability-reporting option if available, or ask
+the maintainer for a private channel without including exploit details or secrets.
+No separate security email or response-time commitment is established. Do not
+post secrets or an exploit against an active room in an issue.
 
 Preserve originals. Share only requested redacted copies of client/emulator/Lua
 logs and version/build metadata. Remove passwords, transport/session tokens,

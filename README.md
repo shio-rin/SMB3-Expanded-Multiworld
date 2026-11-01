@@ -1,42 +1,64 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
-# Super Mario Bros. 3: Expanded Multiworld
+# Super Mario Bros. 3: Expanded Multiworld (SMB3X)
 
-SMB3X connects Super Mario Bros. 3 to Archipelago. Clear levels and other
-locations to send rewards, receive progression and items from your room, and
-explore all eight original worlds. There are 125 reward locations; Bowser is
-victory-only. No Nintendo ROM or private soundtrack is included.
+Explore all eight SMB3 worlds in Archipelago: clear 125 randomized reward checks,
+send items to your multiworld, and unlock progress with World Passes and Regional
+Hammers. Bowser is victory-only. Choose Vanilla, Balanced or Compatible original
+level shuffle, stacked inventory, native menus, optional hazards, traps, Blessings
+and DeathLink, original/shuffled native music, palette modes and cosmetic Luigi.
 
-**Local release candidate: publication holds remain; original project code uses MPL-2.0.**
-This source tree is a new repository with no private development history.
-See [NOTICE.md](NOTICE.md) for the exact remaining material-specific questions.
+**First beta staged for owner review. This repository stays Private and the
+GitHub Release stays an unpublished draft until separately authorized.**
+APWorld **0.36.0**, candidate **36.0.0-rc1**, proposed tag **v0.36.0-beta.1**.
 
-## Play
+## Start playing
 
-Requires Windows, official **Archipelago 0.6.8** and **BizHawk 2.10, 2.11 or 2.11.1 / NesHawk** (M35 compatibility matrix in [docs/emulator-qualification.md](docs/emulator-qualification.md)).
-Supply your own verified SMB3 USA Revision A ROM. Packaging needs no ROM.
+You need Windows x64, official **Archipelago 0.6.8**, a complete **BizHawk 2.10,
+2.11 or 2.11.1** installation using **NesHawk**, and your own clean SMB3 USA Rev A
+ROM. No ROM or emulator is supplied. Game files are built locally from your ROM.
 
-1. Install `smb3x.apworld` by opening it with Archipelago Launcher. Restart Launcher.
-2. Generate the game's YAML template through Launcher, edit your player name and
-   settings, and generate your Archipelago game normally. The host needs no ROM.
-3. Host the generated room by your usual Archipelago method. Give each player
-   their own `.apsmb3x` file from the generated ZIP.
-4. Open your `.apsmb3x` with Launcher. Select your original ROM, supported
-   EmuHawk executable and room address when prompted. Keep this player file.
-5. Wait for the client to connect and finish its initial checkpoint before playing.
+1. Obtain the verified `smb3x.apworld` from the approved beta assets, install it
+   with Archipelago Launcher, then restart Launcher.
+2. Open Options Creator, choose **Super Mario Bros. 3: Expanded Multiworld**,
+   set your player name/options, and export YAML for your host.
+3. Download your own `.apsmb3x` from your generated room. Use Launcher's
+   **Open Patch**, select that file, then select your clean ROM and supported
+   `EmuHawk.exe` when prompted.
+4. Connect to the room and wait for the initial verified checkpoint. Play normally.
+   Reopen the same player file to Resume from the latest verified checkpoint.
 
-[Player guide](docs/player-guide.md) covers setup, saving and troubleshooting.
-[Options](docs/options.md) describes supported settings.
-[Architecture](ARCHITECTURE.md), [codebase walkthrough](CODEBASE_GUIDE.md),
-[development setup](DEVELOPMENT.md), [testing](TESTING.md), [build from source](BUILDING.md) and [contributing](CONTRIBUTING.md) cover development.
+[Installation](INSTALL.md) · [Player guide](docs/beta/player-guide.md) ·
+[Host guide](docs/beta/host-guide.md) · [Troubleshooting](docs/beta/troubleshooting.md) ·
+[Known limitations](docs/beta/known-limitations.md) · [Options](docs/options.md)
 
-## Development and testing disclosure
+Normal close does not guarantee an extra save. Keep the original emulator/core
+version for each existing game; do not transplant States or reset/rewind/load
+arbitrary States. SMB3X and the independent SMB3 proof of concept can coexist.
 
-Substantial implementation, testing, investigation and documentation were produced
-with **OpenAI Codex and ChatGPT assistance under human direction**. Human input
-includes design decisions and targeted gameplay testing. Automated native fixtures
-sometimes assist navigation or approach positioning; they do not establish a
-human full-campaign or every-option certification. This is a free, open-source
-release proposal, subject to the outstanding scope and approval decisions in NOTICE.
+## Development, support and licensing
 
-Unofficial; no affiliation with or endorsement by Nintendo, Archipelago, BizHawk
-or OpenAI is implied. Names identify compatibility.
+[Report bugs through GitHub Issues](https://github.com/shio-rin/SMB3-Expanded-Multiworld/issues).
+Follow [reporting instructions](docs/beta/troubleshooting.md#report-a-bug) and
+[SECURITY.md](SECURITY.md); never attach ROMs, States or private session files.
+
+[Build](BUILDING.md) · [Development](DEVELOPMENT.md) · [Testing](TESTING.md) ·
+[Architecture](ARCHITECTURE.md) · [Codebase](CODEBASE_GUIDE.md) ·
+[Contributing](CONTRIBUTING.md) · [Beta notes](docs/beta/release-notes.md)
+
+MPL-2.0 covers the established original-code scope only. Read
+[NOTICE.md](NOTICE.md), [LICENSE-SCOPE.json](LICENSE-SCOPE.json),
+[third-party notices](THIRD_PARTY_NOTICES.md) and the current
+[scope/status addendum](docs/beta/licensing.md). Three documented native
+adaptation groups have unresolved copyright interpretations; no legal clearance
+is claimed. Attribution does not establish permission for third-party expression.
+
+Substantial implementation, testing and documentation used **OpenAI Codex and
+ChatGPT assistance under human direction**. Targeted human testing and assisted
+automated fixtures do not establish exhaustive multiplayer, every option
+combination, or a complete human eight-world campaign.
+
+Free and unofficial; unaffiliated with Nintendo, Archipelago, BizHawk or OpenAI.
+Names identify compatibility. See [release provenance](docs/beta/provenance.md)
+for the exact packaged source and the separate documentation revision. Historical
+package-bound guides remain unchanged for reproduction; the beta guides linked
+above are the current installation instructions.

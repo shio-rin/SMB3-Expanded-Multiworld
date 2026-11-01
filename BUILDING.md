@@ -6,7 +6,12 @@ library: no ROM, installed AP/BizHawk, private soundtrack, old APWorld or cache.
 Exact ZIP reproduction uses Python 3.12.14/zlib 1.3.2; another compression version
 may change ZIP bytes while preserving member hashes.
 
-From a clean committed checkout:
+To reproduce the sealed first beta, use a separate clean checkout of
+`cf90296511a46174e8daf1a634acb3127f457c51` (the intended `v0.36.0-beta.1` tag).
+Later documentation commits change generated build-source metadata even though
+recipe inputs are identical. See [beta provenance](docs/beta/provenance.md).
+
+From that clean committed checkout:
 
 ```powershell
 python -B -m tools.check_source
@@ -18,7 +23,7 @@ Choose a fresh output; existing archives are never overwritten. The builder chec
 sibling `.build.json` with source commit, recipe/resource identity and member hashes.
 See NOTICE.md before any distribution.
 
-## Edit → test → recipe review → clean build
+## Edit â†’ test â†’ recipe review â†’ clean build
 
 1. Edit actual implementation under `src/smb3x`; run affected tests (TESTING.md).
 2. Run `python tools/update_recipe.py --propose ../recipe-review.json`.

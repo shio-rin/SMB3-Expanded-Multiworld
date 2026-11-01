@@ -4,7 +4,7 @@
 M35 registers the official Windows x64 **2.10, 2.11 and 2.11.1** installations.
 All three pass the M35 managed check/reward/consumption, offline/reconnect and
 two-cold-Resume fixtures. The private handoff records evidence and limitations.
-M35 independent Sol verification passed. M36 configuration remediation awaits its own review. Tests run on Windows 10 Pro 22H2; The owner reports one successful fresh 2.11.1 Windows 11 check and cold Resume; broader Windows 11 acceptance is not inferred. Other versions/platforms are not approved automatically.
+Independent Sol verification passed for both M35 and M36. The M36 membership evidence correction did not change the source or package. Tests run on Windows 10 Pro 22H2; The owner reports one successful fresh 2.11.1 Windows 11 check and cold Resume; broader Windows 11 acceptance is not inferred. Other versions/platforms are not approved automatically.
 
 `shared/emulators.py` identifies the executable by SHA256, then verifies every
 file in the official DLL directory. `launcher/config/emulators.json` holds the
