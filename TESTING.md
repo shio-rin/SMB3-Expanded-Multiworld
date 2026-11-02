@@ -18,6 +18,9 @@ it is never packaged in the runtime.
 | Native | reconstructed certificates, symbols/spans/guards, complete ROM bytes |
 
 Example: `python -B -m unittest tests.test_shuffle tests.test_private_boundaries`.
+For option UI changes, check Creator order Vanilla / Balanced / Compatible,
+default Vanilla and clean YAML export. Removed selections must reject clearly,
+including weighted/triggered YAML; numeric option IDs must stay stable.
 
 Compare official Vanilla/Balanced/Compatible, Mixed Fortresses, hazards, palette/music,
 weighted YAML, triggers, start inventory and plando. Compare placements, slot data
