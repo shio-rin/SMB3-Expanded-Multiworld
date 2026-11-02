@@ -1,29 +1,22 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
-# Architectural consolidation
+# Changelog
 
-> Historical engineering record; dated results retain their original scope.
-> Use the [current player guide](docs/beta/player-guide.md) for setup and play.
+## 0.36.2 — First public beta
 
-The current implementation uses responsibility-based modules under `src/smb3x`.
-World, planning, launcher, native pipeline, client and Lua wrapper chains were
-replaced with direct implementations. Stable IDs and protocol/save semantics remain.
-Removed YAML now rejects in both official import orders. Journal temporary names
-are bounded and managed paths are checked before native work. Fresh games use
-`SMB3X - Expanded Multiworld.nes`; historical games retain their own runtimes.
-See ARCHITECTURE.md, CODEBASE_GUIDE.md and BUILDING.md.
+Published **2026-11-02**, per the [GitHub release](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.2-beta.1).
 
-# Local candidate 31.0.0-rc6
+- First public SMB3X release: all eight worlds, 125 randomized reward checks,
+  World Pass progression, reusable Regional or consumable Legacy Hammers,
+  stacked inventory and native progression/travel menus.
+- Optional stage shuffling, Star Fragment gates, hazards, traps, Blessings,
+  DeathLink, palettes, original/shuffled music and cosmetic Luigi.
+- Managed safe checkpoints and cold Resume with BizHawk 2.10, 2.11 or 2.11.1 / NesHawk
+  on Windows x64, using official Archipelago 0.6.8.
+- Existing supported emulator installations can retain unrelated cores, plugins
+  and language files; executable and critical dependency integrity stay verified.
+- Beta boundaries include limited optional-hazard coverage, some fixed stage
+  arrangements, saves at safe states rather than continuously, and no cross-version
+  save migration. See [known limitations](docs/beta/known-limitations.md).
 
-Level Shuffle is Vanilla (default), Balanced (neighboring original worlds), or
-Compatible (the full technically eligible 53-stage pool). Pool/range selectors
-and obsolete twelve-stage planning are removed. Removed YAML keys reject with
-migration guidance, including weighted and trigger-injected settings. The existing
-numeric option IDs are unchanged; the dropdown order is display-specific.
-
-Historical player files keep their matching cached runtimes. Public packaging
-needs no private music or development seed records. The broader native/gameplay
-implementation and persistence cadence are preserved. See NOTICE.md for the
-remaining publication/licensing gates; this is a local candidate only.
-
-Public source hard-disables private provider loading. Only a separately hash-bound
-private build can enable it; adding metadata files to a public cache cannot.
+[Player guide](docs/beta/player-guide.md) · [Release notes](docs/beta/release-notes.md) ·
+[Build provenance](docs/beta/provenance.md)
