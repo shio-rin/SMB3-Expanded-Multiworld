@@ -35,9 +35,8 @@ Hammers and useful inventory items. Bowser is the victory goal, not a reward che
 Optional level shuffling, hazards, traps, Blessings, palettes and Luigi's appearance
 let you vary a game.
 
-**Availability:** APWorld 0.36.2 / v0.36.2-beta.1 is currently staged in this Private
-repository as an unpublished prerelease. Downloads and Issues require repository
-access. The release is not publicly available yet.
+**First public beta:** [APWorld 0.36.2 / v0.36.2-beta.1](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.2-beta.1).
+This is a beta prerelease; feedback and bug reports are welcome.
 
 ## Start playing
 
@@ -75,7 +74,7 @@ Contributors can start with [Contributing](CONTRIBUTING.md), [Development](DEVEL
 [Codebase guide](CODEBASE_GUIDE.md).
 
 SMB3X is free and unofficial, with no affiliation with Nintendo, Archipelago,
-BizHawk or OpenAI. No ROM or external soundtrack pack is supplied. MPL-2.0 covers
+BizHawk or OpenAI. MPL-2.0 covers
 the established original-source scope; see [licensing and exceptions](docs/beta/licensing.md)
 and [third-party credits](THIRD_PARTY_NOTICES.md).
 [Build provenance](docs/beta/provenance.md) identifies the sealed package and explains

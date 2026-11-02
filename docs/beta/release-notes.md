@@ -1,7 +1,7 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # SMB3X — First Public Beta
 
-**APWorld 0.36.2 / v0.36.2-beta.1**
+**[APWorld 0.36.2 / v0.36.2-beta.1](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.2-beta.1) — beta prerelease**
 
 Explore all eight SMB3 worlds with 125 randomized reward checks and Archipelago
 multiworld delivery. World Passes open travel; reusable Regional Hammers open
@@ -40,7 +40,6 @@ Normal close does not guarantee an extra checkpoint. Reopen the same player file
 to continue with the same BizHawk version. Unsaved mid-level progress may be lost;
 reset/rewind/manual State recovery and cross-version saves are unsupported.
 
-This release uses original or shuffled SMB3 music; external packs are unsupported.
 See [known limitations](known-limitations.md) for shuffle and testing boundaries.
 
 ## Verification and source

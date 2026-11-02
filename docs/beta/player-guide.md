@@ -23,9 +23,8 @@ These files have different jobs:
 | Player `.apsmb3x` | Open your own generated game; keep it to continue later. |
 | Original SMB3 `.nes` ROM | Supply it locally when asked; it is used to build your game. |
 
-Obtain the APWorld from the project's release assets available to you. Open it
-with Archipelago Launcher and complete installation, then **restart Launcher**.
-See the [README](../../README.md) for current release availability.
+Download `smb3x.apworld` from the [0.36.2 beta release](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.2-beta.1).
+Open it with Archipelago Launcher and complete installation, then **restart Launcher**.
 
 ## Creating options and joining a room
 
@@ -50,8 +49,7 @@ for it. Keep the file. The host also supplies the room address and any password.
 Generating a game and starting its server are separate steps; see
 [hosting](host-guide.md) if you are doing both.
 
-This release supports original or shuffled SMB3 music; external soundtrack packs
-are not supported.
+Level and world-map music can each use original or shuffled SMB3 tracks.
 
 ## Starting the game and connecting
 
@@ -179,6 +177,16 @@ are shown on progression pages rather than spent from this inventory.
 For example, open B inventory and use a Leaf before entering a level. After
 receiving a World 3 Pass, use Select travel to visit Water Land. After receiving
 its Regional Hammer, stand next to a Water Land rock and try it from Hammers.
+
+## Optional hazards — limited coverage in this beta
+
+Poison Mushrooms can replace power-ups in selected eligible blocks, while the
+Angry Sun option adds extra Suns to supported stages. These options do not affect
+every block or level. Coverage and placement are areas for future improvement;
+reports of unexpected behavior or problematic placements are welcome. Both
+options are off by default. These add hazards to the original game; they do not
+replace its ordinary enemies. Their probability settings apply only to eligible
+blocks or supported stages; see the [options reference](../../apworld/smb3/docs/options-reference.md#hazards-traps-and-helpful-effects).
 
 ## Saving and continuing
 

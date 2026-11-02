@@ -24,6 +24,11 @@ to see received Passes, Hammers, Fragments and checks during play.
 
 ## Hazards, traps and helpful effects
 
+**Optional hazards — limited coverage in this beta:** Poison Mushrooms affect
+selected eligible blocks; Angry Sun adds encounters only in supported stages.
+Both default to Off, and neither affects every block or level. Placement feedback
+is welcome. Read the [player explanation](../../../docs/beta/player-guide.md#optional-hazards--limited-coverage-in-this-beta).
+
 | Setting / YAML key | Default | What it changes |
 | --- | --- | --- |
 | Poison Mushrooms / `poison_mushrooms` | `off` | `rare`, `normal`, `chaos` give eligible blocks 5%, 15%, 35% chances of harmful mushrooms. Only selected blocks can change; essential power-ups stay safe. |
@@ -43,8 +48,7 @@ to see received Passes, Hammers, Fragments and checks during play.
 | Level Music / `level_music` | `vanilla` | `shuffled` rearranges original SMB3 level music. |
 | World Map Music / `overworld_music_shuffle` | `vanilla` | `shuffled` permutes the eight original map themes independently of Level Music. |
 
-This release supports original or shuffled SMB3 music. External soundtrack packs
-are not supported.
+This release supports original or shuffled SMB3 music.
 
 ## Example: shuffled stages and music
 
