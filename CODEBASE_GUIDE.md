@@ -88,6 +88,5 @@ typed receipt partition, controller and complete server prefix before Resume.
 not the world's RNG. `native/pipeline.py:build` lists every patch stage explicitly;
 its order, original-byte guards and final BPS reproduction check are part of correctness.
 
-M35 emulator/version and State boundaries are documented in
-[emulator qualification](docs/emulator-qualification.md). Original project source
-notices use MPL-2.0; see LICENSE-SCOPE.json and NOTICE.md for exclusions.
+Emulator-version and State boundaries are documented in
+[emulator qualification](docs/emulator-qualification.md). See [licensing scope and exclusions](docs/beta/licensing.md) for source terms.

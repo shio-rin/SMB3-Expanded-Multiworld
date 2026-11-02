@@ -1,6 +1,9 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Architectural consolidation
 
+> Historical engineering record; dated results retain their original scope.
+> Use the [current player guide](docs/beta/player-guide.md) for setup and play.
+
 The current implementation uses responsibility-based modules under `src/smb3x`.
 World, planning, launcher, native pipeline, client and Lua wrapper chains were
 replaced with direct implementations. Stable IDs and protocol/save semantics remain.

@@ -34,9 +34,30 @@ human campaign or multiplayer claim follows.
 Only four assets are staged: smb3x.apworld, SHA256SUMS.txt, INSTALLATION.md and
 RELEASE-NOTES.md. Generated rooms, ROMs, prepared BPS, States, emulator binaries,
 private music, credentials and internal evidence are excluded. MPL scope and
-third-party disclosures remain intact. Repository visibility is Private; the
-release is an unpublished draft/prerelease pending separate launch authorization.
+third-party disclosures remain intact. See the [README](../../README.md) for current release availability.
 
 The old v0.36.0-beta.1 tag remains at
 `cf90296511a46174e8daf1a634acb3127f457c51`; its sealed M36 archive and the sealed
 M36.1 correction remain preserved locally. The active draft now uses the new tag.
+
+## Which documents are current?
+
+The authoritative player guide is [beta/player-guide.md](player-guide.md).
+[INSTALL.md](../../INSTALL.md), the README and older editable setup pages lead
+there. Current host instructions are [host-guide.md](host-guide.md); the current
+options reference is [options-reference.md](../../apworld/smb3/docs/options-reference.md).
+
+Four Markdown files remain pinned by the sealed package recipe: `NOTICE.md`,
+`docs/player-guide.md`, `docs/host-guide.md` and `docs/options.md`. Their unchanged
+bytes preserve the accepted package, including historical wording. They are not
+the current setup/navigation entry points. Do not refresh recipe hashes to edit
+these snapshots. On the next otherwise-required release, consider updating their
+packaged text to point to the current guides and replacing obsolete startup,
+slot-name, availability and internal-option descriptions. No new runtime build is
+needed for this repository documentation sweep.
+
+Historical correction reports, `docs/m32/stages.md`, `docs/validation.md` and older
+CHANGELOG entries record scoped evidence, not a current release checklist.
+The working APWorld, resource recipe, tags and existing draft assets stay fixed.
+Updated draft-document copies are prepared locally for a separate asset update;
+this documentation PR does not upload them.

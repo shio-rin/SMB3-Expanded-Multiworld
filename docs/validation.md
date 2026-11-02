@@ -1,6 +1,9 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Candidate validation
 
+> Historical engineering record; dated results retain their original scope.
+> Use the [current player guide](beta/player-guide.md) for setup and play.
+
 The official AP0.6.8 Options Creator constructs exactly Vanilla, Balanced,
 Compatible in that order and exports clean YAML with Vanilla as default. IDs
 remain Vanilla=0, Compatible=1 and Balanced=2. The removed pool/range selectors

@@ -29,70 +29,54 @@ while looking forward to seeing what it becomes in the long run.
 
 ## Codex's description and instructions
 
-Explore all eight SMB3 worlds in Archipelago: clear 125 randomized reward checks,
-send items to your multiworld, and unlock progress with World Passes and Regional
-Hammers. Bowser is victory-only. Choose Vanilla, Balanced or Compatible original
-level shuffle, stacked inventory, native menus, optional hazards, traps, Blessings
-and DeathLink, original/shuffled native music, palette modes and cosmetic Luigi.
+SMB3X connects all eight Super Mario Bros. 3 worlds to Archipelago. Clear 125
+reward checks, send items to other players, and receive World Passes, Regional
+Hammers and useful inventory items. Bowser is the victory goal, not a reward check.
+Optional level shuffling, hazards, traps, Blessings, palettes and Luigi's appearance
+let you vary a game.
 
-**First beta staged for owner review. This repository stays Private and the
-GitHub Release stays an unpublished draft until separately authorized.**
-APWorld **0.36.2**, candidate **36.0.2-rc1**, beta tag **v0.36.2-beta.1**.
-
-Existing supported BizHawk installations may be used, including unrelated cores,
-language files and plugins. The executable and critical execution dependencies
-remain verified. Generate a **new 0.36.2 player file** to use the corrected launcher;
-older player files retain their original runtime. Never delete or manually migrate
-saved sessions to update them.
+**Availability:** APWorld 0.36.2 / v0.36.2-beta.1 is currently staged in this Private
+repository as an unpublished prerelease. Downloads and Issues require repository
+access. The release is not publicly available yet.
 
 ## Start playing
 
-You need Windows x64, official **Archipelago 0.6.8**, an existing supported **BizHawk 2.10,
-2.11 or 2.11.1** installation using **NesHawk**, and your own clean SMB3 USA Rev A
-ROM. No ROM or emulator is supplied. Game files are built locally from your ROM.
+You need Windows x64, official Archipelago 0.6.8, BizHawk 2.10, 2.11 or 2.11.1,
+and your own clean SMB3 USA Revision A ROM. Your existing supported BizHawk
+installation can be used; unrelated cores, plugins and language files may stay.
+The launcher sets up NesHawk automatically.
 
-1. Obtain the verified `smb3x.apworld` from the approved beta assets, install it
-   with Archipelago Launcher, then restart Launcher.
-2. Open Options Creator, choose **Super Mario Bros. 3: Expanded Multiworld**,
-   set your player name/options, and export YAML for your host.
-3. Download your own `.apsmb3x` from your generated room. Use Launcher's
-   **Open Patch**, select that file, then select your clean ROM and supported
-   `EmuHawk.exe` when prompted.
-4. Connect to the room and wait for the initial verified checkpoint. Play normally.
-   Reopen the same player file to Resume from the latest verified checkpoint.
+1. Install `smb3x.apworld` through Archipelago Launcher and restart Launcher.
+2. Export your choices from Options Creator and send the YAML to your host.
+3. Open your room's `.apsmb3x` using Launcher → Open Patch, then select your ROM
+   and EmuHawk.exe when prompted. Your player name comes from that player file.
+4. Press **Start** at the title screen. The first save becomes available once you
+   reach the world map and connect. Wait for the successful save notice there.
 
-[Installation](INSTALL.md) · [Player guide](docs/beta/player-guide.md) ·
-[Host guide](docs/beta/host-guide.md) · [Troubleshooting](docs/beta/troubleshooting.md) ·
-[Known limitations](docs/beta/known-limitations.md) · [Options](docs/options.md)
+The **[player guide](docs/beta/player-guide.md)** is the main guide for setup,
+[controls and menus](docs/beta/player-guide.md#controls-and-menus),
+[saving and continuing](docs/beta/player-guide.md#saving-and-continuing), and
+[hints/chat](docs/beta/player-guide.md#hints-and-chat).
 
-Normal close does not guarantee an extra save. Keep the original emulator/core
-version for each existing game; do not transplant States or reset/rewind/load
-arbitrary States. SMB3X and the independent SMB3 proof of concept can coexist.
+[Short installation page](INSTALL.md) · [Hosting](docs/beta/host-guide.md) ·
+[Options](apworld/smb3/docs/options-reference.md) ·
+[Troubleshooting and updates](docs/beta/troubleshooting.md) ·
+[Release notes](docs/beta/release-notes.md) · [Known limitations](docs/beta/known-limitations.md)
 
 ## Development, support and licensing
 
-[Report bugs through GitHub Issues](https://github.com/shio-rin/SMB3-Expanded-Multiworld/issues).
-Follow [reporting instructions](docs/beta/troubleshooting.md#report-a-bug) and
-[SECURITY.md](SECURITY.md); never attach ROMs, States or private session files.
+[Report a bug or suggest an improvement](https://github.com/shio-rin/SMB3-Expanded-Multiworld/issues).
+Include steps and relevant redacted log excerpts; see
+[bug reporting](docs/beta/troubleshooting.md#report-a-bug) or
+[security reporting](SECURITY.md) for sensitive issues.
 
-[Build](BUILDING.md) · [Development](DEVELOPMENT.md) · [Testing](TESTING.md) ·
-[Architecture](ARCHITECTURE.md) · [Codebase](CODEBASE_GUIDE.md) ·
-[Contributing](CONTRIBUTING.md) · [Beta notes](docs/beta/release-notes.md)
+Contributors can start with [Contributing](CONTRIBUTING.md), [Development](DEVELOPMENT.md),
+[Build](BUILDING.md), [Testing](TESTING.md), [Architecture](ARCHITECTURE.md) and
+[Codebase guide](CODEBASE_GUIDE.md).
 
-MPL-2.0 covers the established original-code scope only. Read
-[NOTICE.md](NOTICE.md), [LICENSE-SCOPE.json](LICENSE-SCOPE.json),
-[third-party notices](THIRD_PARTY_NOTICES.md) and the current
-[scope/status addendum](docs/beta/licensing.md). Three documented native
-adaptation groups have unresolved copyright interpretations; no legal clearance
-is claimed. Attribution does not establish permission for third-party expression.
-
-Substantial implementation, testing and documentation used **OpenAI Codex and
-ChatGPT assistance under human direction**. Targeted human testing and assisted
-automated fixtures do not establish exhaustive multiplayer, every option
-combination, or a complete human eight-world campaign.
-
-Free and unofficial; unaffiliated with Nintendo, Archipelago, BizHawk or OpenAI.
-Names identify compatibility. See [release provenance](docs/beta/provenance.md)
-for the exact packaged source and the separate documentation revision. Historical
-package-bound guides remain unchanged for reproduction; the beta guides linked
-above are the current installation instructions.
+SMB3X is free and unofficial, with no affiliation with Nintendo, Archipelago,
+BizHawk or OpenAI. No ROM or external soundtrack pack is supplied. MPL-2.0 covers
+the established original-source scope; see [licensing and exceptions](docs/beta/licensing.md)
+and [third-party credits](THIRD_PARTY_NOTICES.md).
+[Build provenance](docs/beta/provenance.md) identifies the sealed package and explains
+which older documents are preserved snapshots rather than current setup guides.

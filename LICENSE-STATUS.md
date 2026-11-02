@@ -1,8 +1,7 @@
+<!-- SPDX-License-Identifier: MPL-2.0 -->
 # License status
 
-MPL-2.0 is selected for the established original-code scope; LICENSE contains the
-unchanged official text. LICENSE-SCOPE.json and NOTICE.md remain package-bound.
-Read [the current beta licensing/status addendum](docs/beta/licensing.md) for the
-three unresolved native adaptation groups and the owner's Private/draft-only
-release instruction. No third-party expression is blanket-relicensed and no legal
-clearance is claimed. M36 removed the redistributed emulator RGB table.
+SMB3X uses MPL-2.0 for its established original-source scope. Read the unchanged
+[license](LICENSE), [file scope](LICENSE-SCOPE.json),
+[current licensing and native-material exceptions](docs/beta/licensing.md), and
+[third-party notices](THIRD_PARTY_NOTICES.md).

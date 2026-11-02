@@ -1,25 +1,20 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
-# Known beta limitations
+# Known limitations
 
-- Windows x64, official AP 0.6.8 and exact supported BizHawk 2.10/2.11/2.11.1
-  NesHawk installations only. Existing installations may contain unrelated cores,
-  plugins and language files; critical dependencies remain pinned. No other emulator/platform qualification is implied.
-- Safe automatic checkpoints are not continuous or exact mid-level crash saves.
-  Normal close does not guarantee an additional checkpoint. Map movement alone
-  may Resume at the prior progress-save position.
-- Existing games are bound to their original emulator/core and runtime. No
-  cross-version State migration, arbitrary State loading, reset/rewind recovery,
-  old-room migration or checkpoint transplantation is supported.
-- Some uncertified rooms retain native content. Shuffle modes use their certified
-  compatibility boundaries; no all-arrangement/full-campaign claim is made.
-- Private R3 music and external soundtrack packs are not included or supported by
-  this build. Use Vanilla/Shuffled native music. No World 9 or Classic Level Pack.
-- Automated fixtures include assisted navigation/goal approach and synthetic
-  rooms. No exhaustive human multiplayer, every-option or complete human eight-world
-  campaign certification is claimed. Desktop dialogs/controller setup and every
-  other APWorld combination have not been exhaustively tested.
-- The three specific native adaptation groups in the licensing notice retain
-  unresolved copyright interpretations. No legal clearance is asserted.
+- Supported play uses Windows x64, AP 0.6.8 and BizHawk 2.10, 2.11 or 2.11.1 with
+  NesHawk. Existing installations can include unrelated cores, plugins and language
+  files; critical dependencies remain verified. Other versions/platforms are untested.
+- Saves are made at safe states, not continuously. Normal close does not force a
+  save, and unsaved mid-level progress can be lost. There is no Save & Quit button,
+  arbitrary savestate recovery or cross-version save migration.
+- Some stage entrances and rooms remain in their original arrangement. Shuffling
+  keeps the entry/exit and routing restrictions described in the
+  [options reference](../../apworld/smb3/docs/options-reference.md).
+- External soundtracks, World 9 and Classic Level Packs are not supported.
+- Hints/chat require an optional Text Client. External clients may reveal traps
+  even when advance warnings are hidden in SMB3X.
+- Gameplay tests include scripted navigation and goal approach. They do not cover
+  every option combination, controller setup, multiplayer group or full campaign.
 
-[Checkpoint details](player-guide.md#checkpoints-and-resume) ·
-[Emulator qualification](../emulator-qualification.md) · [Licensing](licensing.md)
+[Player guide](player-guide.md) · [Troubleshooting](troubleshooting.md) ·
+[Licensing and material-specific exceptions](licensing.md)

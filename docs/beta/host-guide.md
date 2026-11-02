@@ -1,41 +1,54 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
-# Host guide — beta 0.36.2
+# Host guide
 
-Use official Archipelago **0.6.8** and install the same verified `smb3x.apworld`
-as your SMB3X players. Restart Launcher. Hosts need no SMB3 ROM or emulator to
-generate or host a room.
+A host collects player choices, generates the multiworld, and runs or arranges
+its server. You need **official Archipelago 0.6.8** and the matching SMB3X APWorld
+for generation. You do not need another player's ROM or BizHawk installation.
 
-Generate fresh 0.36.2 player files for the corrected launcher; existing rooms and
-saved sessions retain their original runtime and must not be migrated manually.
+## Generate the room
 
-1. Ask each player to export fresh YAML from Options Creator. The SMB3X game name
-   and YAML section key are exactly `Super Mario Bros. 3: Expanded Multiworld`.
-2. Place the YAMLs in your Archipelago `Players` folder (or select the intended
-   player directory in your normal generation workflow). Install the correct
-   APWorld for every other game in the room too.
-3. Run Archipelago Generate. Keep its standard `AP_....zip` output and verify that
-   generation succeeds before distributing player files.
-4. Host its `.archipelago` with Archipelago Server, or upload the standard generation
-   ZIP to an appropriate Archipelago host. Share the room address and assigned
-   slot names privately with the participants.
-5. Give each SMB3X player their own `.apsmb3x` from that output or the room's download
-   page. They use [Launcher/Open Patch](player-guide.md#install-and-play).
+1. Install `smb3x.apworld` through Launcher and restart it. Install the matching
+   integrations for other games in the room as well.
+2. Collect one YAML per player. SMB3X players can export from Options Creator or
+   use the [minimal example](player-guide.md#creating-options-and-joining-a-room).
+   The game and section name are **Super Mario Bros. 3: Expanded Multiworld**.
+3. Put the YAMLs in your chosen `Players` directory and run **Generate** through
+   Launcher. Use the normal player-directory selection if you keep rooms separate.
+4. Check that generation succeeds. Keep the resulting `AP_....zip` output and
+   give each player their own `.apsmb3x`; it identifies their generated slot.
 
-Vanilla is the default level shuffle; Balanced and Compatible are supported.
-Removed legacy selectors are not valid substitutes. Prefer Options Creator exports
-and ordinary native Vanilla/Shuffled music; private external music packs are absent.
-See [options](../options.md) for progression, optional effects and victory settings.
+Use the same SMB3X APWorld version for the host and players starting this room.
+The [options reference](../../apworld/smb3/docs/options-reference.md) explains defaults
+and dependencies. Changing YAML after generation does not change that room.
 
-A generated SMB3X player container has AP/session metadata, not a ROM, BPS, emulator
-or State. Generation needs no ROM. A local prepared-game folder is different:
-it contains locally built ROM/BPS and managed runtime/save data and must never
-be uploaded as a room or release download. Prepared BPS files include original
-CHR data and must remain local.
+## Host and connect
 
-Do not distribute private diagnostic rooms or historical sessions as sample seeds.
-Do not modify played room settings or migrate saved games to this beta. SMB3X and
-the independent SMB3 proof of concept can coexist under their distinct namespaces;
-that does not certify every third-party APWorld combination.
+Open the generated `.archipelago` server data using **Archipelago Server**, or
+upload the standard generated ZIP to a compatible Archipelago hosting service.
+A local server must stay running for players to connect. Share its actual port,
+room address and any password privately with participants.
 
-Report SMB3X issues through [GitHub Issues](https://github.com/shio-rin/SMB3-Expanded-Multiworld/issues)
-with [redacted diagnostics](troubleshooting.md#report-a-bug).
+On the same PC, a client can use `localhost:port` or `127.0.0.1:port`. Remote
+players need an address that reaches the host, such as the hosting service's
+room address or a correctly configured public host address. **Do not give remote
+players localhost**: it refers to their own PC. Direct home hosting may require
+firewall/router setup; use a hosted room if that is unfamiliar.
+
+Players open their assigned `.apsmb3x` through Launcher/Open Patch and supply
+their own ROM locally. Their slot name comes from that file. If a downloaded file
+has no usable server address, give them the room's address for the prompt.
+
+## Which files to share
+
+| Output | Use |
+| --- | --- |
+| Each player's `.apsmb3x` | Give it to that player or let them download it from the room. |
+| `.archipelago` | Server data for the host/hosting service; keep the host's data private. |
+| Generated `AP_....zip` | Standard input for a compatible hosting service; it can include spoiler information. |
+| Spoiler text | Share only if the group wants spoilers. |
+| Local prepared ROM/BPS, States, managed sessions | Never distribute these as room or release files. |
+
+A player container contains metadata, not a ROM or emulator. Generation needs no
+ROM. Do not use private test rooms or already-played sessions as sample rooms.
+For updating an existing room, read [updates](troubleshooting.md#updating) before
+changing anything. For player setup, use the [player guide](player-guide.md).

@@ -71,6 +71,5 @@ interface, effects and music validations are mandatory, without obsolete release
 alternatives. Historical player files select their resource-bound runtime in the
 launcher before reaching the current client's preparation/connection path.
 
-M35 emulator/version and State boundaries are documented in
-[emulator qualification](docs/emulator-qualification.md). Original project source
-notices use MPL-2.0; see LICENSE-SCOPE.json and NOTICE.md for exclusions.
+Emulator-version and State boundaries are documented in
+[emulator qualification](docs/emulator-qualification.md). See [licensing scope and exclusions](docs/beta/licensing.md) for source terms.
