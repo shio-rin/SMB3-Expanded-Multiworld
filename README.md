@@ -1,6 +1,34 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Super Mario Bros. 3: Expanded Multiworld (SMB3X)
 
+This is a heavily AI-assisted Archipelago implementation of SMB3, which started
+as a "What if..." after using Codex for a little while. The goal was to have another
+fun, short-ish Archipelago game I could keep coming back to every now and then, with
+some replay-ability through shuffled levels, color palettes, and more. There were tons
+of testing involved in the process of putting this together, added with all the planning, 
+brainstorming and adjustments that were made as the versions went - and now I consider
+that this reached the point where it is pretty polished, for a beta at least.
+
+There is still plenty of work to be done; logic could use some adjusting or more options, 
+regional hammers add additional 'gating' but there could be more, level shuffle works
+great but is a bit more restrictive than I would like as some stages are omitted, 
+poison mushrooms and angry sun encounters need more coverage (especially the latter), 
+traps are in a good spot for a beta but will definitely need some more variety, 
+some of the palettes randomization options are not the best, and the list goes on...
+
+I do not plan on posting this to the official Archipelago discord because of the 
+community 'general' sentiment towards AI use, especially in a case like this, though
+in my mind I can't see this as another instance of 'AI slop' with all the time I've sunk
+into it. At the end of the day, I made this to have fun, and if some others get to enjoy
+it too, then great! Otherwise then no biggie.
+
+I'm always open to criticism, bug-reports, and especially any constructive feedback or
+ideas on how to improve this. I only see this as a fun project with a fun side effect of
+giving me a functional Archipelago implementation of one of my favorite childhood games, 
+while looking forward to seeing what it becomes in the long run.
+
+## Codex's description and instructions
+
 Explore all eight SMB3 worlds in Archipelago: clear 125 randomized reward checks,
 send items to your multiworld, and unlock progress with World Passes and Regional
 Hammers. Bowser is victory-only. Choose Vanilla, Balanced or Compatible original
