@@ -56,24 +56,23 @@ or transplant them to make an old game use the new runtime. See
 
 ## Find the logs
 
-Managed data normally lives at `%LOCALAPPDATA%\SMB3XAP` in Windows. Each game
-has a folder under `sessions`, with `client.log` and per-run emulator logs and
-bounded `lua-diagnostics.log` backups in `runs`. The error dialog/log may identify
-the relevant session. Use the latest run that shows the problem. Keep originals;
-work on a copy when redacting. Never clear the managed directory as a generic fix.
+Logs are optional when reporting a problem; we may ask for an excerpt while
+investigating. Managed data normally lives at `%LOCALAPPDATA%\SMB3XAP` in Windows.
+Each game has a folder under `sessions`, with `client.log` and per-run emulator
+logs and bounded `lua-diagnostics.log` backups in `runs`. The error dialog may identify the session.
+If asked for logs, use the latest run showing the problem.
 
-Advanced save/runtime details belong in [Architecture](../../ARCHITECTURE.md),
+Advanced save/runtime details are in [Architecture](../../ARCHITECTURE.md),
 [Codebase guide](../../CODEBASE_GUIDE.md) and
 [emulator contracts](../emulator-qualification.md).
 
 ## Report a bug
 
-Use the [bug-report template](https://github.com/shio-rin/SMB3-Expanded-Multiworld/issues/new?template=bug_report.md).
-Include expected/actual behavior, repeatable steps, fresh game versus Resume,
-APWorld/AP/BizHawk versions, Windows version, relevant options and short redacted
-log excerpts. Mention any testing assistance. If useful, include the APWorld hash
-from the release checksums.
+Bugs, suggestions and playthrough feedback are welcome on
+[GitHub Issues](https://github.com/shio-rin/SMB3-Expanded-Multiworld/issues).
+Describe what happened and what you were doing; you don't need a diagnosis or
+reliable reproduction steps. Screenshots, error messages, settings or versions
+are helpful if known, not required.
 
-Do not attach ROMs, BPS, States, entire sessions, host saves or private music.
-Remove passwords, tokens, room addresses, player details and personal paths from
-logs. For sensitive vulnerabilities, use [Security](../../SECURITY.md).
+Don't upload ROMs, saves, passwords or whole session folders; remove personal
+information from logs. For sensitive vulnerabilities, use [Security](../../SECURITY.md).

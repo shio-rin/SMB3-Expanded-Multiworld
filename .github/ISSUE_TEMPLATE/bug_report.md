@@ -1,12 +1,18 @@
 ---
 name: Bug report
-about: Reproducible SMB3X behavior
+about: Something went wrong while playing SMB3X
 ---
 <!-- SPDX-License-Identifier: MPL-2.0 -->
-Describe expected and actual behavior, steps, APWorld version/hash, Archipelago
-version, Windows edition/build and exact BizHawk version. Say whether this was a
-fresh game or Resume. Include only relevant redacted log excerpts.
+You don't need to know the cause or reproduce the problem reliably.
 
-Never attach ROMs, full managed folders, States, journals, server saves, passwords,
-player files or private room identities. Preserve originals on failure; do not
-delete checkpoints or edit identity files to bypass a refusal. See SECURITY.md.
+## What happened?
+Describe the problem and what you expected instead.
+
+## What were you doing?
+Mention the level, action, or anything else that might help.
+
+## Anything else? (optional)
+Screenshots, error messages, relevant settings, or version numbers if you know them.
+
+Please don't upload ROMs, saves, passwords, or entire session folders.
+Remove personal information from any logs you share.
