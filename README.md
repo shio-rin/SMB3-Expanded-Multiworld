@@ -10,11 +10,12 @@ brainstorming and adjustments that were made as the versions went - and now I co
 that this reached the point where it is pretty polished, for a beta at least.
 
 There is still plenty of work to be done; logic could use some adjusting or more options, 
-regional hammers add additional 'gating' but there could be more, level shuffle works
-great but is a bit more restrictive than I would like as some stages are omitted, 
-poison mushrooms and angry sun encounters need more coverage (especially the latter), 
-traps are in a good spot for a beta but will definitely need some more variety, 
-some of the palettes randomization options are not the best, and the list goes on...
+custom start and select menus need minor adjustments, regional hammers add additional 
+'gating' but there could be more, level shuffle works great but is a bit more restrictive 
+than I would like as some stages are omitted, poison mushrooms and angry sun encounters 
+need more coverage (especially the latter), traps are in a good spot for a beta but will
+definitely need some more variety, some of the palettes randomization options are not the
+best, the save-system is probably a tad over-engineered, and the list goes on...
 
 I do not plan on posting this to the official Archipelago discord because of the 
 community 'general' sentiment towards AI use, especially in a case like this, though
@@ -26,6 +27,10 @@ I'm always open to criticism, bug-reports, and especially any constructive feedb
 ideas on how to improve this. I only see this as a fun project with a fun side effect of
 giving me a functional Archipelago implementation of one of my favorite childhood games, 
 while looking forward to seeing what it becomes in the long run.
+
+This entire github will need an eventual re-work, too, with actual human-written text.
+Consider the AI-generated documentation as a place-holder for now, though it should be
+helpful nonetheless as everything is accurate.
 
 ## Codex's description and instructions
 
