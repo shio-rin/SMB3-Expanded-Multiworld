@@ -1,10 +1,16 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Emulator profiles and qualification
 
-M35 registers the official Windows x64 **2.10, 2.11 and 2.11.1** installations.
-All three pass the M35 managed check/reward/consumption, offline/reconnect and
-two-cold-Resume fixtures. The private handoff records evidence and limitations.
-Independent Sol verification passed for both M35 and M36. The M36 membership evidence correction did not change the source or package. Tests run on Windows 10 Pro 22H2; The owner reports one successful fresh 2.11.1 Windows 11 check and cold Resume; broader Windows 11 acceptance is not inferred. Other versions/platforms are not approved automatically.
+The supported profiles are Windows x64 **BizHawk 2.10, 2.11 and 2.11.1** with
+NesHawk. This guide describes their loading, configuration and save contracts for
+contributors; players should start with the [player guide](beta/player-guide.md).
+
+Recorded native tests cover managed checks, rewards, inventory consumption,
+connection interruptions and cold Resume. The 0.36.2 correction adds mixed-installation
+coverage and dependency-focused validation. Automation used Windows 10 Pro 22H2;
+targeted human reports also cover Windows 11. Those results do not qualify other
+versions/platforms or every configuration. See [provenance](beta/provenance.md)
+and the linked historical qualification records for evidence scope.
 
 `shared/emulators.py` identifies the executable by SHA256 and verifies the reviewed
 NES/client/Lua dependencies. Unrelated cores, plugins and language files may be

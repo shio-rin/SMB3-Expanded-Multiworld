@@ -50,6 +50,5 @@ current acceptance, historical-release rejection before planning/mutation, each 
 contract, prepared palette ownership and protocol short-circuiting. This complements,
 and does not replace, official AP generation and real-client lifecycle tests.
 
-M35 emulator/version and State boundaries are documented in
-[emulator qualification](docs/emulator-qualification.md). Original project source
-notices use MPL-2.0; see LICENSE-SCOPE.json and NOTICE.md for exclusions.
+Emulator-version and State boundaries are documented in
+[emulator qualification](docs/emulator-qualification.md). See [licensing scope and exclusions](docs/beta/licensing.md) for source terms.

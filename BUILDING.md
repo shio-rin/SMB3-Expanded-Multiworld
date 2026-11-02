@@ -7,7 +7,7 @@ Exact ZIP reproduction uses Python 3.12.14/zlib 1.3.2; another compression versi
 may change ZIP bytes while preserving member hashes.
 
 To reproduce the sealed first beta, use a separate clean checkout of
-`cf90296511a46174e8daf1a634acb3127f457c51` (the intended `v0.36.0-beta.1` tag).
+`7a4438a840116d279ff9688ded1c0e1b7f26d3fb` (`v0.36.2-beta.1`).
 Later documentation commits change generated build-source metadata even though
 recipe inputs are identical. See [beta provenance](docs/beta/provenance.md).
 
@@ -21,7 +21,7 @@ python -B tools/build_apworld.py ../smb3x.apworld
 Choose a fresh output; existing archives are never overwritten. The builder checks
 `packaging/resources.json` source and emitted hashes, then writes an APWorld and
 sibling `.build.json` with source commit, recipe/resource identity and member hashes.
-See NOTICE.md before any distribution.
+See [licensing and exceptions](docs/beta/licensing.md) before distribution.
 
 ## Edit → test → recipe review → clean build
 

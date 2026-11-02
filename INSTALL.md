@@ -1,28 +1,24 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Install SMB3X
 
-Follow the current [step-by-step player guide](docs/beta/player-guide.md).
+Use the **[player guide](docs/beta/player-guide.md)** for the full setup and controls.
+You need Windows x64, official Archipelago 0.6.8, an existing supported BizHawk
+2.10 / 2.11 / 2.11.1 installation, and your own clean SMB3 USA Revision A ROM.
+The launcher configures NesHawk; no Python or Lua development setup is needed.
 
-**Pending first beta: APWorld 0.36.2 / v0.36.2-beta.1.**
+1. Install `smb3x.apworld` through Archipelago Launcher; restart Launcher.
+2. In Options Creator choose **Super Mario Bros. 3: Expanded Multiworld**, set your
+   name and options, and export a YAML for your host.
+3. Obtain your room's `.apsmb3x`. Use **Launcher → Open Patch** to open it, select
+   your clean ROM and existing EmuHawk.exe, and supply the room address/password
+   if prompted. Your slot name comes from the player file.
+4. Press **Start** at the title screen. On the world map, wait for connection and
+   the initial successful save notice before heading into a level.
 
-Use your existing supported BizHawk installation. Unrelated cores, language files
-and plugins may remain; critical executable/dependency integrity is still verified.
-Generate a fresh 0.36.2 player file to use this launcher correction. Older games
-retain their original runtime; never delete or manually migrate saved sessions.
+[Controls](docs/beta/player-guide.md#controls-and-menus) ·
+[Save and continue](docs/beta/player-guide.md#saving-and-continuing) ·
+[Hints/chat](docs/beta/player-guide.md#hints-and-chat) ·
+[Problems or updating](docs/beta/troubleshooting.md)
 
-Requirements: Windows x64, official Archipelago **0.6.8**, supported BizHawk
-**2.10 / 2.11 / 2.11.1** with **NesHawk**, and your own verified clean SMB3 USA
-Revision A ROM. Install `smb3x.apworld`, restart Launcher, export YAML through
-Options Creator, and obtain your room's player-specific `.apsmb3x`.
-Open it with **Launcher → Open Patch**, choose the ROM and EmuHawk, connect,
-and wait for the initial verified checkpoint. Keep the same player file and
-emulator/core version for Resume.
-
-The exact YAML game key is `Super Mario Bros. 3: Expanded Multiworld`.
-SMB3X uses namespace `smb3x` and `.apsmb3x`; the independent SMB3 proof of concept
-uses `smb3` and `.apsmb3`. They can coexist in the same AP installation. Do not
-install two different implementations of the older `smb3` namespace together.
-
-No Python/Lua development setup is required. No downloadable full ROM is supplied.
-Normal close does not guarantee an additional save. See the player guide before
-resuming or changing emulator installations.
+Game files are created locally from your ROM. Do not share prepared ROMs or BPS.
+For current download availability, see the [README](README.md).

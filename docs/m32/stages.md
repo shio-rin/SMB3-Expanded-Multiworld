@@ -1,6 +1,9 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # M32 implementation gates
 
+> Historical engineering record; dated results retain their original scope.
+> Use the [current player guide](../beta/player-guide.md) for setup and play.
+
 Baseline: M31 public commit 66ede217fedd2f5c429455989de655777b945786.
 The accepted source and archives are read-only comparison inputs. Test outputs
 live outside this checkout under generated/m32. No release is approved by an

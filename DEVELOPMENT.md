@@ -12,7 +12,7 @@ python -m venv .venv
 ```
 
 Official integration uses Windows Archipelago 0.6.8 and BizHawk 2.10, 2.11 or 2.11.1 / NesHawk.
-Use fresh copies; set `SMB3X_MANAGED_HOME` to a short disposable path before launch.
+For testing, isolate your installation and set `SMB3X_MANAGED_HOME` to a short disposable path before launch.
 Install the candidate there and generate a new synthetic room. Supply your own
 verified ROM for preparation only. Decline optional association registration.
 
@@ -27,6 +27,5 @@ temporary can access malformed data that the original guard rejected safely. Do 
 move an await or a durable write while wrapping long statements. A scoped formatter
 is optional developer tooling; it is not needed to build or run SMB3X.
 
-M35 emulator/version and State boundaries are documented in
-[emulator qualification](docs/emulator-qualification.md). Original project source
-notices use MPL-2.0; see LICENSE-SCOPE.json and NOTICE.md for exclusions.
+Emulator-version and State boundaries are documented in
+[emulator qualification](docs/emulator-qualification.md). See [licensing scope and exclusions](docs/beta/licensing.md) for source terms.
