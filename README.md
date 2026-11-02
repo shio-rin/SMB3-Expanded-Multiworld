@@ -64,14 +64,12 @@ The **[player guide](docs/beta/player-guide.md)** is the main guide for setup,
 
 ## Development, support and licensing
 
-[Report a bug or suggest an improvement](https://github.com/shio-rin/SMB3-Expanded-Multiworld/issues).
-Include steps and relevant redacted log excerpts; see
-[bug reporting](docs/beta/troubleshooting.md#report-a-bug) or
-[security reporting](SECURITY.md) for sensitive issues.
+Bug reports, suggestions and playthrough feedback are welcome on
+[GitHub Issues](https://github.com/shio-rin/SMB3-Expanded-Multiworld/issues).
+Tell us what happened and what you were doing. No diagnosis or reliable
+reproduction needed; screenshots or error messages can help.
 
-Contributors can start with [Contributing](CONTRIBUTING.md), [Development](DEVELOPMENT.md),
-[Build](BUILDING.md), [Testing](TESTING.md), [Architecture](ARCHITECTURE.md) and
-[Codebase guide](CODEBASE_GUIDE.md).
+Interested in code or documentation? See [Contributing](CONTRIBUTING.md).
 
 SMB3X is free and unofficial, with no affiliation with Nintendo, Archipelago,
 BizHawk or OpenAI. MPL-2.0 covers

@@ -1,9 +1,8 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Development setup
 
-Use a separate checkout and disposable managed root. Never experiment on an
-existing player's cache, room or journal. Python 3.12+ and Git suffice for packaging;
-maintained tests additionally use `lupa` for actual Lua with mocked emulator APIs.
+Use Python 3.12+ and Git. Maintained tests also need `lupa` to run Lua against
+mocked emulator APIs. From the checkout:
 
 ```powershell
 python -m venv .venv
@@ -11,21 +10,18 @@ python -m venv .venv
 .venv/Scripts/python -B -m unittest discover -s tests
 ```
 
-Official integration uses Windows Archipelago 0.6.8 and BizHawk 2.10, 2.11 or 2.11.1 / NesHawk.
-For testing, isolate your installation and set `SMB3X_MANAGED_HOME` to a short disposable path before launch.
-Install the candidate there and generate a new synthetic room. Supply your own
-verified ROM for preparation only. Decline optional association registration.
+Use the [Codebase guide](CODEBASE_GUIDE.md) to find the relevant implementation and
+[Testing](TESTING.md) to choose checks for your change. [BUILDING.md](BUILDING.md)
+covers packaging and recipe review.
 
-Read ARCHITECTURE.md and CODEBASE_GUIDE.md, then follow BUILDING.md for explicit
-recipe review. Start with a small planner or presentation change. Persistence and
-native changes need TESTING.md's additional gates. Syntax checks do not exercise
-dynamic imports, Lua paths, frozen AP namespaces or native byte guards.
+## Testing with the game
 
-For a readability edit, characterize the affected return values, exceptions and side
-effects first. Keep chained Boolean checks lazy: evaluating every operand into a
-temporary can access malformed data that the original guard rejected safely. Do not
-move an await or a durable write while wrapping long statements. A scoped formatter
-is optional developer tooling; it is not needed to build or run SMB3X.
+Integration testing uses official Windows Archipelago 0.6.8 and BizHawk 2.10,
+2.11 or 2.11.1 / NesHawk. Use a disposable test game and an isolated managed root,
+not a played save. Set `SMB3X_MANAGED_HOME` to a short disposable path before launch,
+install the candidate in your test AP installation, and generate a fresh room.
+Supply your own verified ROM locally; decline optional association registration.
 
-Emulator-version and State boundaries are documented in
-[emulator qualification](docs/emulator-qualification.md). See [licensing scope and exclusions](docs/beta/licensing.md) for source terms.
+Saving, networking, native patches and emulator changes need the targeted
+[maintainer checks](TESTING.md#maintainer-checks-for-runtime-native-changes-and-releases).
+See [emulator qualification](docs/emulator-qualification.md) for version/save contracts.
