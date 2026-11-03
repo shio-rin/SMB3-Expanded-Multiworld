@@ -236,9 +236,9 @@
       "transform": "lf"
     },
     "bizhawk/effects.lua": {
-      "output_sha256": "fb81fea1c0ce0fe11fd55d5d2ce57a454deca609128f2a331b62de37b0ccbdc5",
+      "output_sha256": "1030c03bd28943c3138fb2954f0063bdcb9a8e8cfcd7ba09a1b73c4ea4b90dbd",
       "source": "src/smb3x/bizhawk/effects.lua",
-      "source_lf_sha256": "fb81fea1c0ce0fe11fd55d5d2ce57a454deca609128f2a331b62de37b0ccbdc5",
+      "source_lf_sha256": "1030c03bd28943c3138fb2954f0063bdcb9a8e8cfcd7ba09a1b73c4ea4b90dbd",
       "transform": "lf"
     },
     "bizhawk/locations.lua": {

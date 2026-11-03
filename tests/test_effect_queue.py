@@ -70,4 +70,30 @@ native=function(notify)observe=notify;return native end}
         self.sync(e['sequence']);self.step(level=0,ended=False)
         e=self.select();self.assertEqual(e['index'],0);self.assertEqual(e['entry'],2)
 
+    def test_doorway_preserves_scheduled_delay_and_entry_limit(self):
+        self.push(0,'walking');self.schedule(self.select())
+        for _ in range(100):self.step()
+        self.step(area='fortress boss room',playable=False)
+        self.assertIsNone(self.q.event())
+        for _ in range(300):self.step()
+        self.assertIsNone(self.q.event())
+        for _ in range(139):self.step(playable=True)
+        self.assertIsNone(self.q.event())
+        self.step();e=self.q.event()
+        self.assertEqual(e['type'],'ready')
+        self.assertEqual(e['entry'],1)
+        self.assertEqual(e['area'],'fortress boss room')
+        self.assertEqual(len(self.lua.globals().requests),0)
+
+    def test_room_change_defers_incompatible_micro_without_consumption(self):
+        self.lua.execute('compatible.micro=true')
+        self.push(0,'micro');self.push(1,'walking');self.schedule(self.select())
+        self.lua.execute('compatible.micro=false')
+        for _ in range(400):self.step(area='different graphics')
+        self.assertIsNone(self.q.event())
+        self.assertEqual(self.value['records']['0']['state'],'scheduled')
+        self.assertEqual(self.value['records']['1']['state'],'queued')
+        self.lua.execute('compatible.micro=true')
+        self.step();self.assertEqual(self.q.event()['type'],'ready')
+
 if __name__=='__main__':unittest.main()

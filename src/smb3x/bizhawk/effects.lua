@@ -113,11 +113,14 @@ function M.new(io)
    snapshot=nil;emit({type='select',entry=serial,index=index,eligible=eligible,area=native.area()});return
   end
   if selected and view.records[tostring(selected)].state=='scheduled'then
-   if native.ended()or native.area()~=area then outcome('queued','native entry interrupted before commitment');return end
+   -- A doorway changes room identity without ending the stage entry. Retain
+   -- its selected receipt and remaining active-frame delay across that load.
+   -- Death/exit still requeues, and each effect must qualify in the new room.
+   if native.ended()then outcome('queued','native entry interrupted before commitment');return end
    if native.gameplay()then
     remaining=math.max(0,remaining-1)
     if remaining==0 and native.can_start(view.records[tostring(selected)].kind)then
-     emit({type='ready',index=selected,entry=view.records[tostring(selected)].entry,area=area})
+     emit({type='ready',index=selected,entry=view.records[tostring(selected)].entry,area=native.area()})
      io.hold(true)
     end
    end
