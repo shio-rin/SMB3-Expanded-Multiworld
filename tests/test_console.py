@@ -96,8 +96,9 @@ class ConsolePaths(unittest.TestCase):
     lua.execute("""mem={[0x736]=scenario=='capped'and 99 or 4};local permanent=scenario=='permanent';local life=scenario=='life'or scenario=='capped'
      if scenario=='full'then for a=0x7D80,0x7D9B do mem[a]=1 end end
      local row={id='0x1',kind=permanent and 'permanent'or life and 'life'or 'inventory',name=permanent and 'World 2 Pass'or life and '1-Up'or 'Super Leaf',native=3}
-     d=module.new({read=function(a)return mem[a]or 0 end,write=function(a,v)mem[a]=v end,log=logger.event,frame=function()return 123 end,safe=function()return true end,unlock=function()end},{row})
-     d.sync({{index=0,item=1}},{},3);for i=1,45 do d.process()end;logger.close()""")
+     local frame=0
+     d=module.new({read=function(a)return mem[a]or 0 end,write=function(a,v)mem[a]=v end,log=logger.event,frame=function()return frame end,safe=function()return true end,unlock=function()end},{row})
+     d.sync({{index=0,item=1}},{},3);for i=1,45 do frame=i;d.process()end;logger.close()""")
     out=list(lua.globals().console.values());self.assertEqual(len(out),1)
     self.assertTrue(out[0].startswith('[SMB3X / Items]'))
     self.assertNotIn('index=',out[0]);self.assertNotIn('$',out[0]);self.assertIn('AP ITEM QUEUED index=0',Path(d,'raw.log').read_text())
