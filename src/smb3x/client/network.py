@@ -236,6 +236,11 @@ class SMB3Context(CommonContext):
         self.death_inbox.append((valid, now, time.monotonic()))
 
     async def send_msgs(self, msgs):
+        # CommonClient replays finished_game inside Connected, before our
+        # identity/history callback. Only the validated watcher may send a goal.
+        msgs = [m for m in msgs if not (
+            m.get('cmd') == 'StatusUpdate' and m.get('status') == ClientStatus.CLIENT_GOAL
+        )]
         for message in msgs:
             if message.get('cmd') == 'Bounce' and 'DeathLink' in message.get('tags', []):
                 if not self.death_send_key or not getattr(self, 'expected_effects', {}).get(
@@ -243,7 +248,20 @@ class SMB3Context(CommonContext):
                 ):
                     raise ValueError('DeathLink publication without managed native send intent')
                 self.persistence.outgoing_packet(self.death_send_key, message['data'])
-        await super().send_msgs(msgs)
+        if msgs:
+            await super().send_msgs(msgs)
+
+    async def send_goal(self, identity, delivery, generation):
+        """Watcher-only transport after durable goal/publication validation."""
+        def owned():
+            return (self.identity == identity and self.delivery is delivery
+                    and self.connection_generation == generation and self.replay_ready
+                    and not self.validation_error and self.persistence
+                    and not self.persistence.initial and not self.persistence.closed)
+        if not owned():
+            return False
+        await super().send_msgs([{'cmd': 'StatusUpdate', 'status': ClientStatus.CLIENT_GOAL}])
+        return bool(owned())
 
     def request_replay(self):
         import uuid

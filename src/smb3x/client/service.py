@@ -255,11 +255,9 @@ async def watcher(ctx: SMB3Context, bridge: LuaBridge) -> None:
                         'AP GOAL CONDITIONS SATISFIED: %s; native ending and server checked locations',
                         ctx.goal,
                     )
-                    await ctx.send_msgs(
-                        [{'cmd': 'StatusUpdate', 'status': ClientStatus.CLIENT_GOAL}]
-                    )
-                    ctx.finished_game = True
-                    LOG.info('AP GOAL SUBMITTED; awaiting server confirmation')
+                    if await ctx.send_goal(identity, state, generation):
+                        ctx.finished_game = True
+                        LOG.info('AP GOAL SUBMITTED; awaiting server confirmation')
             except BridgeUnavailable as exc:
                 if bridge_up or not bridge_problem_reported:
                     LOG.warning('BizHawk Lua bridge unavailable; waiting to retry: %s', exc)
