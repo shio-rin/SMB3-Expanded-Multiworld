@@ -240,10 +240,9 @@ async def watcher(ctx: SMB3Context, bridge: LuaBridge) -> None:
                     and (not ctx.goal_confirmed)
                     and bridge.authorized
                     and bridge.journal
-                    and (ctx.persistence.saved_ending == bridge.journal.state['ending'])
                     and satisfied(
                         ctx.goal,
-                        bridge.journal.state['ending'],
+                        ctx.persistence.goal_ending(bridge),
                         ctx.checked_locations,
                         ctx.location_ids,
                         airships,

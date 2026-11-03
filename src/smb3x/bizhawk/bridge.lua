@@ -219,6 +219,7 @@ local function sync_response(request)
         cosmetic_accepted=cosmetic_ok,
         save_requested=checkpoint.state.requested and checkpoint.batch_ready(),save_stable=checkpoint.state.stable,checkpoint_mode=checkpoint.state.mode,
         checkpoint_awaiting_ack=checkpoint.state.awaiting_ack,checkpoint_batch_count=checkpoint.state.batch_count,
+        checkpoint_frozen=checkpoint.frozen(),checkpoint_delivery_flight=delivery.state.flight~=nil,
         checkpoint_dirty=checkpoint.state.dirty,checkpoint_exposed=checkpoint.state.exposed,checkpoint_reason=checkpoint.state.reason,checkpoint_quit=checkpoint.state.quit,
         sync_ready=checkpoint.state.mode=='synchronizing' and checkpoint.state.stable>=30 and checkpoint.safe() and (#delivery.state.pending==0 or delivery.state.full_index~=nil),
         protocol = 40, session = key, checks = monitor.checks(),

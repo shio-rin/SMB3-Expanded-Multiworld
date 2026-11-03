@@ -342,7 +342,7 @@ class CheckpointStore:
         return e
 
     def new_run(self):
-        if self.epochs.exists() or self.pointer.exists():
+        if self.epochs.exists() or self.pointer.exists() or (self.root / 'ENDING.json').exists():
             raise ValueError('Existing session cannot be started as new; preserve history')
         run = unique()
         folder = self.root / 'runs' / run
@@ -618,6 +618,7 @@ class CheckpointStore:
     def resume(self, allow_loss=False):
         """Restore a verified generation into a fresh run; retain the old run as evidence."""
         folder, m, components = self.verify()
+        self.terminal_ending()  # Reject damaged goal authority before changing run ownership.
         e = self.epoch()
         if not set(e.get('published', [])) <= set(components['deliveries']['physical_checks']):
             raise ValueError(
@@ -747,6 +748,114 @@ class CheckpointStore:
         if published != e.get('published', []):
             save_json(self.epochs, {**e, 'published': published})
         return set(checks)
+
+    def terminal_ending(self):
+        """Validate goal-only evidence; it never restores RAM or delivery history."""
+        path = self.root / 'ENDING.json'
+        if not path.exists():
+            return None
+        record = read(path)
+        if (not isinstance(record, dict)
+                or set(record) != {'schema', 'event', 'binding', 'ending', 'native',
+                                   'checkpoint', 'run', 'received', 'physical', 'confirmed'}
+                or type(record['schema']) is not int or record['schema'] != 1
+                or record['event'] != 'credits-entry-v1'
+                or record['binding'] != fingerprint(self.binding)
+                or record['ending'] != {'version': 1, 'phase': 3}):
+            raise ValueError('Invalid durable terminal ending identity')
+        identifier(record['run'])
+        self.validate_terminal_native(record['native'])
+        _, manifest, components = self.verify()
+        ancestor = manifest
+        target = record['checkpoint']
+        if not isinstance(target, dict) or set(target) != {'generation', 'manifest_sha256'}:
+            raise ValueError('Malformed terminal checkpoint reference')
+        identifier(target['generation'])
+        while ancestor['generation'] != target.get('generation'):
+            parent = ancestor['parent']
+            if parent is None:
+                raise ValueError('Terminal ending belongs to another checkpoint lineage')
+            ancestor = read(self.root / 'checkpoints' / parent['generation'] / 'manifest.json')
+        folder = self.root / 'checkpoints' / ancestor['generation']
+        if target != {'generation': ancestor['generation'],
+                      'manifest_sha256': digest((folder / 'manifest.json').read_bytes())}:
+            raise ValueError('Terminal ending checkpoint authority changed')
+        original = read(folder / 'deliveries.json')
+        for field in ('physical', 'confirmed'):
+            value = record[field]
+            if (not isinstance(value, list) or any(type(i) is not int for i in value)
+                    or value != sorted(set(value))):
+                raise ValueError('Malformed terminal physical provenance')
+        if (record['physical'] != original['physical_checks']
+                or not set(record['confirmed']) <= set(record['physical'])
+                or not set(record['physical']) <= set(components['deliveries']['physical_checks'])):
+            raise ValueError('Terminal ending cannot introduce physical checks')
+        validate_prefix(read(folder / 'server.json')['received'], record['received'])
+        if any(not isinstance(row, list) or len(row) != 4
+               or any(type(value) is not int for value in row) for row in record['received']):
+            raise ValueError('Malformed terminal server history')
+        worlds = read(folder / 'worlds.json')
+        if (record['native']['sequence'] < worlds['sequence']
+                or record['native']['transaction'] < worlds['committed']):
+            raise ValueError('Terminal ending predates its checkpoint')
+        # The original immutable authority is verified even after later saves.
+        for name in ('deliveries.json', 'server.json', 'worlds.json'):
+            data = (folder / name).read_bytes()
+            if ancestor['members'][name] != dict(size=len(data), sha256=digest(data)):
+                raise ValueError('Terminal ending ancestor component changed')
+        return record
+
+    def validate_terminal_native(self, native):
+        fields = {'session', 'phase', 'bound', 'error', 'world', 'ending_phase',
+                  'ending_version', 'sequence', 'seen', 'transaction'}
+        if (not isinstance(native, dict) or set(native) != fields
+                or native['session'] != Identity(**self.binding['identity']).key
+                or any(type(native[k]) is not int for k in fields - {'session'})
+                or any(native[k] != v for k, v in dict(phase=2, bound=1, error=0,
+                    world=7, ending_phase=3, ending_version=1).items())
+                or native['sequence'] != native['seen']
+                or not 1 <= native['sequence'] <= 65534
+                or not 0 <= native['transaction'] <= 65534):
+            raise ValueError('Terminal ending requires authenticated native credits entry')
+
+    def persist_terminal_ending(self, run, native, prefix, physical, confirmed):
+        """Called only after NativeBridge's session/ROM/sequence reconciliation.
+
+        Native ending v1 phase 3 is produced by guarded Bowser -> Peach ->
+        credits hooks. Ordinary save safety is deliberately not widened.
+        """
+        fields = ('session', 'phase', 'bound', 'error', 'world', 'ending_phase',
+                  'ending_version', 'sequence', 'seen', 'transaction')
+        native = {k: native[k] for k in fields}
+        self.validate_terminal_native(native)
+        e = self.epoch()
+        if e['run'] != run or e['state'] != 'active':
+            raise ValueError('Terminal ending lost active run authority')
+        existing = self.terminal_ending()
+        if existing is not None:
+            validate_prefix(existing['received'], prefix)
+            return existing
+        _, manifest, components = self.verify()
+        parent = dict(generation=manifest['generation'],
+                      manifest_sha256=digest((self.root / 'checkpoints' /
+                                             manifest['generation'] / 'manifest.json').read_bytes()))
+        if e.get('parent') != parent:
+            raise ValueError('Terminal ending lost current checkpoint authority')
+        if set(physical) != set(components['deliveries']['physical_checks']):
+            raise ValueError('Terminal ending cannot publish unsaved physical progress')
+        validate_prefix(components['server']['received'], prefix)
+        if (native['sequence'] < components['worlds']['sequence']
+                or native['transaction'] < components['worlds']['committed']):
+            raise ValueError('Terminal ending native sequence predates its checkpoint')
+        record = dict(schema=1, event='credits-entry-v1', binding=fingerprint(self.binding),
+                      ending={'version': 1, 'phase': 3}, native=native, checkpoint=parent,
+                      run=run, received=deepcopy(prefix), physical=sorted(physical),
+                      confirmed=sorted(set(confirmed) & set(physical)))
+        save_json(self.root / 'ENDING.json', record)
+        verified = self.terminal_ending()
+        if verified != record:
+            raise ValueError('Terminal ending durable readback differs')
+        return verified
 
     def validate_effect_tail(self, e):
         from ..effects import validate

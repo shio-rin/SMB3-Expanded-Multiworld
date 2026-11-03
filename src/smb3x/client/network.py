@@ -357,6 +357,10 @@ class SMB3Context(CommonContext):
                 self.store.save(self.delivery)
                 self.identity = identity
                 self.validation_error = None
+                # Submission is not confirmation. A fresh connection may
+                # reassert a durably authorized goal if its reply was lost.
+                if not self.goal_confirmed:
+                    self.finished_game = False
                 self.logged_registered = set(self.checked_locations)
                 self.notifications.connected(
                     self.checked_locations, known_count=len(self.delivery.items)

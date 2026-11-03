@@ -24,6 +24,7 @@
     "epoch": 3,
     "hybrid": "m25-hybrid-1",
     "native": 9,
+    "terminal_ending": "credits-entry-v1",
     "wire": 40
   },
   "exclusions": [
@@ -185,7 +186,7 @@
       "owned canonical SMB3 USA Revision A ROM"
     ]
   },
-  "release": "36.0.2-rc1",
+  "release": "36.0.3-rc1",
   "resources": {
     "__init__.py": {
       "output_sha256": "3ee95cc1dca09bbdb3b3e2240c534657d564b68925a51e3079d28ed8d95ff545",
@@ -200,9 +201,9 @@
       "transform": "lf"
     },
     "bizhawk/bridge.lua": {
-      "output_sha256": "c3ee396cdeb4fef8827a50ea40430021c33d02c4e1b10f334a1c12d8b0e87b75",
+      "output_sha256": "2ca2705a0aec0fd4241e8257ce26666a1758f80ef731986dde76fcab75e8c676",
       "source": "src/smb3x/bizhawk/bridge.lua",
-      "source_lf_sha256": "c3ee396cdeb4fef8827a50ea40430021c33d02c4e1b10f334a1c12d8b0e87b75",
+      "source_lf_sha256": "2ca2705a0aec0fd4241e8257ce26666a1758f80ef731986dde76fcab75e8c676",
       "transform": "lf"
     },
     "bizhawk/castle_text.lua": {
@@ -308,9 +309,9 @@
       "transform": "lf"
     },
     "client/network.py": {
-      "output_sha256": "bcc38572288a3bbda56df861bff45025784c67e9fcaf6c967f46d953d8ea53a9",
+      "output_sha256": "02268553bd11bcab39b5f18a083b86a12878a61aab49bb60514b14dcff5d0ce1",
       "source": "src/smb3x/client/network.py",
-      "source_lf_sha256": "bcc38572288a3bbda56df861bff45025784c67e9fcaf6c967f46d953d8ea53a9",
+      "source_lf_sha256": "02268553bd11bcab39b5f18a083b86a12878a61aab49bb60514b14dcff5d0ce1",
       "transform": "lf"
     },
     "client/notifications.py": {
@@ -332,15 +333,15 @@
       "transform": "lf"
     },
     "client/persistence/checkpoints.py": {
-      "output_sha256": "7eb0f96bc6f43315e5d9d29a89d77f034b585c096446c88131e57d615e2d78f3",
+      "output_sha256": "bfa1aca1eeabbdc0397e1e66a49177b30247b774f058b287909bb63ff5e7beec",
       "source": "src/smb3x/client/persistence/checkpoints.py",
-      "source_lf_sha256": "7eb0f96bc6f43315e5d9d29a89d77f034b585c096446c88131e57d615e2d78f3",
+      "source_lf_sha256": "bfa1aca1eeabbdc0397e1e66a49177b30247b774f058b287909bb63ff5e7beec",
       "transform": "lf"
     },
     "client/persistence/coordinator.py": {
-      "output_sha256": "24354539894037a5bedaef8d3ebe9dc362acfd2b12728c9e197adc8ff6942df1",
+      "output_sha256": "2357fe962ff0b2796431a268278728f288b990b940b29e6fda16ceb3c6dfb02e",
       "source": "src/smb3x/client/persistence/coordinator.py",
-      "source_lf_sha256": "24354539894037a5bedaef8d3ebe9dc362acfd2b12728c9e197adc8ff6942df1",
+      "source_lf_sha256": "2357fe962ff0b2796431a268278728f288b990b940b29e6fda16ceb3c6dfb02e",
       "transform": "lf"
     },
     "client/persistence/locking.py": {
@@ -374,9 +375,9 @@
       "transform": "lf"
     },
     "client/service.py": {
-      "output_sha256": "73db06e6de636f570f7a28c5dd8495ab737ece4e0e7ab0610c95e016c27a166b",
+      "output_sha256": "669b20dec68ba87b8bdcbaa50715f9b9a585d0d3e32d0f813a31c7b627f62d54",
       "source": "src/smb3x/client/service.py",
-      "source_lf_sha256": "73db06e6de636f570f7a28c5dd8495ab737ece4e0e7ab0610c95e016c27a166b",
+      "source_lf_sha256": "669b20dec68ba87b8bdcbaa50715f9b9a585d0d3e32d0f813a31c7b627f62d54",
       "transform": "lf"
     },
     "client/transport.py": {
@@ -1508,7 +1509,7 @@
       "transform": "lf"
     }
   },
-  "runtime": "m36-python-3",
+  "runtime": "m36-python-4",
   "schema": 1,
   "seed_policy": "No historical development denylist; all identity/ROM/cache/checkpoint checks retained",
   "slot_release": "m27-1",
