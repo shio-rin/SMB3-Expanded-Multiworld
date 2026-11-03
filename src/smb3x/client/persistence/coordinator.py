@@ -33,11 +33,25 @@ class Coordinator:
         )
         self.known_received = components['server']['received'] if components else []
         self.saved_ending = deepcopy(components['worlds']['ending']) if components else None
+        self.saved_terminal = store.terminal_ending()
+        if self.saved_terminal:
+            older, newer = sorted((self.known_received, self.saved_terminal['received']), key=len)
+            validate_prefix(older, newer)
+            self.known_received = deepcopy(newer)
         self.checkpoint_metrics = []
         from ..deathlink import empty
 
         tail = store.epoch().get('deathlink')
         self.deathlink = deepcopy(tail['value']) if tail else empty()
+
+    def goal_ending(self, bridge):
+        if self.initial or self.closed:
+            return None
+        if self.saved_terminal:
+            return self.saved_terminal['ending']
+        if bridge.journal and self.saved_ending == bridge.journal.state['ending']:
+            return self.saved_ending
+        return None
 
     async def before_poll(self, ctx, bridge):
         """Return True while server replay or cold-restore ownership still blocks polling."""
@@ -52,6 +66,8 @@ class Coordinator:
             return True
         current = received(ctx)
         validate_prefix(self.known_received, current)
+        if self.saved_terminal and not set(self.saved_terminal['confirmed']) <= set(ctx.checked_locations):
+            raise ValueError('Server lost terminal-confirmed physical checks')
         self.known_received = deepcopy(current)
         if self.initial:
             if self.resuming:
@@ -130,6 +146,23 @@ class Coordinator:
         if 'effects' in self.store.binding:
             await self.service_effects(ctx, bridge, state)
             await self.service_deathlink(ctx, bridge)
+        if (not self.saved_terminal and bridge.authorized and bridge.journal
+                and bridge.journal.state['ending'] == {'version': 1, 'phase': 3}
+                and not bridge.action and bridge.journal.state['pending'] is None
+                and response.get('checkpoint_mode') == 'playing'
+                and response.get('checkpoint_frozen') is False
+                and response.get('checkpoint_delivery_flight') is False
+                and not response.get('checkpoint_awaiting_ack')
+                and response.get('checkpoint_batch_count') == 0
+                and not response.get('blocked')
+                and self.saved_physical == set(state.physical_checks)):
+            # NativeBridge already authenticated ROM, run, sequence and ending.
+            # This grants goal authority only, never checks, grants or restore.
+            self.saved_terminal = self.store.persist_terminal_ending(
+                self.run, response['native'], received(ctx), state.physical_checks,
+                set(ctx.checked_locations) & self.saved_physical,
+            )
+            LOG.info('CREDITS ENTRY DURABLE: session-bound terminal goal evidence recorded')
         if (
             response.get('checkpoint_dirty')
             and response.get('checkpoint_exposed')

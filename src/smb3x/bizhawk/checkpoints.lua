@@ -58,6 +58,19 @@ function M.new(io)
   return not state.awaiting_ack and not delivery.state.flight and(state.saved_signature==nil or state.batch_count>=32
     or #delivery.state.pending==0 or delivery.state.full_index~=nil)
  end
+ local function defer_encounter_save()
+  -- Input neutrality cannot stop native map objects from entering a scene.
+  -- Yield only an uncommitted save opportunity, never grant/capture/restore
+  -- ownership. Keep the request and dirty progress until the next safe map.
+  state.deferred_save=false
+  if map_gate()then return end
+  if not state.requested or frozen()or(state.mode~='playing'and state.mode~='quiescing')then return end
+  if not state.saved_signature or not travel.state.authorized or travel.state.blocked or delivery.state.blocked
+    or state.awaiting_ack or delivery.state.flight or state.batch_count~=0
+    or io.read(0x79A2)~=2 or io.read(0x79AE)~=1 or io.read(0x79F3)~=0 then return end
+  if io.read(0x70A)==0 and io.read(0x729)~=15 then return end
+  state.mode='playing';state.deferred_save=true;state.stable=0;state.dirty=true;state.exposed=true
+ end
  local function signature()
   if not travel.checkpoint_safe()then return nil end
   local n=travel.checkpoint_status();local a={n.world,n.transaction,n.ending_phase,io.read(0x736)}
@@ -84,7 +97,7 @@ function M.new(io)
  local function quiesce(reason)
   if frozen()then return end
   if not state.gate_started then state.gate_started=clock();state.gate_frame=io.frame()end
-  state.requested=true;state.reason=reason or state.reason;state.mode='quiescing';state.stable=0
+  state.requested=true;state.deferred_save=false;state.reason=reason or state.reason;state.mode='quiescing';state.stable=0
   status(state.quit and 'Saving and quitting - settling native work' or 'Saving automatically - settling native work', 'Checkpoint', state.quit and 'Saving before closing. Please wait.' or 'Saving progress...')
  end
  local function witness()
@@ -153,6 +166,7 @@ function M.new(io)
    state.mode='booting';state.frame=nil;io.unpause();status('Connecting - validating native session', 'Network', 'Server history received; starting your game.')
   end
   if not frozen()then
+  defer_encounter_save()
   local sig=signature()
    -- Menus and map coordinates alone are not durable progress. Preserve the
    -- full native checkpoint at real returns/mutations; never reconstruct RAM.
@@ -284,6 +298,7 @@ function M.new(io)
   state.verified=true;state.last_checkpoint=io.restored_at;status('Waiting for server — restored state remains paused', 'Network', 'Waiting for the AP server. Your restored game is safely paused.')
  end
  event.oninputpoll(function()
+  defer_encounter_save()
   if state.mode=='playing'and map_gate()then
    -- Gate at the first eligible input poll, before a held direction/A can
    -- leave the safe return. State API and file I/O remain ordinary-thread only.
@@ -293,7 +308,7 @@ function M.new(io)
     if not state.gate_started then state.gate_started=clock();state.gate_frame=io.frame()end
    end
   end
-  if state.requested or (state.mode~='playing'and not(state.mode=='booting'and not map_gate()))then
+  if frozen()or(state.requested and not state.deferred_save) or (state.mode~='playing'and not(state.mode=='booting'and not map_gate()))then
    joypad.set(neutral,1);joypad.set(neutral,2)
   end
  end,'M233 mandatory automatic checkpoint input gate')
