@@ -225,9 +225,9 @@
       "transform": "lf"
     },
     "bizhawk/delivery.lua": {
-      "output_sha256": "0635f287991af78c450d478c790c8aa13a9f1fb7c65d80ab56b300815914d407",
+      "output_sha256": "476c973e446a1d7603fd17b11cf4a3b1033c83a3af24fb675bf00067de3afd51",
       "source": "src/smb3x/bizhawk/delivery.lua",
-      "source_lf_sha256": "0635f287991af78c450d478c790c8aa13a9f1fb7c65d80ab56b300815914d407",
+      "source_lf_sha256": "476c973e446a1d7603fd17b11cf4a3b1033c83a3af24fb675bf00067de3afd51",
       "transform": "lf"
     },
     "bizhawk/diagnostics.lua": {

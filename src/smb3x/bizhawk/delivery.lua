@@ -77,7 +77,15 @@ function M.new(io,rows)
     end
     local function process()
         if s.blocked then return end
-        if io.safe() then s.stable=math.min(s.stable+1,30) else s.stable=0 end
+        -- The checkpoint owner intentionally skips processing during play.
+        -- A prior map's settled count cannot certify the first frame of a
+        -- later return, when a native roaming collision can still take over.
+        local frame=io.frame()
+        if s.process_frame~=frame then
+            if s.process_frame~=frame-1 then s.stable=0 end
+            if io.safe() then s.stable=math.min(s.stable+1,30) else s.stable=0 end
+            s.process_frame=frame
+        elseif not io.safe() then s.stable=0 end
         if s.stable<30 or #s.pending==0 then return end
         local c=s.pending[1]; local item=items[c.item]
         if io.read(0x79A1)==9 then
@@ -165,6 +173,6 @@ function M.new(io,rows)
         return a
     end
     return {sync=sync,process=process,acks=acknowledgements,state=s,snapshot=snapshot,
-        onload=function() s.stable=0 end}
+        onload=function() s.stable=0;s.process_frame=nil end}
 end
 return M

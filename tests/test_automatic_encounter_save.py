@@ -1,11 +1,12 @@
 # SPDX-License-Identifier: MPL-2.0
 """Real checkpoint Lua, mocked native transitions; native evidence is separate."""
-from test_autosave_policy import AutosavePolicyTests
+import unittest
+import test_autosave_policy as fixture
 
 
-class AutomaticEncounterSaveTests(AutosavePolicyTests):
+class AutomaticEncounterSaveTests(unittest.TestCase):
     def setUp(self):
-        super().setUp()
+        fixture.AutosavePolicyTests.setUp(self)
         self.lua.execute('writes=0;joypad.set=function()writes=writes+1 end')
 
     def enter(self, mode='quiescing', tileset=17):
@@ -53,3 +54,24 @@ class AutomaticEncounterSaveTests(AutosavePolicyTests):
     def test_menu_or_unsettled_map_alone_does_not_release_input(self):
         self.lua.execute('c.state.mode="quiescing";c.state.requested=true;safe_flag=false;mem[0x3ED]=1;c.tick();input_callback()')
         self.assertGreater(self.lua.eval('writes'), 0)
+
+    def test_first_input_poll_during_automatic_entry_yields_before_next_tick(self):
+        self.lua.execute('''c.state.mode='quiescing';c.state.requested=true
+         safe_flag=false;mem[0x70A]=0;mem[0x729]=15;input_callback()''')
+        self.assertEqual(self.lua.eval('writes'), 0)
+        self.assertTrue(self.lua.eval('c.state.requested and c.state.dirty'))
+        self.assertEqual(self.lua.eval('c.state.stable'), 0)
+
+    def test_ordinary_encounter_before_request_or_after_completed_save_stays_playable(self):
+        self.lua.execute('mem[0x70A]=9;mem[0x729]=15;safe_flag=false;input_callback();c.tick()')
+        self.assertEqual(self.lua.eval('writes'), 0)
+        self.assertFalse(self.lua.eval('c.state.requested'))
+        self.assertTrue(self.lua.eval('c.state.dirty'))
+
+    def test_deferred_save_cannot_leak_through_connection_hold(self):
+        self.enter()
+        self.assertEqual(self.lua.eval('writes'), 0)
+        self.lua.execute("args.hash=function()return 'unchanged'end;c.control({session='s',run='r',token='t',op='WAIT_SERVER'});input_callback()")
+        self.assertGreater(self.lua.eval('writes'), 0)
+        self.assertTrue(self.lua.eval('c.state.requested'))
+
