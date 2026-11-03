@@ -40,7 +40,7 @@ Hammers and useful inventory items. Bowser is the victory goal, not a reward che
 Optional level shuffling, hazards, traps, Blessings, palettes and Luigi's appearance
 let you vary a game.
 
-**First public beta:** [APWorld 0.36.2 / v0.36.2-beta.1](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.2-beta.1).
+**Current public beta:** [APWorld 0.36.3 / v0.36.3-beta.1](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.3-beta.1).
 This is a beta prerelease; feedback and bug reports are welcome.
 
 ## Start playing

@@ -1,6 +1,19 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Changelog
 
+## 0.36.3 — Gameplay hotfix
+
+- Fix a potential input lock when consecutive N-Spade matching-card games start.
+  Legal roaming Hammer Bros. encounter chains also retain normal controls.
+- Retain scheduled trap delays through fortress doorways, subject to each
+  effect's gameplay and technical restrictions.
+- Recognize Archipelago victory at authenticated credits entry, preserving
+  Standard, All Koopalings and All Locations requirements and safe reconnection.
+- Generate a new game with APWorld 0.36.3 to use these fixes. Existing games
+  retain their original runtime and saved sessions.
+
+[Beta 0.36.3](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.3-beta.1)
+
 ## 0.36.2 — First public beta
 
 Published **2026-11-02**, per the [GitHub release](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.2-beta.1).

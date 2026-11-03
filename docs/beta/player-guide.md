@@ -23,7 +23,7 @@ These files have different jobs:
 | Player `.apsmb3x` | Open your own generated game; keep it to continue later. |
 | Original SMB3 `.nes` ROM | Supply it locally when asked; it is used to build your game. |
 
-Download `smb3x.apworld` from the [0.36.2 beta release](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.2-beta.1).
+Download `smb3x.apworld` from the [0.36.3 beta release](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.3-beta.1).
 Open it with Archipelago Launcher and complete installation, then **restart Launcher**.
 
 ## Creating options and joining a room

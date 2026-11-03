@@ -48,11 +48,9 @@ remain bound to their original runtime, and already-started games keep their
 original save and emulator-version requirements. An APWorld update does not
 rewrite those player files or migrate their saves.
 
-For the 0.36.2 BizHawk compatibility correction, generate a **new room/player
-file with 0.36.2** to use the corrected launcher. Keep your existing BizHawk
-installation. Preserve older player files, caches and saved sessions; never delete
-or transplant them to make an old game use the new runtime. See
-[release notes](release-notes.md) for this beta's changes.
+To use these fixes, generate a new SMB3X game using APWorld 0.36.3. Existing games continue using their original runtime and can be finished normally. Do not delete or manually migrate saved sessions.
+
+See [release notes](release-notes.md) for this beta's changes.
 
 ## Find the logs
 

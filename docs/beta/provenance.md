@@ -1,6 +1,24 @@
 <!-- SPDX-License-Identifier: MPL-2.0 -->
 # Release provenance
 
+## Current beta 0.36.3
+
+[Beta v0.36.3-beta.1](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.3-beta.1)
+uses the unchanged sealed APWorld **0.36.3**, candidate **36.0.3-rc2**.
+Python runtime is `m36-python-4`, native runtime `m26-native-2`, and slot release `m27-1`.
+
+| Identity | Exact value |
+| --- | --- |
+| Packaged source / tag target | `a630e1f5a7a56f6da2c94c75185acc34b3333843` |
+| APWorld SHA256 | `0f87ff4d6e503ffe5b3c306ac9353ca28cbab60383b8cda7d366f30e23cb6054` |
+| Resource-manifest SHA256 | `daa01d0a5fc8604f91c1b28903ae6e375c525d04620bfdbc3c74a83644b199ac` |
+| Recipe SHA256 | `93e291104527ba7a9578d3b5bba1989772bcdb5ee3d1d3d7ad622d2ac50c9f51` |
+
+PR #4 merged the accepted implementation. Later release-documentation commits
+on main are separate from the packaged source and do not rebuild the APWorld.
+
+## Previous beta 0.36.2
+
 [First public beta v0.36.2-beta.1](https://github.com/shio-rin/SMB3-Expanded-Multiworld/releases/tag/v0.36.2-beta.1)
 is APWorld **0.36.2**, sealed candidate **36.0.2-rc1**.
 
