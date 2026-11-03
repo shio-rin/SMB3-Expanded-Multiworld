@@ -8,7 +8,7 @@
     "maximum_ap_version": "0.6.8",
     "minimum_ap_version": "0.6.8",
     "version": 7,
-    "world_version": "0.36.2"
+    "world_version": "0.36.3"
   },
   "baseline": {
     "role": "Accepted M28 gameplay; no archive/cache is a build prerequisite",
@@ -212,9 +212,9 @@
       "transform": "lf"
     },
     "bizhawk/checkpoints.lua": {
-      "output_sha256": "4b0a8268b78ccaa3ae3c4d2cd0112a38f94cf87503fd31f275da509199228a57",
+      "output_sha256": "b5fa240d65798dd25f6e397981d73d324441cb0319bffde43baa1b2747b60905",
       "source": "src/smb3x/bizhawk/checkpoints.lua",
-      "source_lf_sha256": "4b0a8268b78ccaa3ae3c4d2cd0112a38f94cf87503fd31f275da509199228a57",
+      "source_lf_sha256": "b5fa240d65798dd25f6e397981d73d324441cb0319bffde43baa1b2747b60905",
       "transform": "lf"
     },
     "bizhawk/deathlink.lua": {
